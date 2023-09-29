@@ -106,7 +106,6 @@
     <Content Include="Funcoes\global.js" />
     <Content Include="Imagens\fundo.png" />
     <Content Include="Imagens\fundo_topo.png" />
-    <Content Include="viniciusnovo\thumb3.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
