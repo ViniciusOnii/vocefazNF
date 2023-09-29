@@ -1,0 +1,90 @@
+<style >
+
+
+.layouttexto {
+	background-color: transparent;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: solid;
+	border-width: 1px;
+	border-color: #177CC0;
+	box-shadow: none;
+	outline: none;
+	outline-color:#177CC0
+}
+
+
+
+@media (min-width: 1200px) and (max-width: 10000px) {
+	.estilo_desktop {
+		visibility: visible;
+		display: block;
+	}
+}
+    
+
+
+@media (min-width: 1px) and (max-width: 1199px)
+{
+	.estilo_desktop {
+		visibility: hidden;
+		display: none;
+	 }
+}
+    
+     
+@media (min-width: 700px) and (max-width: 1199px)
+{
+	.estilo_tablet {
+		visibility: visible;
+		display: block;
+	 }
+}        
+    
+
+@media (min-width: 1200px) and (max-width: 10000px)
+{
+	.estilo_tablet {
+		visibility: hidden;
+		display: none;
+	 }
+  
+}    
+    
+    
+
+@media (min-width: 1px) and (max-width: 699px)
+{
+	.estilo_tablet {
+		visibility: hidden;
+		display: none;
+	 }
+  
+}    
+    
+    
+	
+@media (min-width: 1px) and (max-width: 699px)
+{
+	.estilo_mobile {
+		visibility: visible;
+		display: block;
+	 }
+}
+	
+
+@media (min-width: 700px) and (max-width: 10000px)
+{
+	.estilo_mobile {
+		visibility: hidden;
+		display: none;
+	 }
+}
+	
+    
+</style>    
+    
+
+
+
