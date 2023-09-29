@@ -1,18 +1,6 @@
-<style >
+<style>
 
 
-.layouttexto {
-	background-color: transparent;
-	border-left: none;
-	border-right: none;
-	border-top: none;
-	border-bottom: solid;
-	border-width: 1px;
-	border-color: #177CC0;
-	box-shadow: none;
-	outline: none;
-	outline-color:#177CC0
-}
 
 
 
@@ -81,8 +69,23 @@
 		display: none;
 	 }
 }
-	
-    
+
+
+.layouttexto {
+	background-color: transparent;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: solid;
+	border-width: 1px;
+	border-color: #177CC0;
+	box-shadow: none;
+	outline: none;
+	outline-color: #177CC0
+}
+
+
+
 </style>    
     
 

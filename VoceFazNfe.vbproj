@@ -102,13 +102,22 @@
     <Content Include="Bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="Bootstrap\js\bootstrap.js" />
     <Content Include="Bootstrap\js\bootstrap.min.js" />
+    <Content Include="empresa.aspx" />
     <Content Include="Estilos\estilos.css" />
     <Content Include="Funcoes\global.js" />
     <Content Include="Imagens\fundo.png" />
     <Content Include="Imagens\fundo_topo.png" />
+    <Content Include="nfe.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="empresa.aspx.designer.vb">
+      <DependentUpon>empresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="empresa.aspx.vb">
+      <DependentUpon>empresa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -127,6 +136,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="nfe.aspx.designer.vb">
+      <DependentUpon>nfe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nfe.aspx.vb">
+      <DependentUpon>nfe.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Topo.Master.designer.vb">
+      <DependentUpon>Topo.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Topo.Master.vb">
+      <DependentUpon>Topo.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -159,6 +182,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <Content Include="Topo.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
