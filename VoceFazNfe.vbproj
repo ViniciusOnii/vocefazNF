@@ -107,7 +107,6 @@
     <Content Include="Funcoes\global.js" />
     <Content Include="Imagens\fundo.png" />
     <Content Include="Imagens\fundo_topo.png" />
-    <Content Include="nfe.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -136,13 +135,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="nfe.aspx.designer.vb">
-      <DependentUpon>nfe.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="nfe.aspx.vb">
-      <DependentUpon>nfe.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Topo.Master.designer.vb">
       <DependentUpon>Topo.Master</DependentUpon>
