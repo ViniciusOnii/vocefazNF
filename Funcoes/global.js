@@ -4,8 +4,6 @@
 
     function SetTextIn(vcontrole,vmodo) {
 
-
-
         if (vmodo==0) vcontrole.style.background = "transparent";
 
         if (vmodo==1) vcontrole.style.background = "#D2E9FF";
