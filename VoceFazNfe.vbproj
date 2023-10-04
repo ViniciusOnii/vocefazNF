@@ -92,16 +92,20 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bootstrap\css\all.min.css" />
     <Content Include="Bootstrap\css\bootstrap-grid.css" />
     <Content Include="Bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="Bootstrap\css\bootstrap-reboot.css" />
     <Content Include="Bootstrap\css\bootstrap-reboot.min.css" />
     <Content Include="Bootstrap\css\bootstrap.css" />
     <Content Include="Bootstrap\css\bootstrap.min.css" />
+    <Content Include="Bootstrap\css\fontawesome.min.css" />
+    <Content Include="Bootstrap\js\all.min.js" />
     <Content Include="Bootstrap\js\bootstrap.bundle.js" />
     <Content Include="Bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="Bootstrap\js\bootstrap.js" />
     <Content Include="Bootstrap\js\bootstrap.min.js" />
+    <Content Include="Bootstrap\js\fontawesome.js" />
     <Content Include="empresa.aspx" />
     <Content Include="Estilos\estilos.css" />
     <Content Include="Funcoes\global.js" />
@@ -116,7 +120,7 @@
     </Compile>
     <Compile Include="empresa.aspx.vb">
       <DependentUpon>empresa.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

@@ -4,7 +4,8 @@
 
 
 
-@media (min-width: 1200px) and (max-width: 10000px) {
+@media (min-width: 1200px) and (max-width: 10000px)
+{
 	.estilo_desktop {
 		visibility: visible;
 		display: block;
@@ -85,8 +86,14 @@
 }
 
 
+.material-symbols-outlined{
+	cursor:pointer;
+	border:none;
+	background:none;
+}
 
-</style>    
+
+</style >    
     
 
 
