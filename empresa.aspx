@@ -7,6 +7,7 @@
 
 
 
+       
         <div class="container-fluid" style="padding:0px;margin:0px;width:100%;height:100%">
 
 
@@ -18,10 +19,55 @@
                 <div id="div_dados_iniciais" name="div_dados_iniciais"
                     style="display:block;visibility:visible;width:100%;height:100%;background-color:transparent;margin-left:20px;margin-right:20px;border:solid;border-color:#177CC0;border-width:1px;border-radius:10px;padding: 0 20px 20px 20px;">
 
+
+                    <!--/////////////////////////////////////////////////// Linha CNPJ/RAZAO SOCIAL / NOME FANTASIA /////////////////////////////////////////////////////////////////////////////////////////////-->
+                    <div class="row" style="width:100%;padding:0px;margin:0px;background-color:transparent;height:100%;padding:0px;margin:0px">
+
+                        <!--/////////////////////////////////////////////////// LINHA LADO ESQUERDO CNPJ/RAZAO SOCIAL /////////////////////////////////////////////////////////////////////////////////////////////-->
+                        <div class="col-xl-8" style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
+
+                              <div class="row" style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
+
+                                  <div class="col-md-4" style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
+
+
+                                         <div class="row" style="padding:0px;margin:0px">
+                                             <div class="col" style="padding:0px;margin:0px";font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                                 CNPJ
+                                             </div>
+                                         </div>
+
+                                         <div class="row" style="padding:0px;margin:0px">
+                                             <div class="col" style="padding:0px;margin:0px">
+                                                 <asp:TextBox ID="TextBox1" runat="server" CssClass="layouttexto" style="width: 150px;padding:0px;margin:0px"
+                                                     placeholder="00.000.000/0000-00" onkeypress="return validarNumeros(event);">
+                                                 </asp:TextBox>
+                                             </div>
+                                         </div>
+
+                                  </div>
+                                  
+
+                                  <div class="col-md-8" style="width:100%;height:100%;background-color:red"></div>
+
+
+                              </div>
+
+                        </div>
+
+                        <!--/////////////////////////////////////////////////// LINHA LADO DIREITO NOME FANTASIA /////////////////////////////////////////////////////////////////////////////////////////////-->
+                        <div class="col-xl-4" style="width:100%;height:100%;background-color:transparent"></div>
+
+
+                 </div>
+
+
+
+
+
                     <div class="row">
 
                         <div class="col-xl-6" style="padding-top:20px;background-color:transparent">
-
 
                             <div class="row">
 
@@ -30,14 +76,14 @@
                                     <div class="row">
                                         <div class="col"
                                             style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            CNPJ:
+                                            CNPJ
                                         </div>
                                     </div>
 
                                     <div class="row">
                                         <div class="col">
-                                            <asp:TextBox ID="cs_emissao" runat="server" CssClass="form-control"
-                                                placeholder="Informe o CNPJ" onkeypress="return validarNumeros(event);">
+                                            <asp:TextBox ID="cs_emissao" runat="server" CssClass="layouttexto" style="width: 150px"
+                                                placeholder="00.000.000/0000-00" onkeypress="return validarNumeros(event);">
                                             </asp:TextBox>
                                         </div>
                                     </div>
@@ -52,7 +98,7 @@
                                     <div class="row">
                                         <div class="col"
                                             style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            Razão Social:</div>
+                                            Razão Social</div>
                                     </div>
                                     <div class="row">
                                         <div class="col"
@@ -85,8 +131,6 @@
                             </div>
                         </div>
 
-
-
                         <div class="col-md-6" style="background-color: transparent; height: 100%; padding-top: 30px">
                             <div class="row">
 
@@ -97,7 +141,7 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <asp:TextBox ID="cs_IE" runat="server" CssClass="form-control"
+                                    <asp:TextBox ID="cs_IE" runat="server" CssClass="layouttexto" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)"
                                         placeholder="Informe a Inscrição Estadual"></asp:TextBox>
                                 </div>
 
@@ -149,6 +193,7 @@
                         </div>
 
                     </div>
+
                 </div>
             </div>
         </div>
@@ -341,6 +386,8 @@
                 </div>
             </div>
         </div>
+
+
 
 
 

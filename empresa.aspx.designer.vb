@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class empresa
 
     '''<summary>
+    '''Controle TextBox1.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''Controle cs_emissao.
     '''</summary>
     '''<remarks>
