@@ -66,46 +66,26 @@
 
 </body>
 <script type="text/javascript">
-    function validarCNPJ(cnpj) {
-        cnpj = cnpj.replace(/[^\d]+/g, '');
-        if (cnpj == '') return false;
-        if (cnpj.length != 14) return false;
+    function formatarCNPJ(input) {
+        // Remove todos os caracteres não numéricos
+        var numeros = input.value.replace(/\D/g, '');
 
-        // Validação do dígito verificador
-        var tamanho = cnpj.length - 2
-        var numeros = cnpj.substring(0, tamanho);
-        var digitos = cnpj.substring(tamanho);
-        var soma = 0;
-        var pos = tamanho - 7;
-        for (var i = tamanho; i >= 1; i--) {
-            soma += numeros.charAt(tamanho - i) * pos--;
-            if (pos < 2)
-                pos = 9;
+        // Aplica a formatação do CNPJ
+        if (numeros.length >= 2) {
+            numeros = numeros.substring(0, 2) + '.' + numeros.substring(2);
         }
-        var resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
-        if (resultado != digitos.charAt(0)) return false;
-
-        tamanho = tamanho + 1;
-        numeros = cnpj.substring(0, tamanho);
-        soma = 0;
-        pos = tamanho - 7;
-        for (var i = tamanho; i >= 1; i--) {
-            soma += numeros.charAt(tamanho - i) * pos--;
-            if (pos < 2)
-                pos = 9;
+        if (numeros.length >= 5) {
+            numeros = numeros.substring(0, 5) + '.' + numeros.substring(5);
         }
-        resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
-        if (resultado != digitos.charAt(1)) return false;
-
-        return true;
-    }
-
-    function validarNumeros(evt) {
-        var charCode = (evt.which) ? evt.which : event.keyCode;
-        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
-            return false;
+        if (numeros.length >= 8) {
+            numeros = numeros.substring(0, 8) + '/' + numeros.substring(8);
         }
-        return true;
+        if (numeros.length >= 12) {
+            numeros = numeros.substring(0, 12) + '-' + numeros.substring(12);
+        }
+
+        // Atualiza o valor do campo com o CNPJ formatado
+        input.value = numeros;
     }
 </script>
 

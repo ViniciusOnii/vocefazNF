@@ -9,8 +9,8 @@
             ' Defina o texto padrão como "Brasil"
             cs_nomePais.Text = "Brasil"
 
-            ' Define o atributo "onkeypress" do TextBox cs_emissao para chamar a função JavaScript de validação de números e formatação de CNPJ
-            cs_emissao.Attributes("onkeypress") = "return validarNumerosEFormatarCNPJ(event);"
+            ' Define o atributo "oninput" do TextBox cs_emissao para chamar a função JavaScript de validação de números e formatação de CNPJ
+            cs_emissao.Attributes("oninput") = "formatarCNPJ(this);"
         End If
     End Sub
 
