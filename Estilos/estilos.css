@@ -92,6 +92,19 @@
 	background:none;
 }
 
+/* Estilo padrão para dispositivos maiores, como tablets e desktops */
+.razaoSocial {
+	width: 550px; /* Largura padrão para a Razão Social */
+}
+
+/* Estilo para dispositivos de tela pequena, como smartphones */
+@media (max-width: 767px) {
+	.razaoSocial {
+		width: 100%; /* Largura de 100% para preencher a largura da tela */
+	}
+}
+
+
 
 </style >    
     
