@@ -48,8 +48,9 @@
                                         <div class="col" style="padding:0px;margin:0px">
                                             <asp:TextBox ID="cs_emissao" runat="server" CssClass="layouttexto"
                                                 style="width: 150px;padding:0px;margin:0px"
-                                                placeholder="00.000.000/0000-00"
-                                                onkeypress="return validarNumeros(event);">
+                                                placeholder="00.000.000/0000-00" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)"
+                                                onkeypress="return validarNumeros(event); ">
+
                                             </asp:TextBox>
                                         </div>
                                     </div>
@@ -57,7 +58,7 @@
                                 </div>
 
 
-                                <div class=" col-md-4"
+                                <div class=" col-md-6"
                                     style="width:100%;height:100%;background-color:transparent; padding:10px;">
                                     <div class="row">
                                         <div class="col"
@@ -68,7 +69,7 @@
                                     <div class="row" style="padding:0px;margin:0px">
                                         <div class="col-sm-12" style="padding:0px;margin:0px">
                                             <asp:TextBox ID="cs_razaosocial" runat="server" CssClass="layouttexto"
-                                                style="width: 110%;" placeholder="Informe a Razão Social">
+                                                style="width: 100%;"  onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
                                             </asp:TextBox>
                                         </div>
                                     </div>
@@ -92,13 +93,13 @@
                             <div class="row" style="padding:0px;margin:0px">
                                 <div class="col-sm-12" style="padding:0px;margin:0px; background-color:transparent">
                                     <asp:TextBox ID="cs_nomefantasia" runat="server" CssClass="layouttexto"
-                                        style="width: 100%;" placeholder="Informe o Nome Fantasia"></asp:TextBox>
+                                        style="width: 100%;"    onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)"></asp:TextBox>
                                 </div>
                             </div>
 
                         </div>
 
-                        <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Inscrição Estadual/IEST/ CNAE Fiscal /////////////////////////////////////////////////////////////////////////////////////////////-->
+                        <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Inscrição Estadual/IEST/ CNAE Fiscal/ Codigo Regime Tributario /////////////////////////////////////////////////////////////////////////////////////////////-->
 
 
 
@@ -115,70 +116,60 @@
                                     <div class="row">
                                         <div class="col"
                                             style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            Inscrição Estadual
-                                        </div>
+                                            Inscrição Estadual </div>
+
                                     </div>
 
-                                    <div class="row" style="padding:0px;margin:0px">
-                                        <div class="col" style="padding:0px;margin:0px">
-                                            <asp:TextBox ID="cs_inscricaoestadual" runat="server" CssClass="layouttexto"
-                                                style="width: 150px;padding:0px;margin:0px"
-                                                placeholder="000.000.000.000"
-                                                onkeypress="return validarNumeros(event);">
-                                            </asp:TextBox>
-                                        </div>
+                                    <div class="input-group">
+                                        <asp:TextBox ID="cs_inscricaoestadual" runat="server" CssClass="layouttexto"
+                                            style="width: 150px" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)"></asp:TextBox>
+
+
                                     </div>
+
 
                                 </div>
 
 
-                                <div class="col-md-4"
+                                <div class=" col-md-4"
                                     style="width:100%;height:100%;background-color:transparent; padding:10px;">
                                     <div class="row">
                                         <div class="col"
                                             style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            IE do Substituto Tributário
-                                        </div>
+                                           IE do Substituto Tributário</div>
                                     </div>
-                                    <div class="row" style="padding:0px;margin:0px">
-                                        <div class="col" style="padding:0px;margin:0px">
+                                    <div class="row">
+                                        <div class="col"
+                                            style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+
                                             <asp:TextBox ID="cs_IE" runat="server" CssClass="layouttexto"
-                                                style="width: 170px;" placeholder="Informe o IE">
+                                                style="width: 40%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
                                             </asp:TextBox>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class=" col-md-4"
+                                    style="width:100%;height:100%;background-color:transparent; padding:10px;">
+                                    <div class="row">
+                                        <div class="col"
+                                            style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                            CNAE Fiscal</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <asp:TextBox ID="cs_cnaeFiscal" runat="server" CssClass="layouttexto"
+                                                style="width: 80px;" placeholder="00.00-0-00" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)"></asp:TextBox>
+                                            
                                         </div>
                                     </div>
                                 </div>
 
-
                             </div>
 
                         </div>
-                        <div class="col-xl-4" style="width:100%;height:100%;background-color:transparent;padding:10px;">
-                            <div class="row">
-                                <div class="col"
-                                    style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                    CNAE Fiscal
-                                </div>
-                            </div>
-                            <div class="row" style="padding:0px;margin:0px">
-                                <div class="cow" style="padding:0px;margin:0px">
-                                    <asp:TextBox ID="cs_cnaeFiscal" runat="server" CssClass="layouttexto"
-                                        placeholder="Informe o Nome Fantasia"></asp:TextBox>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Regime Tributario  /////////////////////////////////////////////////////////////////////////////////////////////-->
-                    <div class="col-xl-8"
-                        style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
-
-                        <div class="row"
-                            style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
-
-
-                            <div class="col-md-6"
+                        <div class="col-md-4"
                                 style="width:100%;height:100%;background-color:transparent; padding:10px;">
                                 <div class="row">
                                     <div class="col"
@@ -202,9 +193,15 @@
                     </div>
 
                 </div>
+                    
+             </div>
+          
 
-            </div>
-        </div>
+                    <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Regime Tributario  /////////////////////////////////////////////////////////////////////////////
+                    
+
+
+                            
         <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Emitente/ 1 linha - CEP/Endereço/Número/Complemento   /////////////////////////////////////////////////////////////////////////////////////////////-->
 
 
@@ -244,7 +241,7 @@
 
                                     <div class="input-group">
                                         <asp:TextBox ID="cs_cep" runat="server" CssClass="layouttexto"
-                                            style="width: 150px" placeholder="Informe seu CEP"></asp:TextBox>
+                                            style="width: 150px" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)"></asp:TextBox>
                                         <div class="input-group-append">
                                             <button class="material-symbols-outlined"><i
                                                     class="fa-solid fa-magnifying-glass"></i></button>
@@ -266,7 +263,7 @@
                                             style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
 
                                             <asp:TextBox ID="cs_endereco" runat="server" CssClass="layouttexto"
-                                                style="width: 100%;" placeholder="Informe o Endereço"></asp:TextBox>
+                                                style="width: 100%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)"></asp:TextBox>
 
                                         </div>
                                     </div>
@@ -282,7 +279,7 @@
                                     <div class="row">
                                         <div class="col">
                                             <asp:TextBox ID="cs_numero" runat="server" CssClass="layouttexto"
-                                                style="width: 80px;" placeholder=""></asp:TextBox>
+                                                style="width: 80px;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)"></asp:TextBox>
                                         </div>
                                     </div>
                                 </div>
@@ -301,12 +298,13 @@
                             <div class="row">
                                 <div class="col">
                                     <asp:TextBox ID="cs_complemento" runat="server" CssClass="layouttexto"
-                                        style="width:100%;" placeholder="Informe o Complemento"></asp:TextBox>
+                                        style="width:100%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
+                          </div>
                         <!--/////////////////////////////////////////////////// Div com os dados Emitente / Emitente 2 linha - Bairro/Nome do Municipio/ Codigo do Municipio/ Nome do País      /////////////////////////////////////////////////////////////////////////////////////////////-->
-                    </div>
+                  
                     <div class="row"
                         style="width:100%;padding:0px;margin:0px;background-color:transparent;height:100%;padding:0px;margin:0px">
 
@@ -330,7 +328,7 @@
 
                                     <div class="input-group">
                                         <asp:TextBox ID="cs_bairro" runat="server" CssClass="layouttexto"
-                                            style="width: 200px" placeholder="Informe seu Bairro"></asp:TextBox>
+                                            style="width: 200px" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)"></asp:TextBox>
 
 
                                     </div>
@@ -351,7 +349,7 @@
                                             style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
 
                                             <asp:TextBox ID="cs_nomeMunicipio" runat="server" CssClass="layouttexto"
-                                                style="width: 100%;" placeholder="Informe o Nome do Município">
+                                                style="width: 100%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
                                             </asp:TextBox>
 
                                         </div>
@@ -359,7 +357,7 @@
 
                                 </div>
                                 <div class=" col-md-4"
-                                    style="width:100%;height:100%;background-color:transparent; padding:10px;">
+                                    style="width:100%;height:100%;background-color:transparent; padding:4px;">
                                     <div class="row">
                                         <div class="col"
                                             style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
@@ -368,7 +366,7 @@
                                     <div class="row">
                                         <div class="col">
                                             <asp:TextBox ID="cs_codMunicipio" runat="server" CssClass="layouttexto"
-                                                style="width: 80px;" placeholder="00000"></asp:TextBox>
+                                                style="width: 80px;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)" ></asp:TextBox>
                                             <button class="material-symbols-outlined"><i
                                                     class="fa-solid fa-magnifying-glass"></i></button>
                                         </div>
@@ -389,14 +387,14 @@
                             <div class="row">
                                 <div class="col">
                                     <asp:TextBox ID="cs_nomePais" runat="server" CssClass="layouttexto"
-                                        style="width:25%;" placeholder=""></asp:TextBox>
+                                        style="width:25%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
 
                     </div>
                     <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Emitente 3 linha - Código do Pais/ Telfone/ UF /////////////////////////////////////////////////////////////////////////////////////////////-->
-                    <div class="row"
+                     <div class="row"
                         style="width:100%;padding:0px;margin:0px;background-color:transparent;height:100%;padding:0px;margin:0px">
 
 
@@ -413,13 +411,13 @@
                                     <div class="row">
                                         <div class="col"
                                             style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            Código do Pais </div>
+                                             Código do Pais </div>
 
                                     </div>
 
                                     <div class="input-group">
                                         <asp:TextBox ID="cs_codPais" runat="server" CssClass="layouttexto"
-                                            style="width: 30px" placeholder=""></asp:TextBox>
+                                            style="width: 200px" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)"></asp:TextBox>
 
 
                                     </div>
@@ -433,20 +431,22 @@
                                     <div class="row">
                                         <div class="col"
                                             style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            Telefone</div>
+                                           Telefone</div>
                                     </div>
                                     <div class="row">
                                         <div class="col"
                                             style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
 
                                             <asp:TextBox ID="cs_telefone" runat="server" CssClass="layouttexto"
-                                                style="width: 100%;" placeholder="(00)00000-0000"></asp:TextBox>
+                                                style="width: 100%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
+                                            </asp:TextBox>
 
                                         </div>
                                     </div>
-                                </div>
+
+                                        </div>
                                 <div class=" col-md-4"
-                                    style="width:100%;height:100%;background-color:transparent; padding:10px;">
+                                    style="width:100%;height:100%;background-color:transparent; padding:4px;">
                                     <div class="row">
                                         <div class="col"
                                             style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
@@ -482,25 +482,13 @@
                                                 <asp:ListItem style="width: 100%;" Text="SC" Value="25" />
                                                 <asp:ListItem style="width: 100%;" Text="SE" Value="26" />
                                                 <asp:ListItem style="width: 100%;" Text="TO" Value="27" />
-
-
-
-
-
-
-
-
-
                                             </asp:DropDownList>
-
-                                        </div>
+                                </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
+            
     </asp:Content>
