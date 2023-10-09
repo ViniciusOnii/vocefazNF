@@ -423,13 +423,13 @@
                                     <div class="row">
                                         <div class="col"
                                             style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            Código do Pais </div>
+                                            Código do País </div>
 
                                     </div>
 
                                     <div class="input-group">
                                         <asp:TextBox ID="cs_codPais" runat="server" CssClass="layouttexto"
-                                            style="width: 200px" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
+                                            style="width: 26px" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
                                         </asp:TextBox>
 
 
@@ -460,7 +460,7 @@
 
                                 </div>
                                 <div class=" col-md-4"
-                                    style="width:100%;height:100%;background-color:transparent; padding:4px;">
+                                    style="width:100%;height:100%;background-color:transparent; padding:15px;">
                                     <div class="row">
                                         <div class="col"
                                             style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
