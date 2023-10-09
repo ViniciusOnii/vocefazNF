@@ -313,6 +313,8 @@
                     </div>
                     <!--/////////////////////////////////////////////////// Div com os dados Emitente / Emitente 2 linha - Bairro/Nome do Municipio/ Codigo do Municipio/ Nome do País      /////////////////////////////////////////////////////////////////////////////////////////////-->
 
+                    <div class="row" style="height: 30px"></div>
+
                     <div class="row"
                         style="width:100%;padding:0px;margin:0px;background-color:transparent;height:100%;padding:0px;margin:0px">
 
@@ -472,6 +474,9 @@
                             </div>
                     </div>
                     <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Emitente 3 linha - Código do Pais/ Telfone/ UF /////////////////////////////////////////////////////////////////////////////////////////////-->
+
+                    <div class="row" style="height:30px"></div>
+
                     <div class="row"
                         style="width:100%;padding:0px;margin:0px;background-color:transparent;height:100%;padding:0px;margin:0px">
 
