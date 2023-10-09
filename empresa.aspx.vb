@@ -10,7 +10,7 @@
             cs_nomePais.Text = "Brasil"
 
             ' Defina o texto padrão "55" no TextBox cs_codPais
-            cs_codPais.Text = "55"
+            cs_codPais.Text = "1058"
 
             ' Define o atributo "oninput" do TextBox cs_emissao para chamar a função JavaScript de validação de números e formatação de CNPJ
             cs_emissao.Attributes("oninput") = "formatarCNPJ(this);"

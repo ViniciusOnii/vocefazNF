@@ -122,15 +122,6 @@ Partial Public Class empresa
     Protected WithEvents cs_bairro As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_nomeMunicipio.
-    '''</summary>
-    '''<remarks>
-    '''Campo gerado automaticamente.
-    '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-    '''</remarks>
-    Protected WithEvents cs_nomeMunicipio As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
     '''Controle cs_codMunicipio.
     '''</summary>
     '''<remarks>
@@ -138,6 +129,15 @@ Partial Public Class empresa
     '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
     '''</remarks>
     Protected WithEvents cs_codMunicipio As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_nomeMunicipio.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_nomeMunicipio As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Controle cs_nomePais.
@@ -158,15 +158,6 @@ Partial Public Class empresa
     Protected WithEvents cs_codPais As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_telefone.
-    '''</summary>
-    '''<remarks>
-    '''Campo gerado automaticamente.
-    '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-    '''</remarks>
-    Protected WithEvents cs_telefone As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
     '''Controle cs_uf.
     '''</summary>
     '''<remarks>
@@ -174,4 +165,13 @@ Partial Public Class empresa
     '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
     '''</remarks>
     Protected WithEvents cs_uf As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Controle cs_telefone.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_telefone As Global.System.Web.UI.WebControls.TextBox
 End Class
