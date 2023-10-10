@@ -8,12 +8,11 @@
 
 
 
-
-
         <div class="container-fluid" style="padding:0px;margin:0px;width:100%;height:100%">
 
 
             <div class="row" style="width:100%;height:200px"></div>
+
 
             <div class="row" style="width:100%;height:100%;padding:0px;margin:0px;background-color:transparent">
 
@@ -22,9 +21,40 @@
                     style="display:block;visibility:visible;width:100%;height:100%;background-color:transparent;margin-left:20px;margin-right:20px;border:solid;border-color:#177CC0;border-width:1px;border-radius:10px;padding: 0 20px 20px 20px;">
 
 
+
                     <!--/////////////////////////////////////////////////// Linha CNPJ/RAZAO SOCIAL / NOME FANTASIA /////////////////////////////////////////////////////////////////////////////////////////////-->
-                    <div class="row"
-                        style="width:100%;padding:0px;margin:0px;background-color:transparent;height:100%;padding:0px;margin:0px">
+                    <div class="row" style="width:100%;padding:0px;margin:0px;background-color:transparent;height:120px;padding:0px;margin:0px">
+
+                            <div class="col-xl-7" style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
+
+                                <div class="row" style="width:100%;height:100px;background-color:transparent">
+
+                                    <div class="col-md-4" style="width:100%;height:100%;background-color:green"></div>
+                                    <div class="col-md-8" style="width:100%;height:100%;background-color:red"></div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-xl-5" style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
+
+                                 <div class="row" style="width:100%;height:100px;background-color:transparent">
+
+                                      <div class="col" style="width:100%;height:100%;background-color:cyan"></div>
+
+                                 </div>
+
+                            </div>
+
+
+                    </div>
+
+
+                    <div class="row" style="height: 30px"></div>
+
+                    <!--/////////////////////////////////////////////////// Linha CNPJ/RAZAO SOCIAL / NOME FANTASIA /////////////////////////////////////////////////////////////////////////////////////////////-->
+                    <div class="row" style="width:100%;padding:0px;margin:0px;background-color:transparent;height:100%;padding:0px;margin:0px">
 
                         <!--/////////////////////////////////////////////////// LINHA LADO ESQUERDO CNPJ/RAZAO SOCIAL /////////////////////////////////////////////////////////////////////////////////////////////-->
                        
@@ -106,8 +136,9 @@
                         <div class="row" style="height: 30px"></div>
 
 
-                        <div class="col-xl-7"
-                            style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px; margin-top:30px">
+                     <div class="row" style="width:100%;padding:0px;margin:0px;background-color:transparent;height:100%;padding:0px;margin:0px">
+
+                        <div class="col-xl-7" style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px; margin-top:30px">
 
                             <div class="row"
                                 style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
@@ -174,8 +205,8 @@
                             </div>
 
                         </div>
-                        <div class="col-md-4"
-                            style="width:100%;height:100%;background-color:transparent; padding:10px; margin-top:30px">
+                        
+                        <div class="col-md-4" style="width:100%;height:100%;background-color:transparent; padding:10px; margin-top:30px">
                             <div class="row">
                                 <div class="col"
                                     style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
@@ -193,6 +224,7 @@
                                 </div>
                             </div>
                         </div>
+                    
                     </div>
                             </div>
 
