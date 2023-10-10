@@ -28,7 +28,7 @@
 
                         <!--/////////////////////////////////////////////////// LINHA LADO ESQUERDO CNPJ/RAZAO SOCIAL /////////////////////////////////////////////////////////////////////////////////////////////-->
                        
-                        <div class="col-xl-8"
+                        <div class="col-xl-7"
                             style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
 
                             <div class="row"
@@ -106,7 +106,7 @@
                         <div class="row" style="height: 30px"></div>
 
 
-                        <div class="col-xl-8"
+                        <div class="col-xl-7"
                             style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px; margin-top:30px">
 
                             <div class="row"
@@ -154,7 +154,7 @@
                                     </div>
 
                                 </div>
-                                <div class=" col-md-3"
+                                <div class=" col-sm-3"
                                     style="width:100%;height:100%;background-color:transparent; padding:10px;">
                                     <div class="row">
                                         <div class="col"
@@ -174,7 +174,7 @@
                             </div>
 
                         </div>
-                        <div class="col-md-6"
+                        <div class="col-md-4"
                             style="width:100%;height:100%;background-color:transparent; padding:10px; margin-top:30px">
                             <div class="row">
                                 <div class="col"
