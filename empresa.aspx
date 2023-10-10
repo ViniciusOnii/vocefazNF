@@ -29,7 +29,7 @@
 
                                 <div class="row" style="width:100%;height:100px;background-color:transparent">
 
-                                    <div class="col-md-4" style="width:100%;height:100%;background-color:green"></div>
+                                    <div class="col-md-4" style="width:100%;height:100%;background-color:blue"></div>
                                     <div class="col-md-8" style="width:100%;height:100%;background-color:red"></div>
 
                                 </div>
