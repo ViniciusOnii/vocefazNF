@@ -102,7 +102,7 @@
                         <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Inscrição Estadual/IEST/ CNAE Fiscal/  /////////////////////////////////////////////////////////////////////////////////////////////-->
                         <div class="row" style="height: 30px"></div>
 
-                    <div class="row" >
+                    <div class="row" style="background-color:transparent" >
                         <div class="col-xl-12"
                             style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px; padding-left:10px">
 
@@ -161,7 +161,7 @@
                         <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Código Regime Tributário /////////////////////////////////////////////////////////////////////////////////////////////-->
                     <div class="row" style="height: 30px"></div>
 
-                    <div class="row">
+                    <div class="row" style="background-color:transparent">
                         <div class="col-xl" style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px; padding-top: 10px; padding-left: 15px">
                             <div class="row">
                                 <div class="col"
@@ -308,7 +308,7 @@
                  
                  <!--/////////////////////////////////////////////////// Div com os dados Iniciais / BAIRRO/ CODIGO DO MUNICIPIO/ NOME DO MUNICIPIO  /////////////////////////////////////////////////////////////////////////////////////////////-->
              <div class="row" style="height: 30px"></div>
-             <div class="row">
+             <div class="row" style="background-color:transparent">
                  <div class="col-xl-9"
                      style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px; padding-left: 10px">
 
@@ -360,7 +360,7 @@
                              <div class="row" style="padding: 0px; margin: 0px">
                                  <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
                                      <asp:TextBox ID="cs_nomemunicipio" runat="server" CssClass="layouttexto"
-                                         Style="width: 60%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
+                                         Style="width: 65%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
                                      </asp:TextBox>
                                  </div>
                              </div>
@@ -387,7 +387,7 @@
 
               <!--/////////////////////////////////////////////////// Última linha  /////////////////////////////////////////////////////////////////////////////////////////////-->
              <div class="row" style="height: 30px"></div>
-             <div class="row">
+             <div class="row" style="background-color:transparent">
     <div class="col-xl-12"
         style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px; padding-left: 10px">
 
@@ -421,10 +421,7 @@
                         <asp:TextBox ID="cs_telefone" runat="server" CssClass="layouttexto"
                             Style="width: 30%;"  onBlur="SetTextIn(this,0)"
                             onFocus="SetTextIn(this,1)"></asp:TextBox>
-                        <button class="material-symbols-outlined">
-                            <i
-                                class="fa-solid fa-magnifying-glass"></i>
-                        </button>
+                        
                     </div>
                 </div>
             </div>
