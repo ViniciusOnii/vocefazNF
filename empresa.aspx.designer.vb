@@ -68,13 +68,13 @@ Partial Public Class empresa
     Protected WithEvents cs_cnaeFiscal As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_crTribrutario.
+    '''Controle cs_regimeTributario.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_crTribrutario As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents cs_regimeTributario As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Controle cs_cep.
@@ -113,40 +113,31 @@ Partial Public Class empresa
     Protected WithEvents cs_complemento As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle Bairro.
+    '''Controle cs_bairro.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents Bairro As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_bairro As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_codigoMunicipio.
+    '''Controle cs_codMunicipio.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_codigoMunicipio As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_codMunicipio As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_nomeMunicipio.
+    '''Controle cs_nomemunicipio.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_nomeMunicipio As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Controle cs_uf.
-    '''</summary>
-    '''<remarks>
-    '''Campo gerado automaticamente.
-    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-    '''</remarks>
-    Protected WithEvents cs_uf As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents cs_nomemunicipio As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Controle cs_nomePais.
@@ -174,4 +165,13 @@ Partial Public Class empresa
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
     Protected WithEvents cs_telefone As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_uf.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_uf As Global.System.Web.UI.WebControls.DropDownList
 End Class

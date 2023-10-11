@@ -8,11 +8,12 @@
 
 
 
+
+
         <div class="container-fluid" style="padding:0px;margin:0px;width:100%;height:100%">
 
 
             <div class="row" style="width:100%;height:200px"></div>
-
 
             <div class="row" style="width:100%;height:100%;padding:0px;margin:0px;background-color:transparent">
 
@@ -21,43 +22,11 @@
                     style="display:block;visibility:visible;width:100%;height:100%;background-color:transparent;margin-left:20px;margin-right:20px;border:solid;border-color:#177CC0;border-width:1px;border-radius:10px;padding: 0 20px 20px 20px;">
 
 
-
-                    <!--/////////////////////////////////////////////////// Linha CNPJ/RAZAO SOCIAL / NOME FANTASIA /////////////////////////////////////////////////////////////////////////////////////////////-->
-                    <div class="row" style="width:100%;padding:0px;margin:0px;background-color:transparent;height:120px;padding:0px;margin:0px">
-
-                            <div class="col-xl-7" style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
-
-                                <div class="row" style="width:100%;height:100px;background-color:transparent">
-
-                                    <div class="col-md-4" style="width:100%;height:100%;background-color:blue"></div>
-                                    <div class="col-md-8" style="width:100%;height:100%;background-color:red"></div>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="col-xl-5" style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
-
-                                 <div class="row" style="width:100%;height:100px;background-color:transparent">
-
-                                      <div class="col" style="width:100%;height:100%;background-color:cyan"></div>
-
-                                 </div>
-
-                            </div>
-
-
-                    </div>
-
-
-                    <div class="row" style="height: 30px"></div>
-
-                    <!--/////////////////////////////////////////////////// Linha CNPJ/RAZAO SOCIAL / NOME FANTASIA /////////////////////////////////////////////////////////////////////////////////////////////-->
-                    <div class="row" style="width:100%;padding:0px;margin:0px;background-color:transparent;height:100%;padding:0px;margin:0px">
+                    
+                    <div class="row"
+                        style="width:100%;padding:0px;margin:0px;background-color:transparent;height:100%;padding:0px;margin:0px">
 
                         <!--/////////////////////////////////////////////////// LINHA LADO ESQUERDO CNPJ/RAZAO SOCIAL /////////////////////////////////////////////////////////////////////////////////////////////-->
-                       
                         <div class="col-xl-7"
                             style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
 
@@ -89,7 +58,7 @@
                                 </div>
 
 
-                                <div class=" col-md-6"
+                                <div class=" col-md-8"
                                     style="width:100%;height:100%;background-color:transparent; padding:10px;">
                                     <div class="row">
                                         <div class="col"
@@ -98,9 +67,9 @@
                                         </div>
                                     </div>
                                     <div class="row" style="padding:0px;margin:0px">
-                                        <div class="col-sm-12" style="padding:0px;margin:0px">
+                                        <div class="col" style="padding:0px;margin:0px">
                                             <asp:TextBox ID="cs_razaosocial" runat="server" CssClass="layouttexto"
-                                                style="width: 100%;" onBlur="SetTextIn(this,0)"
+                                                style="width: 93%;" onBlur="SetTextIn(this,0)"
                                                 onFocus="SetTextIn(this,1)">
                                             </asp:TextBox>
                                         </div>
@@ -113,109 +82,96 @@
                         </div>
 
                         <!--/////////////////////////////////////////////////// LINHA LADO DIREITO NOME FANTASIA /////////////////////////////////////////////////////////////////////////////////////////////-->
-                        
-                        <div class=" col-md-4"
-                            style="width:100%;height:100%;background-color:transparent;padding:10px;">
+                        <div class="col-xl-5" style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px; padding-left:10px; padding-top:10px">
                             <div class="row">
-                                <div class="col"
-                                    style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                    Nome Fantasia
+                        <div class="col"
+                           style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                            Nome Fantasia
                                 </div>
                             </div>
                             <div class="row" style="padding:0px;margin:0px">
-                                <div class="col-sm-12" style="padding:0px;margin:0px; background-color:transparent">
+                                <div class="col" style="padding:0px;margin:0px; background-color:transparent">
                                     <asp:TextBox ID="cs_nomefantasia" runat="server" CssClass="layouttexto"
                                         style="width: 100%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
                                     </asp:TextBox>
                                 </div>
                             </div>
-
+                         </div>   
+                        
                         </div>
-
-                        <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Inscrição Estadual/IEST/ CNAE Fiscal/ Codigo Regime Tributario /////////////////////////////////////////////////////////////////////////////////////////////-->
+                        <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Inscrição Estadual/IEST/ CNAE Fiscal/  /////////////////////////////////////////////////////////////////////////////////////////////-->
                         <div class="row" style="height: 30px"></div>
 
-
-                     <div class="row" style="width:100%;padding:0px;margin:0px;background-color:transparent;height:100%;padding:0px;margin:0px">
-
-                        <div class="col-xl-7" style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px; margin-top:30px">
+                    <div class="row" >
+                        <div class="col-xl-12"
+                            style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px; padding-left:10px">
 
                             <div class="row"
                                 style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
 
-                                <div class="col-md-4"
-                                    style="width:100%;height:100%;background-color:transparent;padding:10px;">
-
-
-                                    <div class="row">
-                                        <div class="col"
-                                            style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            Inscrição Estadual </div>
-
-                                    </div>
-
-                                    <div class="input-group">
-                                        <asp:TextBox ID="cs_inscricaoestadual" runat="server" CssClass="layouttexto"
-                                            style="width: 150px" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
-                                        </asp:TextBox>
-
-
-                                    </div>
-
-
-                                </div>
-
-                                <div class=" col-md-5"
-                                    style="width:100%;height:100%;background-color:transparent; padding:10px;">
-                                    <div class="row">
-                                        <div class="col"
-                                            style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            IE do Substituto Tributário</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col"
-                                            style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-
-                                            <asp:TextBox ID="cs_IE" runat="server" CssClass="layouttexto"
-                                                style="width: 40%;" onBlur="SetTextIn(this,0)"
-                                                onFocus="SetTextIn(this,1)">
+                                <div class="col-md-4" style="width:100%;height:100%;background-color:transparent;padding:10px;">
+                                            <div class="row">
+                                                <div class="col"
+                                                    style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                                     Inscrição Estadual
+                                                </div>
+                                            </div>
+                                    <div class="row" style="padding: 0px; margin: 0px">
+                                        <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
+                                            <asp:TextBox ID="cs_inscricaoestadual" runat="server" CssClass="layouttexto"
+                                                Style="width: 30%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
                                             </asp:TextBox>
-
                                         </div>
                                     </div>
-
+                                </div>  
+                                 <div class="col-md-4" style="width:100%;height:100%;background-color:transparent;padding:10px;">
+                                             <div class="row">
+                                                 <div class="col"
+                                                     style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                                     IE do Substituto Tributário
+                                                 </div>
+                                             </div>
+                                     <div class="row" style="padding: 0px; margin: 0px">
+                                         <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
+                                             <asp:TextBox ID="cs_IE" runat="server" CssClass="layouttexto"
+                                                 Style="width:40%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
+                                             </asp:TextBox>
+                                         </div>
+                                     </div>
+                                 </div>    
+                                 <div class="col-md-4" style="width:100%;height:100%;background-color:transparent;padding:10px;">
+                                             <div class="row">
+                                                 <div class="col"
+                                                     style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                                      CNAE Fiscal
+                                                 </div>
+                                             </div>
+                                     <div class="row" style="padding: 0px; margin: 0px">
+                                         <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
+                                             <asp:TextBox ID="cs_cnaeFiscal" runat="server" CssClass="layouttexto"
+                                                 Style="width: 40%;" placeholder="00.00-0-00" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
+                                             </asp:TextBox>
+                                         </div>
+                                     </div>
+                                 </div>
                                 </div>
-                                <div class=" col-sm-3"
-                                    style="width:100%;height:100%;background-color:transparent; padding:10px;">
-                                    <div class="row">
-                                        <div class="col"
-                                            style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            CNAE Fiscal</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <asp:TextBox ID="cs_cnaeFiscal" runat="server" CssClass="layouttexto"
-                                                style="width: 80px;" placeholder="00.00-0-00" onBlur="SetTextIn(this,0)"
-                                                onFocus="SetTextIn(this,1)"></asp:TextBox>
-
-                                        </div>
-                                    </div>
-                                </div>
-
+                            
                             </div>
-
                         </div>
-                        
-                        <div class="col-md-4" style="width:100%;height:100%;background-color:transparent; padding:10px; margin-top:30px">
+                        <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Código Regime Tributário /////////////////////////////////////////////////////////////////////////////////////////////-->
+                    <div class="row" style="height: 30px"></div>
+
+                    <div class="row">
+                        <div class="col-xl" style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px; padding-top: 10px; padding-left: 15px">
                             <div class="row">
                                 <div class="col"
                                     style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
                                     Código Regime Tributário
                                 </div>
                             </div>
-                            <div class="row" style="padding:0px;margin:0px">
-                                <div class="col" style="padding:0px;margin:0px; width:100%">
-                                    <asp:DropDownList ID="cs_crTribrutario" runat="server">
+                            <div class="row" style="padding: 0px; margin: 0px">
+                                <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
+                                    <asp:DropDownList ID="cs_regimeTributario" runat="server">
                                         <asp:ListItem style="width: 100%;" Text="Simples Nacional" Value="1" />
                                         <asp:ListItem style="width: 100%;"
                                             Text="Simples Nacional, execesso sublimite de receita bruta" Value="2" />
@@ -224,50 +180,55 @@
                                 </div>
                             </div>
                         </div>
-                    
                     </div>
-                            </div>
 
-                        </div>
-                    </div>
-                       
-                  
-        <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Regime Tributario  /////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+           </div>
+        </div>
+      </div>
+
+
+       
                     
 
 
                             
         <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Emitente/ 1 linha - CEP/Endereço/Número/Complemento   /////////////////////////////////////////////////////////////////////////////////////////////-->
 
-        <div class="row" style="height: 30px"></div>
-        <div class="container-fluid" style="padding:0px;margin:0px;width:100%;height:100%">
+             <div class="container-fluid" style="padding:0px;margin:0px;width:100%;height:100%">
 
 
-            <div class="row" style="width:100%;height:50px"></div>
+     <div class="row" style="width:100%;height:50px"></div>
 
-            <div class="row" style="width:100%;height:100%;padding:0px;margin:0px;background-color:transparent">
+     <div class="row" style="width:100%;height:100%;padding:0px;margin:0px;background-color:transparent">
 
-
-                <div id="div_dados_emitente" name="div_dados_emitente"
-                    style="display:block;visibility:visible;width:100%;height:100%;background-color:transparent;margin-left:20px;margin-right:20px;border:solid;border-color:#177CC0;border-width:1px;border-radius:10px;padding: 0 20px 20px 20px;">
-
-
-
-                    <div class="row"
-                        style="width:100%;padding:0px;margin:0px;background-color:transparent;height:100%;padding:0px;margin:0px">
+         <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Principais da Nota /////////////////////////////////////////////////////////////////////////////////////////////-->
+         <div id="div_dados_iniciais_emitente" name="div_dados_iniciais_emitente"
+             style="display:block;visibility:visible;width:100%;height:100%;background-color:transparent;margin-left:20px;margin-right:20px;border:solid;border-color:#177CC0;border-width:1px;border-radius:10px;padding: 0 20px 20px 20px;">
 
 
-                        <div class="col-xl-8"
-                            style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
+            
+             <div class="row"
+                 style="width:100%;padding:0px;margin:0px;background-color:transparent;height:100%;padding:0px;margin:0px">
 
-                            <div class="row"
-                                style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
+                 <!--/////////////////////////////////////////////////// LINHA LADO DIREITO - CEP/ENDEREÇO/ NÚMERO /////////////////////////////////////////////////////////////////////////////////////////////-->
+                 <div class="col-xl-7"
+                     style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
 
-                                <div class="col-md-4"
-                                    style="width:100%;height:100%;background-color:transparent;padding:10px;">
+                     <div class="row"
+                         style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
+
+                         <div class="col-md-4"
+                             style="width:100%;height:100%;background-color:transparent;padding:10px;">
 
 
-                                    <div class="row">
+                              <div class="row">
                                         <div class="col"
                                             style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
                                             CEP </div>
@@ -276,7 +237,7 @@
 
                                     <div class="input-group">
                                         <asp:TextBox ID="cs_cep" runat="server" CssClass="layouttexto"
-                                            style="width: 150px" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
+                                            style="width: 150px" placeholder="00000-000" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
                                         </asp:TextBox>
                                         <div class="input-group-append">
                                             <button class="material-symbols-outlined"><i
@@ -284,156 +245,200 @@
                                         </div>
                                     </div>
 
-                                </div>
+                         </div>
 
 
-                                <div class=" col-md-6"
-                                    style="width:100%;height:100%;background-color:transparent; padding:10px;">
-                                    <div class="row">
-                                        <div class="col"
-                                            style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            Endereço</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col"
-                                            style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                         <div class=" col-md-6"
+                             style="width:100%;height:100%;background-color:transparent; padding:10px;">
+                             <div class="row">
+                                 <div class="col"
+                                     style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                     Endereço
+                                 </div>
+                             </div>
+                             <div class="row" style="padding:0px;margin:0px">
+                                 <div class="col" style="padding:0px;margin:0px">
+                                     <asp:TextBox ID="cs_endereco" runat="server" CssClass="layouttexto"
+                                         style="width: 93%;" onBlur="SetTextIn(this,0)"
+                                         onFocus="SetTextIn(this,1)">
+                                     </asp:TextBox>
+                                 </div>
+                             </div>
+                         </div> 
 
-                                            <asp:TextBox ID="cs_endereco" runat="server" CssClass="layouttexto"
-                                                style="width: 100%;" onBlur="SetTextIn(this,0)"
-                                                onFocus="SetTextIn(this,1)"></asp:TextBox>
-
-                                        </div>
-                                    </div>
-
-                                </div>
                                 <div class=" col-md-2"
-                                    style="width:100%;height:100%;background-color:transparent; padding:10px;">
+                                    style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
                                     <div class="row">
                                         <div class="col"
                                             style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            Número</div>
+                                            Número
+                                        </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col">
+                                    <div class="row" style="padding: 0px; margin: 0px">
+                                        <div class="col" style="padding: 0px; margin: 0px">
                                             <asp:TextBox ID="cs_numero" runat="server" CssClass="layouttexto"
-                                                style="width: 80px;" onBlur="SetTextIn(this,0)"
-                                                onFocus="SetTextIn(this,1)"></asp:TextBox>
+                                                Style="width: 50%;" onBlur="SetTextIn(this,0)"
+                                                onFocus="SetTextIn(this,1)">
+                                            </asp:TextBox>
                                         </div>
                                     </div>
                                 </div>
 
-                            </div>
+                     </div>
 
-                        </div>
-                        <div class=" col-md-4"
-                            style="width:100%;height:100%;background-color:transparent; padding:10px;">
-                            <div class="row">
-                                <div class="col"
-                                    style="font-family: Arial; font-size: 16px; color: #000000;  font-weight: bold;">
-                                    Complemento</div>
+                 </div>
 
-                            </div>
-                            <div class="row">
+                 <!--/////////////////////////////////////////////////// LINHA LADO DIREITO COMPLEMENTO /////////////////////////////////////////////////////////////////////////////////////////////-->
+                 <div class="col-xl-5" style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px; padding-left:10px; padding-top:10px">
+                     <div class="row">
+                 <div class="col"
+                    style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                     Complemento
+                         </div>
+                     </div>
+                     <div class="row" style="padding:0px;margin:0px">
+                         <div class="col" style="padding:0px;margin:0px; background-color:transparent">
+                             <asp:TextBox ID="cs_complemento" runat="server" CssClass="layouttexto"
+                                 style="width: 70%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
+                             </asp:TextBox>
+                         </div>
+                     </div>
+                  </div>   
+                 </div>
+                 
+                 <!--/////////////////////////////////////////////////// Div com os dados Iniciais / BAIRRO/ CODIGO DO MUNICIPIO/ NOME DO MUNICIPIO  /////////////////////////////////////////////////////////////////////////////////////////////-->
+             <div class="row" style="height: 30px"></div>
+             <div class="row">
+                 <div class="col-xl-9"
+                     style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px; padding-left: 10px">
+
+                     <div class="row"
+                         style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px">
+
+                         <div class="col-md-3" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+                             <div class="row">
+                                 <div class="col"
+                                     style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                     Bairro
+                                 </div>
+                             </div>
+                             <div class="row" style="padding: 0px; margin: 0px">
+                                 <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
+                                     <asp:TextBox ID="cs_bairro" runat="server" CssClass="layouttexto"
+                                         Style="width: 90%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
+                                     </asp:TextBox>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-md-4" style="width: 100%; height: 100%; background-color: transparent; padding: 4px; padding-left:10px">
+                             <div class="row">
+                                 <div class="col"
+                                     style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                     Código do Município
+                                 </div>
+                             </div>
+                             <div class="row">
+                                 <div class="col">
+                                     <asp:TextBox ID="cs_codMunicipio" runat="server" CssClass="layouttexto"
+                                         Style="width: 20%;" onBlur="SetTextIn(this,0)"
+                                         onFocus="SetTextIn(this,1)"></asp:TextBox>
+                                     <button class="material-symbols-outlined">
+                                         <i
+                                             class="fa-solid fa-magnifying-glass"></i>
+                                     </button>
+                                 </div>
+                             </div>
+                         </div>
+
+                         <div class="col-md-5" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+                             <div class="row">
+                                 <div class="col"
+                                     style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                     Nome do Município
+                                 </div>
+                             </div>
+                             <div class="row" style="padding: 0px; margin: 0px">
+                                 <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
+                                     <asp:TextBox ID="cs_nomemunicipio" runat="server" CssClass="layouttexto"
+                                         Style="width: 60%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
+                                     </asp:TextBox>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                  <!--/////////////////////////////////////////////////// LINHA LADO DIREITO NOME PAIS /////////////////////////////////////////////////////////////////////////////////////////////-->
+                 <div class="col-xl-3" style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px; padding-left: 10px; padding-top: 10px; padding-left:20px">
+                     <div class="row">
+                         <div class="col"
+                             style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                             Nome do País
+                         </div>
+                     </div>
+                     <div class="row">
                                 <div class="col">
-                                    <asp:TextBox ID="cs_complemento" runat="server" CssClass="layouttexto"
-                                        style="width:100%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
+                                    <asp:TextBox ID="cs_nomePais" runat="server" CssClass="layouttexto"
+                                        style="width:25%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
                                     </asp:TextBox>
                                 </div>
                             </div>
-                        </div>
+                 </div>
+             </div>
+
+              <!--/////////////////////////////////////////////////// Última linha  /////////////////////////////////////////////////////////////////////////////////////////////-->
+             <div class="row" style="height: 30px"></div>
+             <div class="row">
+    <div class="col-xl-12"
+        style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px; padding-left: 10px">
+
+        <div class="row"
+            style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px">
+
+            <div class="col-md-4" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+                <div class="row">
+                    <div class="col"
+                        style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                         Código do Páis
                     </div>
-                    <!--/////////////////////////////////////////////////// Div com os dados Emitente / Emitente 2 linha - Bairro/Nome do Municipio/ Codigo do Municipio/ Nome do País      /////////////////////////////////////////////////////////////////////////////////////////////-->
+                </div>
+                <div class="row" style="padding: 0px; margin: 0px">
+                    <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
+                        <asp:TextBox ID="cs_codPais" runat="server" CssClass="layouttexto"
+                            Style="width: 20%;"  onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
+                        </asp:TextBox>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="width: 100%; height: 100%; background-color: transparent; padding: 4px;">
+                <div class="row">
+                    <div class="col"
+                        style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                        Telefone
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <asp:TextBox ID="cs_telefone" runat="server" CssClass="layouttexto"
+                            Style="width: 30%;"  onBlur="SetTextIn(this,0)"
+                            onFocus="SetTextIn(this,1)"></asp:TextBox>
+                        <button class="material-symbols-outlined">
+                            <i
+                                class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
 
-                    <div class="row" style="height: 30px"></div>
-
-                    <div class="row"
-                        style="width:100%;padding:0px;margin:0px;background-color:transparent;height:100%;padding:0px;margin:0px">
-
-
-                        <div class="col-xl-8"
-                            style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
-
-                            <div class="row"
-                                style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
-
-                                <div class="col-md-4"
-                                    style="width:100%;height:100%;background-color:transparent;padding:10px;">
-
-
-                                    <div class="row">
-                                        <div class="col"
-                                            style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            Bairro </div>
-
-                                    </div>
-
-                                    <div class="input-group">
-                                        <asp:TextBox ID="Bairro" runat="server" CssClass="layouttexto"
-                                            style="width: 200px" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
-                                        </asp:TextBox>
-
-
-                                    </div>
-
-
-                                </div>
-                                <div class=" col-md-3"
-                                    style="width:100%;height:100%;background-color:transparent; padding:2px;">
-                                    <div class="row">
-                                        <div class="col"
-                                            style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            Código do Município</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <asp:TextBox ID="cs_codigoMunicipio" runat="server" CssClass="layouttexto"
-                                                style="width: 80px;" onBlur="SetTextIn(this,0)"
-                                                onFocus="SetTextIn(this,1)"></asp:TextBox>
-                                            <button class="material-symbols-outlined"><i
-                                                    class="fa-solid fa-magnifying-glass"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class=" col-md-4"
-                                    style="width:100%;height:100%;background-color:transparent; padding:5px;">
-                                    <div class="row">
-                                        <div class="col"
-                                            style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            Nome do Município</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col"
-                                            style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-
-                                            <asp:TextBox ID="cs_nomeMunicipio" runat="server" CssClass="layouttexto"
-                                                style="width: 100%;" onBlur="SetTextIn(this,0)"
-                                                onFocus="SetTextIn(this,1)">
-                                            </asp:TextBox>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                                
-
-                            </div>
-
-                        </div>
-                        
-                        <div class=" col-sm-1"
-                                    style="width:100%;height:100%;background-color:transparent; padding:11px;">
-                                    <div class="row">
-                                        <div class="col"
-                                            style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            UF</div>
-                                    </div>
-                                   
-                                
-                         <div class="row" style="padding:0px;margin:0px">
-                                        <div class="col" style="padding:0px;margin:0px; width:100%">
-                                            <asp:DropDownList ID="cs_uf" runat="server">
+            <div class="col-md-4" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+                <div class="row">
+                    <div class="col"
+                        style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                        UF
+                    </div>
+                </div>
+                <div class="row" style="padding: 0px; margin: 0px">
+                    <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
+                        <asp:DropDownList ID="cs_uf" runat="server">
                                                 <asp:ListItem style="width: 100%;" Text="SP" Value="1" />
                                                 <asp:ListItem style="width: 100%;" Text="AC" Value="2" />
                                                 <asp:ListItem style="width: 100%;" Text="AL" Value="3" />
@@ -462,92 +467,17 @@
                                                 <asp:ListItem style="width: 100%;" Text="SE" Value="26" />
                                                 <asp:ListItem style="width: 100%;" Text="TO" Value="27" />
                                             </asp:DropDownList>
-                                        </div>
-                                    </div>
-                            
-                            </div>
                     </div>
-                    <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Emitente 3 linha - Código do Pais/ Telfone/ UF /////////////////////////////////////////////////////////////////////////////////////////////-->
-
-                    <div class="row" style="height:30px"></div>
-
-                    <div class="row"
-                        style="width:100%;padding:0px;margin:0px;background-color:transparent;height:100%;padding:0px;margin:0px">
-
-
-                        <div class="col-xl-8"
-                            style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
-
-                            <div class="row"
-                                style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
-                                <div class="col-md-4"
-                                    style="width:100%;height:100%;background-color:transparent;padding:10px;">
-
-
-                                    <div class="row">
-                                        <div class="col"
-                                            style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            Nome do País </div>
-
-                                    </div>
-
-                                    <div class="input-group">
-                                        <asp:TextBox ID="cs_nomePais" runat="server" CssClass="layouttexto"
-                                            style="width: 55px" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
-                                        </asp:TextBox>
-
-
-                                    </div>
-
-
-                                </div>
-
-
-                                <div class=" col-md-3"
-                                    style="width:100%;height:100%;background-color:transparent; padding:10px;">
-                                    <div class="row">
-                                        <div class="col"
-                                            style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                             Código do País</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col"
-                                            style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-
-                                            <asp:TextBox ID="cs_codPais" runat="server" CssClass="layouttexto"
-                                                style="width: 15%;" onBlur="SetTextIn(this,0)"
-                                                onFocus="SetTextIn(this,1)">
-                                            </asp:TextBox>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class=" col-md-4"
-                                    style="width:100%;height:100%;background-color:transparent; padding:10px;">
-                                    <div class="row">
-                                        <div class="col"
-                                            style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            Telefone</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <asp:TextBox ID="cs_telefone" runat="server" CssClass="layouttexto"
-                                                style="width: 33%;" placeholder="(00)00000-0000" onBlur="SetTextIn(this,0)"
-                                                onFocus="SetTextIn(this,1)"></asp:TextBox>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                
-
-
-                                
-                    </div>
-                     </div>
                 </div>
-
             </div>
         </div>
+    </div>
+</div>
+
         </div>
+     </div>
+   </div>
+
+
+
     </asp:Content>
