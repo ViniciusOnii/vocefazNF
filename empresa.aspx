@@ -7,9 +7,6 @@
 
 
 
-
-
-
         <div class="container-fluid" style="padding:0px;margin:0px;width:100%;height:100%">
 
 
@@ -20,9 +17,7 @@
                 <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Principais da Nota /////////////////////////////////////////////////////////////////////////////////////////////-->
                 <div id="div_dados_iniciais" name="div_dados_iniciais"
                     style="display:block;visibility:visible;width:100%;height:100%;background-color:transparent;margin-left:20px;margin-right:20px;border:solid;border-color:#177CC0;border-width:1px;border-radius:10px;padding: 0 20px 20px 20px;">
-
-
-                    
+                                        
                     <div class="row"
                         style="width:100%;padding:0px;margin:0px;background-color:transparent;height:100%;padding:0px;margin:0px">
 
@@ -102,7 +97,8 @@
                         <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Inscrição Estadual/IEST/ CNAE Fiscal/  /////////////////////////////////////////////////////////////////////////////////////////////-->
                         <div class="row" style="height: 30px"></div>
 
-                    <div class="row" style="background-color:transparent" >
+                    <div class="row" >
+
                         <div class="col-xl-12"
                             style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px; padding-left:10px">
 
@@ -119,7 +115,7 @@
                                     <div class="row" style="padding: 0px; margin: 0px">
                                         <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
                                             <asp:TextBox ID="cs_inscricaoestadual" runat="server" CssClass="layouttexto"
-                                                Style="width: 30%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
+                                                Style="width: 45%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
                                             </asp:TextBox>
                                         </div>
                                     </div>
@@ -158,10 +154,12 @@
                             
                             </div>
                         </div>
+
                         <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Código Regime Tributário /////////////////////////////////////////////////////////////////////////////////////////////-->
                     <div class="row" style="height: 30px"></div>
 
-                    <div class="row" style="background-color:transparent">
+                    <div class="row">
+
                         <div class="col-xl" style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px; padding-top: 10px; padding-left: 15px">
                             <div class="row">
                                 <div class="col"
@@ -169,7 +167,9 @@
                                     Código Regime Tributário
                                 </div>
                             </div>
+
                             <div class="row" style="padding: 0px; margin: 0px">
+
                                 <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
                                     <asp:DropDownList ID="cs_regimeTributario" runat="server">
                                         <asp:ListItem style="width: 100%;" Text="Simples Nacional" Value="1" />
@@ -178,16 +178,10 @@
                                         <asp:ListItem style="width: 100%;" Text="Regime normal" Value="3" />
                                     </asp:DropDownList>
                                 </div>
+
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
-
 
            </div>
         </div>
@@ -308,7 +302,7 @@
                  
                  <!--/////////////////////////////////////////////////// Div com os dados Iniciais / BAIRRO/ CODIGO DO MUNICIPIO/ NOME DO MUNICIPIO  /////////////////////////////////////////////////////////////////////////////////////////////-->
              <div class="row" style="height: 30px"></div>
-             <div class="row" style="background-color:transparent">
+             <div class="row">
                  <div class="col-xl-9"
                      style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px; padding-left: 10px">
 
@@ -340,7 +334,7 @@
                              <div class="row">
                                  <div class="col">
                                      <asp:TextBox ID="cs_codMunicipio" runat="server" CssClass="layouttexto"
-                                         Style="width: 20%;" onBlur="SetTextIn(this,0)"
+                                         Style="width: 30%;" onBlur="SetTextIn(this,0)"
                                          onFocus="SetTextIn(this,1)"></asp:TextBox>
                                      <button class="material-symbols-outlined">
                                          <i
@@ -360,7 +354,7 @@
                              <div class="row" style="padding: 0px; margin: 0px">
                                  <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
                                      <asp:TextBox ID="cs_nomemunicipio" runat="server" CssClass="layouttexto"
-                                         Style="width: 65%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
+                                         Style="width: 60%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
                                      </asp:TextBox>
                                  </div>
                              </div>
@@ -372,14 +366,40 @@
                      <div class="row">
                          <div class="col"
                              style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                             Nome do País
+                             UF 
                          </div>
                      </div>
                      <div class="row">
                                 <div class="col">
-                                    <asp:TextBox ID="cs_nomePais" runat="server" CssClass="layouttexto"
-                                        style="width:25%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
-                                    </asp:TextBox>
+                                    <asp:DropDownList ID="cs_uf" runat="server">
+                        <asp:ListItem style="width: 100%;" Text="SP" Value="1" />
+                        <asp:ListItem style="width: 100%;" Text="AC" Value="2" />
+                        <asp:ListItem style="width: 100%;" Text="AL" Value="3" />
+                        <asp:ListItem style="width: 100%;" Text="AP" Value="4" />
+                        <asp:ListItem style="width: 100%;" Text="AM" Value="5" />
+                        <asp:ListItem style="width: 100%;" Text="BA" Value="6" />
+                        <asp:ListItem style="width: 100%;" Text="CE" Value="7" />
+                        <asp:ListItem style="width: 100%;" Text="DF" Value="8" />
+                        <asp:ListItem style="width: 100%;" Text="ES" Value="9" />
+                        <asp:ListItem style="width: 100%;" Text="GO" Value="10" />
+                        <asp:ListItem style="width: 100%;" Text="MA" Value="11" />
+                        <asp:ListItem style="width: 100%;" Text="MT" Value="12" />
+                        <asp:ListItem style="width: 100%;" Text="MS" Value="13" />
+                        <asp:ListItem style="width: 100%;" Text="MG" Value="14" />
+                        <asp:ListItem style="width: 100%;" Text="PA" Value="15" />
+                        <asp:ListItem style="width: 100%;" Text="PB" Value="16" />
+                        <asp:ListItem style="width: 100%;" Text="PR" Value="17" />
+                        <asp:ListItem style="width: 100%;" Text="PE" Value="18" />
+                        <asp:ListItem style="width: 100%;" Text="PI" Value="19" />
+                        <asp:ListItem style="width: 100%;" Text="RJ" Value="20" />
+                        <asp:ListItem style="width: 100%;" Text="RN" Value="21" />
+                        <asp:ListItem style="width: 100%;" Text="RS" Value="22" />
+                        <asp:ListItem style="width: 100%;" Text="RO" Value="23" />
+                        <asp:ListItem style="width: 100%;" Text="RR" Value="24" />
+                        <asp:ListItem style="width: 100%;" Text="SC" Value="25" />
+                        <asp:ListItem style="width: 100%;" Text="SE" Value="26" />
+                        <asp:ListItem style="width: 100%;" Text="TO" Value="27" />
+                    </asp:DropDownList>
                                 </div>
                             </div>
                  </div>
@@ -387,89 +407,66 @@
 
               <!--/////////////////////////////////////////////////// Última linha  /////////////////////////////////////////////////////////////////////////////////////////////-->
              <div class="row" style="height: 30px"></div>
-             <div class="row" style="background-color:transparent">
-    <div class="col-xl-12"
-        style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px; padding-left: 10px">
+             <div class="row">
+                    <div class="col-xl-12"
+                        style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px; padding-left: 10px">
 
-        <div class="row"
-            style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px">
+                        <div class="row"
+                            style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px">
 
-            <div class="col-md-4" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
-                <div class="row">
-                    <div class="col"
-                        style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                         Código do Páis
-                    </div>
-                </div>
-                <div class="row" style="padding: 0px; margin: 0px">
-                    <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
-                        <asp:TextBox ID="cs_codPais" runat="server" CssClass="layouttexto"
-                            Style="width: 20%;"  onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
-                        </asp:TextBox>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4" style="width: 100%; height: 100%; background-color: transparent; padding: 4px;">
-                <div class="row">
-                    <div class="col"
-                        style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                        Telefone
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <asp:TextBox ID="cs_telefone" runat="server" CssClass="layouttexto"
-                            Style="width: 30%;"  onBlur="SetTextIn(this,0)"
-                            onFocus="SetTextIn(this,1)"></asp:TextBox>
-                        
-                    </div>
-                </div>
-            </div>
+                            <div class="col-md-4" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+                                <div class="row">
+                                    <div class="col"
+                                        style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                         Código do País 
+                                    </div>
+                                </div>
+                                <div class="row" style="padding: 0px; margin: 0px">
+                                    <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
+                                        <asp:TextBox ID="cs_codPais" runat="server" CssClass="layouttexto"
+                                            Style="width: 20%;"  onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
+                                        </asp:TextBox>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" style="width: 100%; height: 100%; background-color: transparent; padding: 4px;">
+                                <div class="row">
+                                    <div class="col"
+                                        style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                        Nome do País
+                                    </div>
+                                </div>
+                                <div class="row" style="padding: 0px; margin: 0px">
+                                    <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
+                                        <asp:TextBox ID="cs_nomePais" runat="server" CssClass="layouttexto"
+                                            Style="width: 20%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
+                                        </asp:TextBox>
+                                    </div>
+                                </div>
+                            </div>
 
-            <div class="col-md-4" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
-                <div class="row">
-                    <div class="col"
-                        style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                        UF
+                            <div class="col-md-4" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+                                <div class="row">
+                                    <div class="col"
+                                        style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                        Telefone
+                                    </div>
+                                </div>
+                                <div class="row" style="padding: 0px; margin: 0px">
+                                    <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
+                                        <asp:TextBox ID="cs_telefone" runat="server" CssClass="layouttexto"
+                                            Style="width: 30%;" onBlur="SetTextIn(this,0)"
+                                            onFocus="SetTextIn(this,1)"></asp:TextBox>
+                                        <button class="material-symbols-outlined">
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row" style="padding: 0px; margin: 0px">
-                    <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
-                        <asp:DropDownList ID="cs_uf" runat="server">
-                                                <asp:ListItem style="width: 100%;" Text="SP" Value="1" />
-                                                <asp:ListItem style="width: 100%;" Text="AC" Value="2" />
-                                                <asp:ListItem style="width: 100%;" Text="AL" Value="3" />
-                                                <asp:ListItem style="width: 100%;" Text="AP" Value="4" />
-                                                <asp:ListItem style="width: 100%;" Text="AM" Value="5" />
-                                                <asp:ListItem style="width: 100%;" Text="BA" Value="6" />
-                                                <asp:ListItem style="width: 100%;" Text="CE" Value="7" />
-                                                <asp:ListItem style="width: 100%;" Text="DF" Value="8" />
-                                                <asp:ListItem style="width: 100%;" Text="ES" Value="9" />
-                                                <asp:ListItem style="width: 100%;" Text="GO" Value="10" />
-                                                <asp:ListItem style="width: 100%;" Text="MA" Value="11" />
-                                                <asp:ListItem style="width: 100%;" Text="MT" Value="12" />
-                                                <asp:ListItem style="width: 100%;" Text="MS" Value="13" />
-                                                <asp:ListItem style="width: 100%;" Text="MG" Value="14" />
-                                                <asp:ListItem style="width: 100%;" Text="PA" Value="15" />
-                                                <asp:ListItem style="width: 100%;" Text="PB" Value="16" />
-                                                <asp:ListItem style="width: 100%;" Text="PR" Value="17" />
-                                                <asp:ListItem style="width: 100%;" Text="PE" Value="18" />
-                                                <asp:ListItem style="width: 100%;" Text="PI" Value="19" />
-                                                <asp:ListItem style="width: 100%;" Text="RJ" Value="20" />
-                                                <asp:ListItem style="width: 100%;" Text="RN" Value="21" />
-                                                <asp:ListItem style="width: 100%;" Text="RS" Value="22" />
-                                                <asp:ListItem style="width: 100%;" Text="RO" Value="23" />
-                                                <asp:ListItem style="width: 100%;" Text="RR" Value="24" />
-                                                <asp:ListItem style="width: 100%;" Text="SC" Value="25" />
-                                                <asp:ListItem style="width: 100%;" Text="SE" Value="26" />
-                                                <asp:ListItem style="width: 100%;" Text="TO" Value="27" />
-                                            </asp:DropDownList>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
         </div>
      </div>
