@@ -114,7 +114,6 @@
     <Content Include="Imagens\fundo_topo.png" />
     <Content Include="nfe.aspx" />
     <Content Include="parametrosnfe.aspx" />
-    <Content Include="ParâmetrosGeraisNFE.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -156,13 +155,6 @@
     </Compile>
     <Compile Include="parametrosnfe.aspx.vb">
       <DependentUpon>parametrosnfe.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="ParâmetrosGeraisNFE.aspx.designer.vb">
-      <DependentUpon>ParâmetrosGeraisNFE.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ParâmetrosGeraisNFE.aspx.vb">
-      <DependentUpon>ParâmetrosGeraisNFE.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Topo.Master.designer.vb">
