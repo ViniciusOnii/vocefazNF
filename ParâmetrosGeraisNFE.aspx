@@ -7,11 +7,9 @@
 
     <div class="container-fluid" style="padding: 0px; margin: 0px; width: 100%; height: 100%">
 
-
         <div class="row" style="width: 100%; height: 200px"></div>
 
         <div class="row" style="width: 100%; height: 100%; padding: 0px; margin: 0px; background-color: transparent">
-
 
             <div id="div_parametros_NotaFiscal" name="div_parametros_NotaFiscal"
                 style="display: block; visibility: visible; width: 100%; height: 100%; background-color: transparent; margin-left: 20px; margin-right: 20px; border: solid; border-color: #177CC0; border-width: 1px; border-radius: 10px; padding: 0 20px 20px 20px;">
@@ -32,6 +30,7 @@
                                         Nome do Certificado Digital
                                     </div>
                                 </div>
+
                                 <div class="row" style="padding: 0px; margin: 0px">
                                     <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
                                         <asp:TextBox ID="cs_certificado_digital" runat="server" CssClass="layouttexto"
@@ -40,11 +39,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
-
-
-
 
                         </div>
 
