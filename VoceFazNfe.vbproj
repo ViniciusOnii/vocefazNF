@@ -109,9 +109,11 @@
     <Content Include="empresa.aspx" />
     <Content Include="Estilos\estilos.css" />
     <Content Include="Funcoes\global.js" />
+    <Content Include="Imagens\certificadoft.png" />
     <Content Include="Imagens\fundo.png" />
     <Content Include="Imagens\fundo_topo.png" />
     <Content Include="nfe.aspx" />
+    <Content Include="ParâmetrosGeraisNFE.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -146,6 +148,13 @@
     </Compile>
     <Compile Include="nfe.aspx.vb">
       <DependentUpon>nfe.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ParâmetrosGeraisNFE.aspx.designer.vb">
+      <DependentUpon>ParâmetrosGeraisNFE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ParâmetrosGeraisNFE.aspx.vb">
+      <DependentUpon>ParâmetrosGeraisNFE.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Topo.Master.designer.vb">

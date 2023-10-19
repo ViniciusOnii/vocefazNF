@@ -303,13 +303,13 @@
                  <!--/////////////////////////////////////////////////// Div com os dados Iniciais / BAIRRO/ CODIGO DO MUNICIPIO/ NOME DO MUNICIPIO  /////////////////////////////////////////////////////////////////////////////////////////////-->
              <div class="row" style="height: 30px"></div>
              <div class="row">
-                 <div class="col-xl-9"
+                 <div class="col-xl-3"
                      style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px; padding-left: 10px">
 
                      <div class="row"
                          style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px">
 
-                         <div class="col-md-3" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+                         <div class="col" style="width: 100%; height: 100%; background-color: transparent; padding: 10px; padding-top:20px">
                              <div class="row">
                                  <div class="col"
                                      style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
@@ -319,12 +319,18 @@
                              <div class="row" style="padding: 0px; margin: 0px">
                                  <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
                                      <asp:TextBox ID="cs_bairro" runat="server" CssClass="layouttexto"
-                                         Style="width: 75%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
+                                         Style="width: 280px;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
                                      </asp:TextBox> 
                                  </div>
                              </div>
                          </div>
-                         <div class="col-md-4" style="width: 100%; height: 100%; background-color: transparent; padding: 4px; padding-left:10px">
+                         
+                     </div>
+                 </div>
+                  <!--/////////////////////////////////////////////////// LINHA LADO DIREITO NOME PAIS /////////////////////////////////////////////////////////////////////////////////////////////-->
+                 <div class="col-xl-9" style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px; padding-left: 10px; padding-top: 10px; padding-left: 20px">
+                     <div class="row">
+                         <div class="col-md-4" style="width: 100%; height: 100%; background-color: transparent; padding: 4px; padding-left: 10px">
                              <div class="row">
                                  <div class="col"
                                      style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
@@ -334,7 +340,7 @@
                              <div class="row">
                                  <div class="col">
                                      <asp:TextBox ID="cs_codMunicipio" runat="server" CssClass="layouttexto"
-                                         Style="width: 140px;" onBlur="SetTextIn(this,0)"
+                                         Style="width: 170px;" onBlur="SetTextIn(this,0)"
                                          onFocus="SetTextIn(this,1)"></asp:TextBox>
                                      <button class="material-symbols-outlined">
                                          <i
@@ -344,7 +350,7 @@
                              </div>
                          </div>
 
-                         <div class="col-md-5" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+                         <div class="col-md-6" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
                              <div class="row">
                                  <div class="col"
                                      style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
@@ -354,15 +360,13 @@
                              <div class="row" style="padding: 0px; margin: 0px">
                                  <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
                                      <asp:TextBox ID="cs_nomemunicipio" runat="server" CssClass="layouttexto"
-                                         Style="width: 400px;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
+                                         Style="width: 80%;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
                                      </asp:TextBox>
                                  </div>
                              </div>
                          </div>
-                     </div>
-                 </div>
-                  <!--/////////////////////////////////////////////////// LINHA LADO DIREITO NOME PAIS /////////////////////////////////////////////////////////////////////////////////////////////-->
-                 <div class="col-xl-3" style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px; padding-left: 10px; padding-top: 10px; padding-left:20px">
+
+                         <div class="col-md-2" style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px; padding-left: 10px; padding-top: 10px; padding-left:20px">
                      <div class="row">
                          <div class="col"
                              style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
@@ -399,9 +403,12 @@
                         <asp:ListItem style="width: 100%;" Text="SC" Value="25" />
                         <asp:ListItem style="width: 100%;" Text="SE" Value="26" />
                         <asp:ListItem style="width: 100%;" Text="TO" Value="27" />
-                    </asp:DropDownList>
+                        </asp:DropDownList>
                                 </div>
                             </div>
+                </div>
+                     </div>
+
                  </div>
              </div>
 
