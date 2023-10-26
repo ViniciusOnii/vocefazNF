@@ -65,6 +65,7 @@
     
 
 </body>
+
 <script type="text/javascript">
     function formatarCNPJ(input) {
         // Remove todos os caracteres não numéricos
@@ -88,7 +89,6 @@
         input.value = numeros;
     }
 </script>
-
 
 
 </html>

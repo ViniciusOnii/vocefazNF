@@ -44,7 +44,7 @@
                                             <asp:TextBox ID="cs_emissao" runat="server" CssClass="layouttexto"
                                                 style="width: 150px;padding:0px;margin:0px"
                                                 placeholder="00.000.000/0000-00" onBlur="SetTextIn(this,0)"
-                                                onFocus="SetTextIn(this,1)" onkeypress="return validarNumeros(event); ">
+                                                onFocus="SetTextIn(this,1)" >
 
                                             </asp:TextBox>
                                         </div>
@@ -94,6 +94,8 @@
                          </div>   
                         
                         </div>
+
+
                         <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Inscrição Estadual/IEST/ CNAE Fiscal/  /////////////////////////////////////////////////////////////////////////////////////////////-->
                         <div class="row" style="height: 30px"></div>
 
@@ -431,7 +433,7 @@
                                 <div class="row" style="padding: 0px; margin: 0px">
                                     <div class="col" style="padding: 0px; margin: 0px; background-color: transparent">
                                         <asp:TextBox ID="cs_codPais" runat="server" CssClass="layouttexto"
-                                            Style="width: 70px;"  onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)">
+                                            Style="width: 70px;" onBlur="SetTextIn(this,0)" onFocus="SetTextIn(this,1)" OnTextChanged="cs_codPais_TextChanged">
                                         </asp:TextBox>
                                     </div>
                                 </div>
