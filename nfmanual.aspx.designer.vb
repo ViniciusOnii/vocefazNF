@@ -14,6 +14,114 @@ Option Explicit On
 Partial Public Class nfmanual
 
     '''<summary>
+    '''Controle cs_emissao_nf.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_emissao_nf As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Controle cs_finalidade_nf.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_finalidade_nf As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Controle cs_operacao_consumidor.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_operacao_consumidor As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Controle cs_tipo_operacao.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_tipo_operacao As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Controle cs_natureza_da_operacao.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_natureza_da_operacao As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_numero_documento_fiscal.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_numero_documento_fiscal As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_serie_documento_fiscal.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_serie_documento_fiscal As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_data_hora_emissao.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_data_hora_emissao As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_forma_de_pagamento.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_forma_de_pagamento As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Controle cs_destino_da_operacao.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_destino_da_operacao As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Controle cs_codigo_municipio_dados_principais.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_codigo_municipio_dados_principais As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_indicador_de_presenca.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_indicador_de_presenca As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
     '''Controle cs_cnpj_cpf_manual.
     '''</summary>
     '''<remarks>
