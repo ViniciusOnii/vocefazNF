@@ -9,7 +9,7 @@
     </ProductVersion>
     <SchemaVersion>
     </SchemaVersion>
-    <ProjectGuid>{760F1613-B88F-4499-8934-ED0CD2EEC37B}</ProjectGuid>
+    <ProjectGuid>{A241D294-7585-481A-A480-242B5FE1D11C}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <RootNamespace>VoceFazNfe</RootNamespace>
@@ -18,7 +18,7 @@
     <MyType>Custom</MyType>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44359</IISExpressSSLPort>
+    <IISExpressSSLPort>44329</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -74,7 +74,15 @@
     <Import Include="System.Collections" />
     <Import Include="System.Collections.Generic" />
     <Import Include="System.Data" />
+    <Import Include="System.Data.Sql" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.Data.SqlTypes" />
     <Import Include="System.Linq" />
+    <Import Include="System.Security.Cryptography" />
+    <Import Include="System.Security.Cryptography.X509Certificates" />
+    <Import Include="System.Security.Permissions" />
+    <Import Include="System.Security.Policy" />
+    <Import Include="System.Security.Principal" />
     <Import Include="System.Xml.Linq" />
     <Import Include="System.Diagnostics" />
     <Import Include="System.Collections.Specialized" />
@@ -106,23 +114,120 @@
     <Content Include="Bootstrap\js\bootstrap.js" />
     <Content Include="Bootstrap\js\bootstrap.min.js" />
     <Content Include="Bootstrap\js\fontawesome.js" />
-    <Content Include="empresa.aspx" />
     <Content Include="Estilos\estilos.css" />
+    <Content Include="Funcoes\formatador.js" />
     <Content Include="Funcoes\global.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Help\aliquotadecalculo.html" />
+    <Content Include="Help\aliquotaissqn.html" />
+    <Content Include="Help\bandeiracartoes.html" />
+    <Content Include="Help\basecalculoissqn.html" />
+    <Content Include="Help\BCdaCIDE.html" />
+    <Content Include="Help\bcoperacaopropria.html" />
+    <Content Include="Help\bcufdestino.html" />
+    <Content Include="Help\calculoicmsst.html" />
+    <Content Include="Help\cfop.html" />
+    <Content Include="Help\ChassiVeiculo.html" />
+    <Content Include="Help\chavenfeexportacao.html" />
+    <Content Include="Help\CnaeFiscal.html" />
+    <Content Include="Help\CodificacaoNVE.html" />
+    <Content Include="Help\codigo101.html" />
+    <Content Include="Help\codigo102.html" />
+    <Content Include="Help\codigo201.html" />
+    <Content Include="Help\codigo202.html" />
+    <Content Include="Help\codigo500.html" />
+    <Content Include="Help\codigo900.html" />
+    <Content Include="Help\CodigodoProdutoDaANP.html" />
+    <Content Include="Help\CodigoIBGE.html" />
+    <Content Include="Help\ChaveAcessoNFE.html" />
+    <Content Include="Help\codigomunicipio.html" />
+    <Content Include="Help\CodigoNCM.html" />
+    <Content Include="Help\CodigoProdutoeServico.html" />
+    <Content Include="Help\codigotributacao.html" />
+    <Content Include="Help\codmunicipioocorrencia.html" />
+    <Content Include="Help\contigencia.html" />
+    <Content Include="Help\coo.html" />
+    <Content Include="Help\creditoicmsart23.html" />
+    <Content Include="Help\cstcofins.html" />
+    <Content Include="Help\cstipi.html" />
+    <Content Include="Help\cstipi1.html" />
+    <Content Include="Help\Drawback.html" />
+    <Content Include="Help\extipi.html" />
+    <Content Include="Help\finalidadedeemissao.html" />
+    <Content Include="Help\formadepagamento.html" />
+    <Content Include="Help\Gtin.html" />
+    <Content Include="Help\gtinproduto.html" />
+    <Content Include="Help\ICMSdesonerado.html" />
+    <Content Include="Help\ICMSdiferido.html" />
+    <Content Include="Help\icmsretido.html" />
+    <Content Include="Help\icmsstretido.html" />
+    <Content Include="Help\identificacaodestinatario.html" />
+    <Content Include="Help\iedestinatario.html" />
+    <Content Include="Help\indicadoriss.html" />
+    <Content Include="Help\InscricaoEstadual.html" />
+    <Content Include="Help\InscricaoMunicipal.html" />
+    <Content Include="Help\InscricaoSubstituto.html" />
+    <Content Include="Help\margemvaloradicionadoicmsst.html" />
+    <Content Include="Help\mercadoriadevolvida.html" />
+    <Content Include="Help\modalidadebcdocimsst.html" />
+    <Content Include="Help\modalidadefrete.html" />
+    <Content Include="Help\motivodesoneracaoicms.html" />
+    <Content Include="Help\motivoicms.html" />
+    <Content Include="Help\motivoicms30.html" />
+    <Content Include="Help\motivoicms40.html" />
+    <Content Include="Help\numerodocumento.html" />
+    <Content Include="Help\numerodocumentoimportacao.html" />
+    <Content Include="Help\numeroecf.html" />
+    <Content Include="Help\NumeroFCI.html" />
+    <Content Include="Help\numeroregistroexportacao.html" />
+    <Content Include="Help\origemdoprecesso.html" />
+    <Content Include="Help\origemmercadoria.html" />
+    <Content Include="Help\percentualbcicms.html" />
+    <Content Include="Help\PercentualdaMV doICMSST.html" />
+    <Content Include="Help\percentualdodiferimento.html" />
+    <Content Include="Help\qpis.html" />
+    <Content Include="Help\qpisnaotributado.html" />
+    <Content Include="Help\qpisoutrasoperacoes.html" />
+    <Content Include="Help\qpisqtde.html" />
+    <Content Include="Help\reducaobc.html" />
+    <Content Include="Help\reducaobcst.html" />
+    <Content Include="Help\RegistroCODIF.html" />
+    <Content Include="Help\suframa.html" />
+    <Content Include="Help\tipodeoperacao.html" />
+    <Content Include="Help\tomadordoservico.html" />
+    <Content Include="Help\tributacaoicms.html" />
+    <Content Include="Help\uficmsst.html" />
+    <Content Include="Help\ValorBCdoICMS.html" />
+    <Content Include="Help\ValorBCdoICMSST.html" />
+    <Content Include="Help\ValordaAFRMM.html" />
+    <Content Include="Help\valoripidevolvido.html" />
     <Content Include="Imagens\certificadoft.png" />
+    <Content Include="Imagens\coo.jpg" />
     <Content Include="Imagens\fundo.png" />
+    <Content Include="Imagens\fundoazultopo.png" />
     <Content Include="Imagens\fundo_topo.png" />
-    <Content Include="nfmanual.aspx" />
-    <Content Include="parametrosnfe.aspx" />
+    <Content Include="Imagens\fundo_topo_azul.jpg" />
+    <Content Include="Imagens\ihelp.png" />
+    <Content Include="Imagens\logovocefaznfe.png" />
+    <Content Include="Imagens\nfe_icon.png" />
+    <Content Include="Imagens\preloader.gif" />
+    <Content Include="Imagens\topohelp.png" />
+    <Content Include="Jquery\jquery_mask.js" />
+    <Content Include="Jquery\jquery_min.js" />
+    <Content Include="Logotipos\logoempresa.bmp" />
+    <Content Include="telas\empresa.aspx" />
+    <Content Include="telas\Grupo.aspx" />
+    <Content Include="telas\Login.html" />
+    <Content Include="telas\nfmanual.aspx" />
+    <Content Include="telas\parametros.aspx" />
+    <Content Include="telas\subgrupo.aspx" />
+    <Content Include="telas\teste.aspx" />
+    <Content Include="telas\unidademedidas.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="empresa.aspx.designer.vb">
-      <DependentUpon>empresa.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="empresa.aspx.vb">
-      <DependentUpon>empresa.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -143,26 +248,58 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="nfmanual.aspx.designer.vb">
-      <DependentUpon>nfmanual.aspx</DependentUpon>
+    <Compile Include="telas\empresa.aspx.designer.vb">
+      <DependentUpon>empresa.aspx</DependentUpon>
     </Compile>
-    <Compile Include="nfmanual.aspx.vb">
-      <DependentUpon>nfmanual.aspx</DependentUpon>
+    <Compile Include="telas\empresa.aspx.vb">
+      <DependentUpon>empresa.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="parametrosnfe.aspx.designer.vb">
-      <DependentUpon>parametrosnfe.aspx</DependentUpon>
+    <Compile Include="telas\Grupo.aspx.designer.vb">
+      <DependentUpon>Grupo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="parametrosnfe.aspx.vb">
-      <DependentUpon>parametrosnfe.aspx</DependentUpon>
+    <Compile Include="telas\Grupo.aspx.vb">
+      <DependentUpon>Grupo.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Topo.Master.designer.vb">
-      <DependentUpon>Topo.Master</DependentUpon>
+    <Compile Include="telas\nfmanual.aspx.designer.vb">
+      <DependentUpon>nfmanual.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Topo.Master.vb">
+    <Compile Include="telas\nfmanual.aspx.vb">
+      <DependentUpon>nfmanual.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="telas\parametros.aspx.designer.vb">
+      <DependentUpon>parametros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\parametros.aspx.vb">
+      <DependentUpon>parametros.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="telas\subgrupo.aspx.designer.vb">
+      <DependentUpon>subgrupo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\subgrupo.aspx.vb">
+      <DependentUpon>subgrupo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="telas\teste.aspx.designer.vb">
+      <DependentUpon>teste.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\teste.aspx.vb">
+      <DependentUpon>teste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="telas\Topo.Master.vb">
       <DependentUpon>Topo.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="telas\unidademedidas.aspx.designer.vb">
+      <DependentUpon>unidademedidas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\unidademedidas.aspx.vb">
+      <DependentUpon>unidademedidas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -174,7 +311,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bootstrap\css\.DS_Store" />
     <Content Include="Bootstrap\css\bootstrap-grid.css.map" />
     <Content Include="Bootstrap\css\bootstrap-grid.min.css.map" />
     <Content Include="Bootstrap\css\bootstrap-reboot.css.map" />
@@ -195,7 +331,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
-    <Content Include="Topo.Master" />
+    <Content Include="telas\Topo.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -203,7 +339,10 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Certificados\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -229,9 +368,11 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>49774</DevelopmentServerPort>
+          <DevelopmentServerPort>49861</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44359/</IISUrl>
+          <IISUrl>https://localhost:44329/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>https://localhost:44329/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
@@ -243,7 +384,7 @@
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
-      <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>

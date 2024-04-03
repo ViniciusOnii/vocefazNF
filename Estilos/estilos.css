@@ -1,11 +1,13 @@
-<style>
+<style >
+
+
+	.invisible-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
 
 
 
-
-
-@media (min-width: 1200px) and (max-width: 10000px)
-{
+@media (min-width: 1200px) and (max-width: 10000px) {
 	.estilo_desktop {
 		visibility: visible;
 		display: block;
@@ -107,6 +109,18 @@
 .cs_pcertificado{
 	
 }
+
+.botao_cadastro {
+	padding: 10px 20px;
+	background-color: #007bff; /* Cor de fundo azul, ajuste conforme necessário */
+	color: white;
+	border: none;
+	border-radius: 20px; /* Define o raio da borda para criar um efeito arredondado */
+	cursor: pointer;
+	margin: 0 10px;
+}
+
+
 
 </style >    
     

@@ -1,6 +1,47 @@
-﻿<script language="javascript" type="text/javascript">
+﻿
 
 
+    function mostra_div_informacao(vdiv,vcontroleon,vcontroleoff,vmodo) {
+
+        var vdivdados=document.getElementById(vdiv);
+        var vdivon=document.getElementById(vcontroleon);
+        var vdivoff=document.getElementById(vcontroleoff);
+
+
+        if (vmodo==0) {
+
+            vdivdados.style.display = "none";
+            vdivdados.style.visibility="hidden";
+
+            vdivon.style.display = "none";
+            vdivon.style.visibility="hidden";
+
+            vdivoff.style.display="block";
+            vdivoff.style.visibility="visible";
+
+            
+        }
+
+
+
+        if (vmodo==1) {
+
+            vdivdados.style.display = "block";
+            vdivdados.style.visibility="visible";
+
+            vdivoff.style.display = "none";
+            vdivoff.style.visibility="hidden";
+
+            vdivon.style.display="block";
+            vdivon.style.visibility="visible";
+
+            
+        }
+
+
+
+    
+    }
 
     function SetTextIn(vcontrole,vmodo) {
 
@@ -9,10 +50,6 @@
         if (vmodo==1) vcontrole.style.background = "#D2E9FF";
  
     }
-
-
-
-
     
     function seleciona_menu_nfe(vcontrole) {
 
@@ -85,11 +122,6 @@
         }
     }
 
-
-
-
-
-
     function muda_foco_menu_nfe(vcontrole,vmodo) {
 
      
@@ -106,9 +138,92 @@
 
     }
 
+    function SetDiv(vcontrole,vmodo) {
+
+        var vdiv = document.getElementById(vcontrole);
+
+        if (vmodo == 1) {
+            vdiv.style.borderWidth = "3px";
+            vdiv.style.backgroundColor = "#f1f1f1";
+        }
+        else {
+            vdiv.style.borderWidth = "1px";
+            vdiv.style.backgroundColor = "transparent";
+        }
+        
+        
+
+    }
 
 
+    function anima_informacao(vmodo, vchave) {
+
+        var vdiv = document.getElementById("div_informacao");
+        var vdiv_dados = document.getElementById("div_dados_informacao");
+
+        ///////// Habilita o menu //////////////////////////////////////
+        if (vmodo == 1) {
+
+            vdiv.style.width = "0px";
+            vdiv.style.height = "100vh"
+            vdiv.style.visibility = "visible";
+            vdiv.style.display = "block";
+
+            vdiv.style.top = "0px";
+            vdiv.style.left = "0px";
 
 
+            if (window.XMLHttpRequest) {    // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+            else {// code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
 
-</script>
+            xmlhttp.onreadystatechange = function () {
+
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+
+                    const vretorno = xmlhttp.responseText;
+
+                   
+                    vdiv_dados.innerHTML = vretorno
+
+                }
+                else {
+                    
+                }
+              
+            }
+
+        
+            xmlhttp.open("GET", "../Help/" + vchave + ".html", true);
+            xmlhttp.send();
+
+            $("#div_informacao").animate({ width: '400px' }, {
+                duration: 100, easing: "linear", done: function () {
+
+                }
+            });
+        }
+
+
+        ///////// Desabilita o menu //////////////////////////////////////
+        if (vmodo == 0) {
+
+            vdiv.style.width = "400px";
+
+            $("#div_informacao").animate({ width: '0px' }, {
+                duration: 100, easing: "linear", done: function () {
+
+                    vdiv.style.visible = "hidden";
+                    vdiv.style.display = "none";
+                }
+            });
+
+
+        }
+
+    }
+
+

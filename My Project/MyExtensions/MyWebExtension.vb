@@ -2,7 +2,7 @@
 
 Namespace My
     ''' <summary>
-    ''' Módulo usado para definir as propriedades que estão disponíveis em My Namespace para projetos da web.
+    ''' Module used to define the properties that are available in the My Namespace for Web projects.
     ''' </summary>
     ''' <remarks></remarks>
     <Global.Microsoft.VisualBasic.HideModuleName()> _
@@ -11,7 +11,7 @@ Namespace My
         Private ReadOnly s_User As New ThreadSafeObjectProvider(Of Global.Microsoft.VisualBasic.ApplicationServices.WebUser)
         Private ReadOnly s_Log As New ThreadSafeObjectProvider(Of Global.Microsoft.VisualBasic.Logging.AspLog)
         ''' <summary>
-        ''' Retorna informações sobre o computador host.
+        ''' Returns information about the host computer.
         ''' </summary>
         <Global.System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")> _
         Friend ReadOnly Property Computer() As Global.Microsoft.VisualBasic.Devices.ServerComputer
@@ -20,7 +20,7 @@ Namespace My
             End Get
         End Property
         ''' <summary>
-        ''' Retorna informações sobre o usuário atual da web.
+        ''' Returns information for the current Web user.
         ''' </summary>
         <Global.System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")> _
         Friend ReadOnly Property User() As Global.Microsoft.VisualBasic.ApplicationServices.WebUser
@@ -29,7 +29,7 @@ Namespace My
             End Get
         End Property
         ''' <summary>
-        ''' Retorna um objeto Request.
+        ''' Returns Request object.
         ''' </summary>
         <Global.System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")> _
         <Global.System.ComponentModel.Design.HelpKeyword("My.Request")> _
@@ -44,7 +44,7 @@ Namespace My
             End Get
         End Property
         ''' <summary>
-        ''' Retorna um objeto Response.
+        ''' Returns Response object.
         ''' </summary>
         <Global.System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")> _
          <Global.System.ComponentModel.Design.HelpKeyword("My.Response")> _
@@ -59,7 +59,7 @@ Namespace My
             End Get
         End Property
         ''' <summary>
-        ''' Retorna o objeto de log Asp.
+        ''' Returns the Asp log object.
         ''' </summary>
         <Global.System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")> _
         Friend ReadOnly Property Log() As Global.Microsoft.VisualBasic.Logging.AspLog
