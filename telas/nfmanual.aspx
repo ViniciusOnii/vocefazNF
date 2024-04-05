@@ -1,10 +1,7 @@
-﻿
-
-                <%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/telas/Topo.Master" CodeBehind="nfmanual.aspx.vb" Inherits="VoceFazNfe.nfmanual" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/telas/Topo.Master" CodeBehind="nfmanual.aspx.vb" Inherits="VoceFazNfe.nfmanual" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-
-    <div class="row" style="width: 100%; height: 210px; background-color: transparent"></div>
+  <div class="row" style="width: 100%; height: 210px; background-color: transparent"></div>
 
     <!-- Menu das seçoes da nota fiscal -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -7491,19 +7488,20 @@
    
            <div class="row" style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
    
-               <div class="col-md-8" style="width:100%;height:100%;background-color:transparent;padding: 4px;  padding-top: 20px">
+               <div class="col-md-8" style="width:100%;height:100%;background-color:transparent;padding: 4px; padding-left: 5px; padding-top: 20px">
    
    
-                   <div class="row" style="padding: 0px; margin: 0px">
-                       <div class="col"  style=" font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                     Nº de Lotes de medicamentos/ matérias-primas
+                   <div class="row">
+                       <div class="col"
+                           style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                           Nº de Lotes de medicamentos/ matérias-primas
                        </div>
                    </div>
    
                    <div class="row" style="padding: 0px; margin: 0px">
                    <div class="col" style="padding: 0px; margin: 0px">
                                 <asp:TextBox ID="TextBox19" runat="server" CssClass="layouttexto"
-                                    Style="width: 45%; padding-right:5px" onBlur="SetTextIn(this,0);SetDiv('div_medicamento_materia_prima_farmaceuticas',0)" onFocus="SetTextIn(this,1);SetDiv('div_medicamento_materia_prima_farmaceuticas',1)">
+                                    Style="width: 45%;" onBlur="SetTextIn(this,0);SetDiv('div_medicamento_materia_prima_farmaceuticas',0)" onFocus="SetTextIn(this,1);SetDiv('div_medicamento_materia_prima_farmaceuticas',1)">
                                 </asp:TextBox>
                        </div>
                      </div>
@@ -7971,71 +7969,6 @@
                 </div>
             </div>
     </div>
-
-            <!--///////////////////////////////////////////////////   Container - Detalhamento para operação com Papel Imune /////////////////////////////////////////////////////////////////////////////////////////////-->
-
-
-<div class="container-fluid" style="padding: 0px; margin: 0px; width: 100%; height: 100%;">
-
-
-    <div class="row" style="width: 100%; height: 50px"></div>
-
-    <div class="row" style="width: 100%; height: 100%; padding: 0px; margin: 0px; background-color: transparent">
-
-        <div class="row" style="width: 100%; height: 100%; color: #177CC0; padding-left: 20px; padding-top: 0px; font-family: Arial; font-size: 20px; font-weight: bold; margin-left: 0px">
-
-            <div id="i_detalhamento_operacao_papel_imune_on" name="i_detalhamento_operacao_papel_imune_on" class="col" align="left" style="display: none; visibility: hidden; font-size: 20px; color: red; margin-right: 20px; border-bottom: none; cursor: pointer" onclick="mostra_div_informacao('div_detalhamento_operacao_papel_imune','i_detalhamento_operacao_papel_imune_on','i_detalhamento_operacao_papel_imune_off',0)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Detalhamento Específico para Operação com Papel Imune</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i></div>
-            <div id="i_detalhamento_operacao_papel_imune_off" name="i_detalhamento_operacao_papel_imune_off" class="col" align="left" style="display: block; visibility: visible; font-size: 20px; color: red; margin-right: 20px; border-bottom: solid; border-color: #767676; border-width: 1px; cursor: pointer" onclick="mostra_div_informacao('div_detalhamento_operacao_papel_imune','i_detalhamento_operacao_papel_imune_on','i_detalhamento_operacao_papel_imune_off',1)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Detalhamento Específico para Operação com Papel Imune</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i></div>
-
-
-        </div>
-
-        <div class="row" style="width: 100%; height: 20px"></div>
-
-
-        <div id="div_detalhamento_operacao_papel_imune" name="div_detalhamento_operacao_papel_imune"
-            style="display: none; visibility: visible; width: 100%; height: 100%; background-color: transparent; margin-left: 20px; margin-right: 20px; border: solid; border-color: #177CC0; border-width: 1px; border-radius: 10px; padding: 0 20px 20px 20px;">
-
-
-
-            <div class="row"
-                style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
-
-
-                <!--///////////////////////////////////////////////////  Container - Detalhamento Especifico de Combustíveis -  LINHA LADO ESQUERDO - Código do Produto Da ANP -  Percentual de Gás Natural/////////////////////////////////////////////////////////////////////////////////////////////-->
-                <div class="col-xl-12"
-                    style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px">
-
-                    <div class="row" style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px">
-
-                        <div class="col-md-12" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
-
-
-                            <div class="row">
-                                <div class="col"
-                                    style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                    Número do RECOPI
-                                </div>
-                            </div>
-
-                            <div class="row" style="padding: 0px; margin: 0px">
-                                <div class="col" style="padding: 0px; margin: 0px">
-                                    <asp:TextBox ID="TextBox222" runat="server" CssClass="layouttexto"
-                                        Style="width: 30%; padding: 0px; margin: 0px"
-                                        onBlur="SetTextIn(this,0);SetDiv('div_detalhamento_operacao_papel_imune',0)"
-                                        onFocus="SetTextIn(this,1);SetDiv('div_detalhamento_operacao_papel_imune',1)">
-
-                                    </asp:TextBox>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
     <!--///////////////////////////////////////////////////   Container - Tributos incidentes no Produto ou Serviço /////////////////////////////////////////////////////////////////////////////////////////////-->
 
 
@@ -11177,7 +11110,7 @@
              </div>
  
 
-                         <!--///////////////////////////////////////////////////   Container - Total nfe/ISSQN/////////////////////////////////////////////////////////////////////////////////////////////-->
+                         <!--///////////////////////////////////////////////////   Container - Total nfe/retenção de tributos/////////////////////////////////////////////////////////////////////////////////////////////-->
 
 
 <div class="container-fluid" style="padding: 0px; margin: 0px; width: 100%; height: 100%;">
@@ -14224,5 +14157,6 @@
             </div>
 
             </asp:Panel> 
+
 
 </asp:Content>

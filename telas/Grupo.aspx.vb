@@ -25,6 +25,7 @@ Public Class Grupo
             vcodigo_grupo = Trim(cs_codigo.Text)
             vdescricao_grupo = Trim(cs_descricao.Text)
 
+
             '///////////////////////////// Consistências ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             If Trim(vcodigo_grupo) = "" Then
                 cs_codigo.BackColor = Drawing.Color.Red
@@ -41,6 +42,16 @@ Public Class Grupo
             End If
 
 
+            If (vflag_obrigatorio = 1) Then
+
+                pnl_principal.Visible = False
+                pnl_obrigatorio.visible = True
+                Exit Sub
+
+            End If
+
+
+            ' ///////////////////////////// Refresh auto ////////////////////////////////////////////////////////////////////////////////////////
             '////// abre o banco de dados ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             verp.ConnectionString = My.Settings.vconexaobase
             verp.Open()
@@ -84,6 +95,11 @@ Public Class Grupo
             ' Fechando a conexão com o banco de dados
             verp.Close()
 
+            cmd_gravar.Visible = False
+            cmd_deletar.Visible = False
+            cs_codigo.Text = ""
+            cs_descricao.Text = ""
+            cs_codigo.Focus()
 
 
 
@@ -91,11 +107,6 @@ Public Class Grupo
             ' Trate a exceção aqui
         End Try
     End Sub
-
-
-
-
-
 
 
 
@@ -173,6 +184,9 @@ Public Class Grupo
                 cs_codigo.Text = ""
                 cs_descricao.Text = ""
 
+                cmd_gravar.Visible = False
+                cmd_deletar.Visible = False
+
             Else
 
                 '///erro 
@@ -188,5 +202,84 @@ Public Class Grupo
 
     End Sub
 
+    Protected Sub cmd_voltar_obrigatorio_Click(sender As Object, e As EventArgs) Handles cmd_voltar_obrigatorio.Click
 
+
+        pnl_obrigatorio.Visible = False
+        pnl_principal.Visible = True
+
+
+    End Sub
+
+    Protected Sub cs_codigo_TextChanged(sender As Object, e As EventArgs) Handles cs_codigo.TextChanged
+
+        Dim verp As New Data.SqlClient.SqlConnection
+        Dim vcmdcomando As New Data.SqlClient.SqlCommand
+        Dim tgrupo As Data.SqlClient.SqlDataReader
+
+
+        Dim vselecao As String
+
+        Dim vcodigo_grupo As String
+
+
+        Try
+
+            vcodigo_grupo = UCase(Trim(cs_codigo.Text))
+            cs_codigo.Text = vcodigo_grupo
+
+            '////// abre o banco de dados ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            verp.ConnectionString = My.Settings.vconexaobase
+            verp.Open()
+
+            vselecao = "SELECT * FROM grupo WHERE grupo_codigo='" & Trim(vcodigo_grupo) & "'"
+
+            vcmdcomando.CommandText = vselecao
+            vcmdcomando.CommandType = CommandType.Text
+            vcmdcomando.CommandTimeout = 0
+            vcmdcomando.Connection = verp
+
+            tgrupo = vcmdcomando.ExecuteReader
+
+            If tgrupo.Read() Then
+
+                cs_descricao.Text = tgrupo("grupo_descricao")
+                cmd_deletar.Visible = True
+                cmd_gravar.Visible = True
+
+            Else
+
+                cs_descricao.Text = ""
+                cmd_deletar.Visible = False
+                cmd_gravar.Visible = True
+
+
+            End If
+
+            cs_descricao.Focus()
+
+            tgrupo.Close()
+            verp.Close()
+
+
+        Catch ex As Exception
+
+        End Try
+
+
+    End Sub
+
+    Protected Sub cmd_limpar_Click(sender As Object, e As EventArgs) Handles cmd_limpar.Click
+
+        cmd_gravar.Visible = False
+        cmd_deletar.Visible = False
+
+        cs_codigo.Text = ""
+        cs_descricao.Text = ""
+
+        cs_codigo.Focus()
+
+
+
+    End Sub
 End Class

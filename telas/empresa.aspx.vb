@@ -14,6 +14,10 @@
         Dim vaux As String
         Dim vlogo As String
 
+        Dim vcertificado As String
+        Dim vsenhacertificado As String
+
+
         Try
 
             If Not Page.IsPostBack Then
@@ -74,12 +78,14 @@
                         cs_nomemunicipio.Text = tempresa("xmun_emitente")
                         cs_uf.Text = tempresa("uf_emitente")
 
-                        cs_telefone.Text = tempresa("fone_emitente")
+                    cs_telefone.Text = tempresa("fone_emitente")
+
+                    cs_senha_certificado.Text = tempresa("senha_certificado")
 
 
-                        cs_iest_ac.Text = tempresa("iest_ac_emitente")
-                        cs_iest_al.Text = tempresa("iest_al_emitente")
-                        cs_iest_ap.Text = tempresa("iest_ap_emitente")
+                    cs_iest_ac.Text = tempresa("iest_ac_emitente")
+                    cs_iest_al.Text = tempresa("iest_al_emitente")
+                    cs_iest_ap.Text = tempresa("iest_ap_emitente")
                         cs_iest_am.Text = tempresa("iest_am_emitente")
                         cs_iest_ba.Text = tempresa("iest_ba_emitente")
                         cs_iest_ce.Text = tempresa("iest_ce_emitente")
@@ -103,19 +109,62 @@
                         cs_iest_sp.Text = tempresa("iest_sp_emitente")
                         cs_iest_se.Text = tempresa("iest_se_emitente")
                         cs_iest_to.Text = tempresa("iest_to_emitente")
-                        cs_iest_df.Text = tempresa("iest_df_emitente")
+                    cs_iest_df.Text = tempresa("iest_df_emitente")
 
 
-                    End If
+                    cmb_ambiente.SelectedValue = tempresa("ambiente")
 
-                    tempresa.Close()
+                    cs_serie1.Text = tempresa("serie_1")
+                    cs_serie2.Text = tempresa("serie_2")
+                    cs_serie3.Text = tempresa("serie_3")
+                    cs_serie4.Text = tempresa("serie_4")
+                    cs_serie5.Text = tempresa("serie_5")
+
+                    cs_nota1.Text = tempresa("nota_1")
+                    cs_nota2.Text = tempresa("nota_2")
+                    cs_nota3.Text = tempresa("nota_3")
+                    cs_nota4.Text = tempresa("nota_4")
+                    cs_nota5.Text = tempresa("nota_5")
+
+
+                    '////////////// Busca os dados do certificado digital caso ele exista ////////////////////////////////////////////////////////////////////////////////////////////
+
+                    Try
+
+                        If Trim(tempresa("nome_certificado")) <> "" Then
+
+                            vcertificado = "C:\VoceFazNfe\Certificados\" + tempresa("nome_certificado")
+                            vsenhacertificado = cs_senha_certificado.Text
+
+                            If System.IO.File.Exists(vcertificado) Then
+
+                                Dim oCert As X509Certificate = New X509Certificate2(vcertificado, vsenhacertificado)
+
+                                lbl_certificado.Text = oCert.Subject & Chr(13) & Chr(10) & "Válido até: " & oCert.GetExpirationDateString
+
+                            End If
+
+                        End If
+
+                    Catch ex As Exception
+
+                        lbl_certificado.Text = "Erro no certificado digital. Verifique se o arquivo foi carregado e se a senha esta correta."
+
+                    End Try
+
+                    '/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                End If
+
+
+                tempresa.Close()
                     verp.Close()
 
                 End If
 
         Catch ex As Exception
 
-            MsgBox(ex.Message)
+
 
         End Try
 
@@ -139,6 +188,8 @@
         Dim vcep As String
 
         Dim vflag_obrigatorio As Integer
+
+
 
 
 
@@ -246,6 +297,46 @@
             End If
 
 
+            If Not IsNumeric(Trim(cs_nota1.Text)) And Trim(cs_nota1.Text) <> "" Then
+                cs_nota1.BackColor = Drawing.Color.Red
+                vflag_obrigatorio = 1
+            Else
+                cs_nota1.BackColor = Drawing.Color.Transparent
+            End If
+
+
+            If Not IsNumeric(Trim(cs_nota2.Text)) And Trim(cs_nota2.Text) <> "" Then
+                cs_nota2.BackColor = Drawing.Color.Red
+                vflag_obrigatorio = 1
+            Else
+                cs_nota2.BackColor = Drawing.Color.Transparent
+            End If
+
+
+            If Not IsNumeric(Trim(cs_nota3.Text)) And Trim(cs_nota3.Text) <> "" Then
+                cs_nota3.BackColor = Drawing.Color.Red
+                vflag_obrigatorio = 1
+            Else
+                cs_nota3.BackColor = Drawing.Color.Transparent
+            End If
+
+
+            If Not IsNumeric(Trim(cs_nota4.Text)) And Trim(cs_nota4.Text) <> "" Then
+                cs_nota4.BackColor = Drawing.Color.Red
+                vflag_obrigatorio = 1
+            Else
+                cs_nota4.BackColor = Drawing.Color.Transparent
+            End If
+
+
+            If Not IsNumeric(Trim(cs_nota5.Text)) And Trim(cs_nota5.Text) <> "" Then
+                cs_nota5.BackColor = Drawing.Color.Red
+                vflag_obrigatorio = 1
+            Else
+                cs_nota5.BackColor = Drawing.Color.Transparent
+            End If
+
+
             '///////////////////////////// FIM Consistencias ////////////////////////////////////////////////////////////////////////////////////////
 
             If (vflag_obrigatorio = 1) Then
@@ -297,6 +388,37 @@
                 vselecao = vselecao & "nome_contato='" & cs_contato.Text & "',"
                 vselecao = vselecao & "email='" & cs_email.Text & "',"
 
+
+                '//////////////////////////////////////// Grava os dados do certificado Digital ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                If filecertificado.HasFile Then
+
+                    Dim vnomeArquivo As String = filecertificado.PostedFile.FileName
+                    Dim vauxarquivo As String
+
+                    vauxarquivo = Mid(vnomeArquivo, vnomeArquivo.Length - 3, 4)
+
+                    filecertificado.PostedFile.SaveAs(Server.MapPath("~/Certificados/" + vcnpj + vauxarquivo))
+
+                    vselecao = vselecao & "nome_certificado='" & vcnpj + vauxarquivo & "',"
+
+                End If
+
+                vselecao = vselecao & "ambiente='" & cmb_ambiente.SelectedValue & "',"
+
+                vselecao = vselecao & "serie_1='" & cs_serie1.Text & "',"
+                vselecao = vselecao & "serie_2='" & cs_serie2.Text & "',"
+                vselecao = vselecao & "serie_3='" & cs_serie3.Text & "',"
+                vselecao = vselecao & "serie_4='" & cs_serie4.Text & "',"
+                vselecao = vselecao & "serie_5='" & cs_serie5.Text & "',"
+
+                vselecao = vselecao & "nota_1='" & cs_nota1.Text & "',"
+                vselecao = vselecao & "nota_2='" & cs_nota2.Text & "',"
+                vselecao = vselecao & "nota_3='" & cs_nota3.Text & "',"
+                vselecao = vselecao & "nota_4='" & cs_nota4.Text & "',"
+                vselecao = vselecao & "nota_5='" & cs_nota5.Text & "',"
+
+                vselecao = vselecao & "senha_certificado='" & cs_senha_certificado.Text & "',"
+
                 vselecao = vselecao & "iest_ac_emitente='" & cs_iest_ac.Text & "',"
                 vselecao = vselecao & "iest_al_emitente='" & cs_iest_al.Text & "',"
                 vselecao = vselecao & "iest_ap_emitente='" & cs_iest_ap.Text & "',"
@@ -336,6 +458,7 @@
                 vcmdcomando_gravar.Connection = verp
                 vcmdcomando_gravar.ExecuteNonQuery()
 
+
                 pnl_gravar.Visible = True
                 pnl_obrigatório.Visible = False
 
@@ -343,7 +466,7 @@
 
             Else
 
-                'MsgBox("O CNPJ informado não possui uma licença válida. Entre em contato com o suporte para regularizar.", 64, My.Settings.vmensagem)
+                '////MsgBox("O CNPJ informado não possui uma licença válida. Entre em contato com o suporte para regularizar.", 64, My.Settings.vmensagem)
 
             End If
 
@@ -352,7 +475,7 @@
 
         Catch ex As Exception
 
-            'MsgBox(ex.Message)
+            '///MsgBox(ex.Message)
 
         End Try
 

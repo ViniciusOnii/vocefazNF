@@ -500,6 +500,132 @@ Partial Public Class empresa
     Protected WithEvents lblmsg As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''filecertificado control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents filecertificado As Global.System.Web.UI.WebControls.FileUpload
+
+    '''<summary>
+    '''cs_senha_certificado control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cs_senha_certificado As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''lbl_certificado control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lbl_certificado As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''cmb_ambiente control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cmb_ambiente As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''cs_serie1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cs_serie1 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''cs_nota1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cs_nota1 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''cs_serie2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cs_serie2 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''cs_nota2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cs_nota2 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''cs_serie3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cs_serie3 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''cs_nota3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cs_nota3 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''cs_serie4 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cs_serie4 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''cs_nota4 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cs_nota4 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''cs_serie5 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cs_serie5 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''cs_nota5 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents cs_nota5 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''Button1 control.
     '''</summary>
     '''<remarks>

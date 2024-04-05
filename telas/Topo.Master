@@ -45,6 +45,7 @@
 
 
 
+
 <body style="background-image:url('../Imagens/fundo.png')">
 
     <form id="form1" runat="server">
@@ -68,10 +69,84 @@
 
                </div>
 
+          </div>
+
+
+
+          <!-- ////////////////////////////////////////////////  Div responsável pela apresentação das informações de consulta /////////////////////////////////////////////////////////////////////////////////////////////////// //-->
+          <div class="estilo_desktop">
+           <div class="container-fluid" id="div_consulta" style="display:none;visibility:hidden;padding:0px;margin:0px;width:900px;height:100vh;background-color:#FF9D28;position:fixed;top:0px;left:70vw;z-index:999999999999;border:solid;border-width:0px;border-color:#16469D;">
+
+
+               <div class="row" style="width:100%;height:40px;padding:0px;margin:0px;">
+
+                    <div class="col" align="right" style="font-size:20px;width:100%;height:40px;background-color:transparent;background-size:cover;background-repeat:no-repeat" onclick="anima_consulta(0,'FECHAR')">
+                        <i class="fa fa-arrow-left" style="padding-top:10px;cursor:pointer"></i>
+                    </div>
+               
+                </div>
+
+
+               <div class="row invisible-scrollbar" id="div_dados_consulta" style="width:100%;height:80vh;padding:0px;margin:0px;background-color:#FF9D28;overflow-y:scroll;scrollbar-width: none">
+
+
+
+               </div>
+
                
 
        </div>
+          </div>
+    
+          <div class="estilo_tablet">
+           <div class="container-fluid" id="div_consulta_tablet" style="display:none;visibility:hidden;padding:0px;margin:0px;width:100%;height:100vh;background-color:#FF9D28;position:fixed;top:0px;left:70vw;z-index:999999999999;border:solid;border-width:0px;border-color:#16469D;">
 
+
+               <div class="row" style="width:100%;height:40px;padding:0px;margin:0px;">
+
+                    <div class="col" align="right" style="font-size:20px;width:100%;height:40px;background-color:transparent;background-size:cover;background-repeat:no-repeat" onclick="anima_consulta(0,'FECHAR')">
+                        <i class="fa fa-arrow-left" style="padding-top:10px;cursor:pointer"></i>
+                    </div>
+               
+                </div>
+
+
+               <div class="row invisible-scrollbar" id="div_dados_consulta_tablet" style="width:100%;height:80vh;padding:0px;margin:0px;background-color:#FF9D28;overflow-y:scroll;scrollbar-width: none">
+
+
+
+               </div>
+
+               
+
+       </div>
+          </div>
+    
+          <div class="estilo_mobile">
+           <div class="container-fluid" id="div_consulta_mobile" style="display:none;visibility:hidden;padding:0px;margin:0px;width:100%;height:100vh;background-color:#FF9D28;position:fixed;top:0px;left:70vw;z-index:999999999999;border:solid;border-width:0px;border-color:#16469D;">
+
+
+               <div class="row" style="width:100%;height:40px;padding:0px;margin:0px;">
+
+                    <div class="col" align="right" style="font-size:20px;width:100%;height:40px;background-color:transparent;background-size:cover;background-repeat:no-repeat" onclick="anima_consulta(0,'FECHAR')">
+                        <i class="fa fa-arrow-left" style="padding-top:10px;cursor:pointer"></i>
+                    </div>
+               
+                </div>
+
+
+               <div class="row invisible-scrollbar" id="div_dados_consulta_mobile" style="width:100%;height:80vh;padding:0px;margin:0px;background-color:#FF9D28;overflow-y:scroll;scrollbar-width: none">
+
+
+
+               </div>
+
+               
+
+       </div>
+          </div>
+    
+          <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 
             <div class="container-fluid fixed-top" style="padding:0px;margin:0px">

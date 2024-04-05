@@ -114,6 +114,8 @@
 
       </asp:Panel>
 
+
+      <!--/////////////////////////////////////////////////// Painel Obrigatório //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
       <asp:Panel ID="pnl_obrigatório" runat="server" BackColor="Transparent" Height="100%" Visible="False" style="background-color:transparent">
 
           <div class="row" style="width:100%;height:100px;background-color:transparent"></div>
@@ -124,7 +126,7 @@
 
               
                   <div class="row" style="font-family:Arial;font-size:20px;color:black">
-                      <div class="col" align="center" style="padding-top:10px">Você deixou de preencher campos obrigatórios.</div>
+                      <div class="col" align="center" style="padding-top:10px">Você deixou de preencher campos obrigatórios ou preencheu de forma errada.</div>
                   </div>
 
                   <div class="row" style="font-family:Arial;font-size:20px;color:black">
@@ -1488,31 +1490,231 @@
                 <div class="row" style="width:100%;height:100%;padding:0px;margin:0px;background-color:transparent">
 
 
-                <div class="row" style="width:100%;height:100%;color: #177CC0; padding-left: 20px; padding-top: 0px; font-family: Arial; font-size: 20px; font-weight: bold;margin-left:0px">
+                        <div class="row" style="width:100%;height:100%;color: #177CC0; padding-left: 20px; padding-top: 0px; font-family: Arial; font-size: 20px; font-weight: bold;margin-left:0px">
                     
-                    <div id="i_a1_on" name="i_a1_on" class="col" align="left" style="display:none;visibility:hidden; font-size:20px;color:red;margin-right:20px;border-bottom:none;cursor:pointer" onclick="mostra_div_informacao('div_a1','i_a1_on','i_a1_off',0)"><span style="color: #177CC0;font-family: Arial; font-size: 20px; font-weight: bold;">Certificado Digital A1</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i></div>
-                    <div id="i_a1_off" name="i_a1_off" class="col" align="left" style="display:block;visibility:visible; font-size:20px;color:red;margin-right:20px;border-bottom:solid;border-color:#767676;border-width:1px;cursor:pointer" onclick="mostra_div_informacao('div_a1','i_a1_on','i_a1_off',1)"><span style="color: #177CC0;font-family: Arial; font-size: 20px; font-weight: bold;">Certificado Digital A1</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i></div>
+                            <div id="i_a1_on" name="i_a1_on" class="col" align="left" style="display:none;visibility:hidden; font-size:20px;color:red;margin-right:20px;border-bottom:none;cursor:pointer" onclick="mostra_div_informacao('div_a1','i_a1_on','i_a1_off',0)"><span style="color: #177CC0;font-family: Arial; font-size: 20px; font-weight: bold;">Certificado Digital A1</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i>&nbsp;&nbsp; <img alt="" src="../Imagens/ihelp.png"  style="width: 20px; height: 21px; cursor:pointer" onclick="anima_informacao(1,'CertificadoDigital')" /></div>
+                            <div id="i_a1_off" name="i_a1_off" class="col" align="left" style="display:block;visibility:visible; font-size:20px;color:red;margin-right:20px;border-bottom:solid;border-color:#767676;border-width:1px;cursor:pointer" onclick="mostra_div_informacao('div_a1','i_a1_on','i_a1_off',1)"><span style="color: #177CC0;font-family: Arial; font-size: 20px; font-weight: bold;">Certificado Digital A1</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i> &nbsp;&nbsp; <img alt="" src="../Imagens/ihelp.png"  style="width: 20px; height: 21px; cursor:pointer" onclick="anima_informacao(1,'CertificadoDigital')" /></div>
                     
                     
-                </div>
+                        </div>
 
-                <div class="row" style="width:100%;height:20px"></div>
+                        <div class="row" style="width:100%;height:20px"></div>
 
 
-                <!--/////////////////////////////////////////////////// Logotipo da empresa /////////////////////////////////////////////////////////////////////////////////////////////-->
-                <div id="div_a1" name="div_a1" style="display:none;visibility:hidden;width:100%;height:100%;background-color:transparent;margin-left:20px;margin-right:20px;border:solid;border-color:#177CC0;border-width:1px;border-radius:10px;padding: 0px 20px 20px 20px;">
+                        <!--/////////////////////////////////////////////////// Logotipo da empresa //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                        <div id="div_a1" name="div_a1" style="display:none;visibility:hidden;width:100%;height:100%;background-color:transparent;margin-left:20px;margin-right:20px;border:solid;border-color:#177CC0;border-width:1px;border-radius:10px;padding: 0px 20px 20px 20px;">
 
                      
-                    <div class="row" style="width:100%;height: 30px"></div>
+                            <div class="row" style="width:100%;height: 30px"></div>
 
-                   
+                    
+                            <div class="row" style="width:100%;">
+
+
+                                <div class="col-xl-4" align="left">
+
+                                    <div class="row" style="width:100%;">
+                                        <div class="col" style="width:100%;font-family:Arial;font-size:20px;color:black">Selecione o arquivo do Certificado</div>
+                                    </div>
+
+                                    <div class="row" style="width:100%;padding-top:20px;padding-bottom:40px">
+                                         <div class="col" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                             <asp:FileUpload ID="filecertificado"  runat="server" Width="100%" style="color:red" />
+                                         </div>
+                                    </div>
+
+                            
+                                </div>
+
+
+                                <div class="col-xl-4" align="left">
+
+                                    <div class="row" style="width:100%;">
+                                        <div class="col" style="width:100%;font-family:Arial;font-size:20px;color:black">Informe a Senha do Certificado</div>
+                                    </div>
+
+                                    <div class="row" style="width:100%;padding-top:20px;padding-bottom:40px">
+                                         <div class="col" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                              <asp:TextBox ID="cs_senha_certificado" runat="server" CssClass="layouttexto" style="width: 100%;padding:0px;margin:0px" onBlur="SetTextIn(this,0);SetDiv('div_a1',0)"
+                                                onFocus="SetTextIn(this,1);SetDiv('div_a1',1)" ></asp:TextBox>
+                                         </div>
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="col-xl-4" align="left">
+
+
+                                    <asp:Label ID="lbl_certificado" runat="server" Text=""></asp:Label>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
                
-                 </div>
+                         </div>
           
-                   </div>
-  
-                </div>
 
+
+                </div>
+  
+          </div>
+
+
+           <!--/////////////////////////////////////////////////// Parametros Gerais de Nota Fiscal - Emissão   ////////////////////////////////////////////////////////////////////////////////////-->
+            <div class="container-fluid" style="padding:0px;margin:0px;width:100%;height:100%">
+
+                <div class="row" style="width:100%;height:50px"></div>
+
+                <div class="row" style="width:100%;height:100%;padding:0px;margin:0px;background-color:transparent">
+
+
+                        <div class="row" style="width:100%;height:100%;color: #177CC0; padding-left: 20px; padding-top: 0px; font-family: Arial; font-size: 20px; font-weight: bold;margin-left:0px">
+                    
+                            <div id="i_parametros_on" name="i_a1_on" class="col" align="left" style="display:none;visibility:hidden; font-size:20px;color:red;margin-right:20px;border-bottom:none;cursor:pointer" onclick="mostra_div_informacao('div_parametros','i_parametros_on','i_parametros_off',0)"><span style="color: #177CC0;font-family: Arial; font-size: 20px; font-weight: bold;">Parâmetros Gerais de Emissão</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i></div>
+                            <div id="i_parametros_off" name="i_a1_off" class="col" align="left" style="display:block;visibility:visible; font-size:20px;color:red;margin-right:20px;border-bottom:solid;border-color:#767676;border-width:1px;cursor:pointer" onclick="mostra_div_informacao('div_parametros','i_parametros_on','i_parametros_off',1)"><span style="color: #177CC0;font-family: Arial; font-size: 20px; font-weight: bold;">Parâmetros Gerais de Emissão</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i></div>
+                    
+                    
+                        </div>
+
+                        <div class="row" style="width:100%;height:20px"></div>
+
+
+                        <!--/////////////////////////////////////////////////// Logotipo da empresa //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                        <div id="div_parametros" name="div_parametros" style="display:none;visibility:hidden;width:100%;height:100%;background-color:transparent;margin-left:20px;margin-right:20px;border:solid;border-color:#177CC0;border-width:1px;border-radius:10px;padding: 0px 20px 20px 20px;">
+
+                     
+                            <div class="row" style="width:100%;height: 30px"></div>
+
+                    
+                            <div class="row" style="width:100%;">
+
+
+                                <div class="col-xl-4" align="left">
+
+                                    <div class="row" style="width:100%;">
+                                        <div class="col" style="width:100%;font-family:Arial;font-size:20px;color:black">Selecione o Ambiente de Emissão &nbsp &nbsp <img alt="" src="../Imagens/ihelp.png"  style="width: 20px; height: 21px; cursor:pointer" onclick="anima_informacao(1,'Ambiente')" /></div>
+                                    </div>
+
+                                    <div class="row" style="width:100%;padding-top:20px;padding-bottom:40px">
+                                         <div class="col" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                             <asp:DropDownList ID="cmb_ambiente" runat="server" CssClass="layouttexto" onBlur="SetDiv('div_parametros',0)"
+                                                onFocus="SetDiv('div_parametros',1)">
+                                                    <asp:ListItem style="width: 200px;" Text="Produção" Value="1" />
+                                                    <asp:ListItem style="width: 200px;" Text="Homologação" Value="2" />
+                                                    <asp:ListItem style="width: 200px;" Text="Contigência Amb Nac NA" Value="3" />
+                                                    <asp:ListItem style="width: 200px;" Text="Contigência Amb Nac RS" Value="4" />
+                                                </asp:DropDownList>
+                                         </div>
+                                    </div>
+
+                            
+                                </div>
+
+
+                                <div class="col-xl-4" align="left">
+
+                                    <div class="row" style="width:100%;">
+                                        <div class="col" style="width:100%;font-family:Arial;font-size:20px;color:black">Série e Sequência de Nota &nbsp &nbsp <img alt="" src="../Imagens/ihelp.png"  style="width: 20px; height: 21px; cursor:pointer" onclick="anima_informacao(1,'SerieNota')" /></div>
+                                    </div>
+
+                                    <div class="row" style="width:100%;padding-top:20px;padding-bottom:10px">
+
+                                         <div class="col-3" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                              <asp:TextBox ID="cs_serie1" runat="server" CssClass="layouttexto" MaxLength="3" style="width: 100%;padding:0px;margin:0px" onBlur="SetTextIn(this,0);SetDiv('div_a1',0)"
+                                                onFocus="SetTextIn(this,1);SetDiv('div_a1',1)" ></asp:TextBox>
+                                         </div>
+
+                                        <div class="col-9" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                              <asp:TextBox ID="cs_nota1" runat="server" CssClass="layouttexto" MaxLength="10" style="width: 100%;padding:0px;margin:0px" onBlur="SetTextIn(this,0);SetDiv('div_a1',0)"
+                                                onFocus="SetTextIn(this,1);SetDiv('div_a1',1)" ></asp:TextBox>
+                                         </div>
+
+
+                                    </div>
+
+                                    <div class="row" style="width:100%;padding-top:20px;padding-bottom:10px">
+
+                                                     <div class="col-3" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                                          <asp:TextBox ID="cs_serie2" runat="server" CssClass="layouttexto" MaxLength="3" style="width: 100%;padding:0px;margin:0px" onBlur="SetTextIn(this,0);SetDiv('div_a1',0)"
+                                                            onFocus="SetTextIn(this,1);SetDiv('div_a1',1)" ></asp:TextBox>
+                                                     </div>
+
+                                                    <div class="col-9" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                                          <asp:TextBox ID="cs_nota2" runat="server" CssClass="layouttexto" MaxLength="10" style="width: 100%;padding:0px;margin:0px" onBlur="SetTextIn(this,0);SetDiv('div_a1',0)"
+                                                            onFocus="SetTextIn(this,1);SetDiv('div_a1',1)" ></asp:TextBox>
+                                                     </div>
+
+
+                                                </div>
+
+                                    <div class="row" style="width:100%;padding-top:20px;padding-bottom:10px">
+
+                                                     <div class="col-3" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                                          <asp:TextBox ID="cs_serie3" runat="server" CssClass="layouttexto" MaxLength="3" style="width: 100%;padding:0px;margin:0px" onBlur="SetTextIn(this,0);SetDiv('div_a1',0)"
+                                                            onFocus="SetTextIn(this,1);SetDiv('div_a1',1)" ></asp:TextBox>
+                                                     </div>
+
+                                                    <div class="col-9" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                                          <asp:TextBox ID="cs_nota3" runat="server" CssClass="layouttexto" MaxLength="10" style="width: 100%;padding:0px;margin:0px" onBlur="SetTextIn(this,0);SetDiv('div_a1',0)"
+                                                            onFocus="SetTextIn(this,1);SetDiv('div_a1',1)" ></asp:TextBox>
+                                                     </div>
+
+
+                                                </div>
+
+                                    <div class="row" style="width:100%;padding-top:20px;padding-bottom:10px">
+
+                                                     <div class="col-3" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                                          <asp:TextBox ID="cs_serie4" runat="server" CssClass="layouttexto" MaxLength="3" style="width: 100%;padding:0px;margin:0px" onBlur="SetTextIn(this,0);SetDiv('div_a1',0)"
+                                                            onFocus="SetTextIn(this,1);SetDiv('div_a1',1)" ></asp:TextBox>
+                                                     </div>
+
+                                                    <div class="col-9" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                                          <asp:TextBox ID="cs_nota4" runat="server" CssClass="layouttexto" MaxLength="10" style="width: 100%;padding:0px;margin:0px" onBlur="SetTextIn(this,0);SetDiv('div_a1',0)"
+                                                            onFocus="SetTextIn(this,1);SetDiv('div_a1',1)" ></asp:TextBox>
+                                                     </div>
+
+
+                                                </div>
+
+                                    <div class="row" style="width:100%;padding-top:20px;padding-bottom:10px">
+
+                                                     <div class="col-3" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                                          <asp:TextBox ID="cs_serie5" runat="server" CssClass="layouttexto" MaxLength="3" style="width: 100%;padding:0px;margin:0px" onBlur="SetTextIn(this,0);SetDiv('div_a1',0)"
+                                                            onFocus="SetTextIn(this,1);SetDiv('div_a1',1)" ></asp:TextBox>
+                                                     </div>
+
+                                                    <div class="col-9" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                                          <asp:TextBox ID="cs_nota5" runat="server" CssClass="layouttexto" MaxLength="10" style="width: 100%;padding:0px;margin:0px" onBlur="SetTextIn(this,0);SetDiv('div_a1',0)"
+                                                            onFocus="SetTextIn(this,1);SetDiv('div_a1',1)" ></asp:TextBox>
+                                                     </div>
+
+
+                                                </div>
+
+                                </div>
+
+
+                                <div class="col-xl-4" align="left">
+
+
+                                </div>
+
+                            </div>
+
+                         </div>
+          
+                </div>
+  
+          </div>
 
       </div> 
 

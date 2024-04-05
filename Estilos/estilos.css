@@ -99,6 +99,7 @@
 	width: 550px; /* Largura padrão para a Razão Social */
 }
 
+
 /* Estilo para dispositivos de tela pequena, como smartphones */
 @media (max-width: 767px) {
 	.razaoSocial {
@@ -109,18 +110,6 @@
 .cs_pcertificado{
 	
 }
-
-.botao_cadastro {
-	padding: 10px 20px;
-	background-color: #007bff; /* Cor de fundo azul, ajuste conforme necessário */
-	color: white;
-	border: none;
-	border-radius: 20px; /* Define o raio da borda para criar um efeito arredondado */
-	cursor: pointer;
-	margin: 0 10px;
-}
-
-
 
 </style >    
     

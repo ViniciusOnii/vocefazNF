@@ -114,20 +114,26 @@
     <Content Include="Bootstrap\js\bootstrap.js" />
     <Content Include="Bootstrap\js\bootstrap.min.js" />
     <Content Include="Bootstrap\js\fontawesome.js" />
+    <Content Include="Consultas\adovbs.inc" />
+    <Content Include="Consultas\config.asp" />
+    <Content Include="Consultas\grupo.asp" />
     <Content Include="Estilos\estilos.css" />
     <Content Include="Funcoes\formatador.js" />
     <Content Include="Funcoes\global.js" />
     <Content Include="Global.asax" />
     <Content Include="Help\aliquotadecalculo.html" />
     <Content Include="Help\aliquotaissqn.html" />
+    <Content Include="Help\Ambiente.html" />
     <Content Include="Help\bandeiracartoes.html" />
     <Content Include="Help\basecalculoissqn.html" />
     <Content Include="Help\BCdaCIDE.html" />
     <Content Include="Help\bcoperacaopropria.html" />
     <Content Include="Help\bcufdestino.html" />
     <Content Include="Help\calculoicmsst.html" />
+    <Content Include="Help\CertificadoDigital.html" />
     <Content Include="Help\cfop.html" />
     <Content Include="Help\ChassiVeiculo.html" />
+    <Content Include="Help\ChaveAcessoNFE.html" />
     <Content Include="Help\chavenfeexportacao.html" />
     <Content Include="Help\CnaeFiscal.html" />
     <Content Include="Help\CodificacaoNVE.html" />
@@ -139,7 +145,6 @@
     <Content Include="Help\codigo900.html" />
     <Content Include="Help\CodigodoProdutoDaANP.html" />
     <Content Include="Help\CodigoIBGE.html" />
-    <Content Include="Help\ChaveAcessoNFE.html" />
     <Content Include="Help\codigomunicipio.html" />
     <Content Include="Help\CodigoNCM.html" />
     <Content Include="Help\CodigoProdutoeServico.html" />
@@ -155,6 +160,7 @@
     <Content Include="Help\extipi.html" />
     <Content Include="Help\finalidadedeemissao.html" />
     <Content Include="Help\formadepagamento.html" />
+    <Content Include="Help\grupo.html" />
     <Content Include="Help\Gtin.html" />
     <Content Include="Help\gtinproduto.html" />
     <Content Include="Help\ICMSdesonerado.html" />
@@ -192,6 +198,7 @@
     <Content Include="Help\reducaobc.html" />
     <Content Include="Help\reducaobcst.html" />
     <Content Include="Help\RegistroCODIF.html" />
+    <Content Include="Help\SerieNota.html" />
     <Content Include="Help\suframa.html" />
     <Content Include="Help\tipodeoperacao.html" />
     <Content Include="Help\tomadordoservico.html" />
@@ -202,14 +209,11 @@
     <Content Include="Help\ValordaAFRMM.html" />
     <Content Include="Help\valoripidevolvido.html" />
     <Content Include="Imagens\certificadoft.png" />
-    <Content Include="Imagens\coo.jpg" />
     <Content Include="Imagens\fundo.png" />
     <Content Include="Imagens\fundoazultopo.png" />
     <Content Include="Imagens\fundo_topo.png" />
     <Content Include="Imagens\fundo_topo_azul.jpg" />
     <Content Include="Imagens\ihelp.png" />
-    <Content Include="Imagens\logovocefaznfe.png" />
-    <Content Include="Imagens\nfe_icon.png" />
     <Content Include="Imagens\preloader.gif" />
     <Content Include="Imagens\topohelp.png" />
     <Content Include="Jquery\jquery_mask.js" />
@@ -217,12 +221,8 @@
     <Content Include="Logotipos\logoempresa.bmp" />
     <Content Include="telas\empresa.aspx" />
     <Content Include="telas\Grupo.aspx" />
-    <Content Include="telas\Login.html" />
     <Content Include="telas\nfmanual.aspx" />
-    <Content Include="telas\parametros.aspx" />
-    <Content Include="telas\subgrupo.aspx" />
     <Content Include="telas\teste.aspx" />
-    <Content Include="telas\unidademedidas.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -260,27 +260,13 @@
     </Compile>
     <Compile Include="telas\Grupo.aspx.vb">
       <DependentUpon>Grupo.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="telas\nfmanual.aspx.designer.vb">
       <DependentUpon>nfmanual.aspx</DependentUpon>
     </Compile>
     <Compile Include="telas\nfmanual.aspx.vb">
       <DependentUpon>nfmanual.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="telas\parametros.aspx.designer.vb">
-      <DependentUpon>parametros.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="telas\parametros.aspx.vb">
-      <DependentUpon>parametros.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="telas\subgrupo.aspx.designer.vb">
-      <DependentUpon>subgrupo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="telas\subgrupo.aspx.vb">
-      <DependentUpon>subgrupo.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="telas\teste.aspx.designer.vb">
@@ -293,13 +279,6 @@
     <Compile Include="telas\Topo.Master.vb">
       <DependentUpon>Topo.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="telas\unidademedidas.aspx.designer.vb">
-      <DependentUpon>unidademedidas.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="telas\unidademedidas.aspx.vb">
-      <DependentUpon>unidademedidas.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
