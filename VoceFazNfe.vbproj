@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -51,6 +52,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web.DynamicData" />
@@ -222,6 +226,7 @@
     <Content Include="telas\empresa.aspx" />
     <Content Include="telas\Grupo.aspx" />
     <Content Include="telas\nfmanual.aspx" />
+    <Content Include="telas\subgrupos.aspx" />
     <Content Include="telas\teste.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -267,6 +272,13 @@
     </Compile>
     <Compile Include="telas\nfmanual.aspx.vb">
       <DependentUpon>nfmanual.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="telas\subgrupos.aspx.designer.vb">
+      <DependentUpon>subgrupos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\subgrupos.aspx.vb">
+      <DependentUpon>subgrupos.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="telas\teste.aspx.designer.vb">
