@@ -25,7 +25,6 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,9 +51,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
-    <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web.DynamicData" />
@@ -121,6 +117,7 @@
     <Content Include="Consultas\adovbs.inc" />
     <Content Include="Consultas\config.asp" />
     <Content Include="Consultas\grupo.asp" />
+    <Content Include="Consultas\subgrupo.asp" />
     <Content Include="Estilos\estilos.css" />
     <Content Include="Funcoes\formatador.js" />
     <Content Include="Funcoes\global.js" />
@@ -226,7 +223,7 @@
     <Content Include="telas\empresa.aspx" />
     <Content Include="telas\Grupo.aspx" />
     <Content Include="telas\nfmanual.aspx" />
-    <Content Include="telas\subgrupos.aspx" />
+    <Content Include="telas\subgrupo.aspx" />
     <Content Include="telas\teste.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -274,11 +271,11 @@
       <DependentUpon>nfmanual.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="telas\subgrupos.aspx.designer.vb">
-      <DependentUpon>subgrupos.aspx</DependentUpon>
+    <Compile Include="telas\subgrupo.aspx.designer.vb">
+      <DependentUpon>subgrupo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="telas\subgrupos.aspx.vb">
-      <DependentUpon>subgrupos.aspx</DependentUpon>
+    <Compile Include="telas\subgrupo.aspx.vb">
+      <DependentUpon>subgrupo.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="telas\teste.aspx.designer.vb">

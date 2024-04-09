@@ -16,7 +16,7 @@
 		 tgrupo.CursorType = adOpenDynamic
 		 tgrupo.LockType = adLockOptimistic
 
-         tgrupo.open "SELECT * FROM grupo ORDER BY grupo_codigo" ,erpDB
+         tgrupo.open "SELECT * FROM subgrupo ORDER BY subgrupo_codigo" ,erpDB
 
 
          if Not tgrupo.eof then vflag_dados=1
@@ -33,7 +33,7 @@
 
                      <!-- Cabeçalho com a descrição das colunas da consulta -->
                      <div class="row" style="width:100%;height:30px;background-color:black;color:white;margin:0px;padding:0px;font-family:Arial">
-                         <div class="col-2" style="font-size:18px">Grupo</div>
+                         <div class="col-2" style="font-size:18px">Sub-Grupo</div>
                          <div class="col-10" style="font-size:18px">Descrição</div>
                      </div>
 
@@ -50,9 +50,9 @@
          
                      <div id="linha_<%=vlinha %>" class="row" style="width:100%;height:30px;background-color:transparent;color:black;margin:0px;padding:0px;font-family:Arial;cursor:pointer" onmouseover="altera_fundo_linha(this,1)" onmouseout="altera_fundo_linha(this,0)">
 
-                         <div class="col-2" style="font-size:18px;cursor:pointer" ondblclick="resposta_consulta('<%=tgrupo("grupo_codigo") %>')"><%=tgrupo("grupo_codigo") %></div>
+                         <div class="col-2" style="font-size:18px;cursor:pointer" ondblclick="resposta_consulta('<%=tgrupo("subgrupo_codigo") %>')"><%=tgrupo("subgrupo_codigo") %></div>
 
-                         <div class="col-10" style="font-size:18px;cursor:pointer" ondblclick="resposta_consulta('<%=tgrupo("grupo_codigo") %>')"><%=tgrupo("grupo_descricao") %></div>
+                         <div class="col-10" style="font-size:18px;cursor:pointer" ondblclick="resposta_consulta('<%=tgrupo("subgrupo_codigo") %>')"><%=tgrupo("subgrupo_descricao") %></div>
 
                      </div>
 
@@ -76,7 +76,7 @@
 
                      <!-- Cabeçalho com a descrição das colunas da consulta -->
                      <div class="row" style="width:100%;height:30px;background-color:black;color:white;margin:0px;padding:0px;font-family:Arial">
-                         <div class="col-2" style="font-size:18px">Grupo</div>
+                         <div class="col-2" style="font-size:18px">Sub-Grupo</div>
                          <div class="col-10" style="font-size:18px">Descrição</div>
                      </div>
 
@@ -93,9 +93,9 @@
          
                      <div id="linha_<%=vlinha %>_tablet" class="row" style="width:100%;height:30px;background-color:transparent;color:black;margin:0px;padding:0px;font-family:Arial;cursor:pointer" onmouseover="altera_fundo_linha(this,1)" onmouseout="altera_fundo_linha(this,0)">
 
-                         <div class="col-2" style="font-size:18px;cursor:pointer" ondblclick="resposta_consulta('<%=tgrupo("grupo_codigo") %>')"><%=tgrupo("grupo_codigo") %></div>
+                         <div class="col-2" style="font-size:18px;cursor:pointer" ondblclick="resposta_consulta('<%=tgrupo("subgrupo_codigo") %>')"><%=tgrupo("subgrupo_codigo") %></div>
 
-                         <div class="col-10" style="font-size:18px;cursor:pointer" ondblclick="resposta_consulta('<%=tgrupo("grupo_codigo") %>')"><%=tgrupo("grupo_descricao") %></div>
+                         <div class="col-10" style="font-size:18px;cursor:pointer" ondblclick="resposta_consulta('<%=tgrupo("subgrupo_codigo") %>')"><%=tgrupo("subgrupo_descricao") %></div>
 
                      </div>
 
@@ -120,7 +120,7 @@
 
                      <!-- Cabeçalho com a descrição das colunas da consulta -->
                      <div class="row" style="width:100%;height:30px;background-color:black;color:white;margin:0px;padding:0px;font-family:Arial">
-                         <div class="col-2" style="font-size:14px">Grupo</div>
+                         <div class="col-2" style="font-size:14px">Sub-Grupo</div>
                          <div class="col-10" style="font-size:14px">Descrição</div>
                      </div>
 
@@ -137,9 +137,9 @@
          
                      <div id="linha_<%=vlinha %>_mobile" class="row" style="width:100%;height:30px;background-color:transparent;color:black;margin:0px;padding:0px;font-family:Arial;cursor:pointer" onmouseover="altera_fundo_linha(this,1)" onmouseout="altera_fundo_linha(this,0)">
 
-                         <div class="col-2" style="font-size:14px;cursor:pointer" ondblclick="resposta_consulta('<%=tgrupo("grupo_codigo") %>')"><%=tgrupo("grupo_codigo") %></div>
+                         <div class="col-2" style="font-size:14px;cursor:pointer" ondblclick="resposta_consulta('<%=tgrupo("subgrupo_codigo") %>')"><%=tgrupo("subgrupo_codigo") %></div>
 
-                         <div class="col-10" style="font-size:14px;cursor:pointer" ondblclick="resposta_consulta('<%=tgrupo("grupo_codigo") %>')"><%=tgrupo("grupo_descricao") %></div>
+                         <div class="col-10" style="font-size:14px;cursor:pointer" ondblclick="resposta_consulta('<%=tgrupo("subgrupo_codigo") %>')"><%=tgrupo("subgrupo_descricao") %></div>
 
                      </div>
 

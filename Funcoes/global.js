@@ -161,7 +161,7 @@
         var vdiv = document.getElementById("div_informacao");
         var vdiv_dados = document.getElementById("div_dados_informacao");
 
-        ///////// Habilita o menu //////////////////////////////////////
+        ///////// Habilita o menu /////////////////////////////////////////////////////////////////////////////////////////////
         if (vmodo == 1) {
 
             vdiv.style.width = "0px";
@@ -227,3 +227,320 @@
     }
 
 
+    function anima_consulta(vmodo, vchave) {
+
+    var vdiv = document.getElementById("div_consulta");
+    var vdiv_dados = document.getElementById("div_dados_consulta");
+
+    var vdiv_tablet = document.getElementById("div_consulta_tablet");
+    var vdiv_dados_tablet = document.getElementById("div_dados_consulta_tablet");
+
+
+    var vdiv_mobile = document.getElementById("div_consulta_mobile");
+    var vdiv_dados_mobile = document.getElementById("div_dados_consulta_mobile");
+
+
+    
+
+
+    ///////// Habilita o menu /////////////////////////////////////////////////////////////////////////////////////////////
+    if (vmodo == 1) {
+
+        vdiv.style.width = "0px";
+        vdiv.style.height = "100vh"
+        vdiv.style.visibility = "visible";
+        vdiv.style.display = "block";
+
+        vdiv.style.top = "0px";
+        vdiv.style.left = "0px";
+
+
+        vdiv_tablet.style.width = "0%";
+        vdiv_tablet.style.height = "100vh"
+        vdiv_tablet.style.visibility = "visible";
+        vdiv_tablet.style.display = "block";
+
+        vdiv_tablet.style.top = "0px";
+        vdiv_tablet.style.left = "0px";
+
+
+        vdiv_mobile.style.width = "0%";
+        vdiv_mobile.style.height = "100vh"
+        vdiv_mobile.style.visibility = "visible";
+        vdiv_mobile.style.display = "block";
+
+        vdiv_mobile.style.top = "0px";
+        vdiv_mobile.style.left = "0px";
+
+
+
+        if (window.XMLHttpRequest) {    // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {// code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        xmlhttp.onreadystatechange = function () {
+
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+
+                const vretorno = xmlhttp.responseText;
+
+                vdiv_dados.innerHTML = vretorno
+                vdiv_dados_tablet.innerHTML = vretorno
+                vdiv_dados_mobile.innerHTML = vretorno
+
+            }
+            else {
+
+            }
+
+        }
+
+
+        xmlhttp.open("GET", "../Consultas/grupo.asp", true);
+        xmlhttp.send();
+
+        $("#div_consulta").animate({ width: '800px' }, {
+            duration: 100, easing: "linear", done: function () {
+
+            }
+        });
+
+
+        $("#div_consulta_tablet").animate({ width: '100%' }, {
+            duration: 100, easing: "linear", done: function () {
+
+            }
+        });
+
+
+
+        $("#div_consulta_mobile").animate({ width: '100%' }, {
+            duration: 100, easing: "linear", done: function () {
+
+            }
+        });
+
+
+
+    }
+
+
+    ///////// Desabilita o menu //////////////////////////////////////
+    if (vmodo == 0) {
+
+        vdiv.style.width = "800px";
+        vdiv_tablet.style.width = "100%";
+        vdiv_mobile.style.width = "100%";
+
+        $("#div_consulta").animate({ width: '0px' }, {
+            duration: 100, easing: "linear", done: function () {
+
+                vdiv.style.visible = "hidden";
+                vdiv.style.display = "none";
+            }
+        });
+
+
+        $("#div_consulta_tablet").animate({ width: '0%' }, {
+            duration: 100, easing: "linear", done: function () {
+
+                vdiv_tablet.style.visible = "hidden";
+                vdiv_tablet.style.display = "none";
+            }
+        });
+
+
+        $("#div_consulta_mobile").animate({ width: '0%' }, {
+            duration: 100, easing: "linear", done: function () {
+
+                vdiv_mobile.style.visible = "hidden";
+                vdiv_mobile.style.display = "none";
+            }
+        });
+
+
+    }
+
+}
+
+    function altera_fundo_linha(vcontrole, vmodo) {
+
+        if (vmodo == 1) {
+
+            vcontrole.style.backgroundColor = "#767676";
+        }
+
+
+
+        if (vmodo == 0) {
+
+
+            vcontrole.style.backgroundColor = "transparent";
+
+        }
+
+
+    }
+
+    /////////////////////subgrupo//////////////////
+
+function anima_consulta_sub(vmodo, vchave) {
+
+    var vdiv = document.getElementById("div_consulta");
+    var vdiv_dados = document.getElementById("div_dados_consulta");
+
+    var vdiv_tablet = document.getElementById("div_consulta_tablet");
+    var vdiv_dados_tablet = document.getElementById("div_dados_consulta_tablet");
+
+
+    var vdiv_mobile = document.getElementById("div_consulta_mobile");
+    var vdiv_dados_mobile = document.getElementById("div_dados_consulta_mobile");
+
+
+
+
+
+    ///////// Habilita o menu /////////////////////////////////////////////////////////////////////////////////////////////
+    if (vmodo == 1) {
+
+        vdiv.style.width = "0px";
+        vdiv.style.height = "100vh"
+        vdiv.style.visibility = "visible";
+        vdiv.style.display = "block";
+
+        vdiv.style.top = "0px";
+        vdiv.style.left = "0px";
+
+
+        vdiv_tablet.style.width = "0%";
+        vdiv_tablet.style.height = "100vh"
+        vdiv_tablet.style.visibility = "visible";
+        vdiv_tablet.style.display = "block";
+
+        vdiv_tablet.style.top = "0px";
+        vdiv_tablet.style.left = "0px";
+
+
+        vdiv_mobile.style.width = "0%";
+        vdiv_mobile.style.height = "100vh"
+        vdiv_mobile.style.visibility = "visible";
+        vdiv_mobile.style.display = "block";
+
+        vdiv_mobile.style.top = "0px";
+        vdiv_mobile.style.left = "0px";
+
+
+
+        if (window.XMLHttpRequest) {    // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {// code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        xmlhttp.onreadystatechange = function () {
+
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+
+                const vretorno = xmlhttp.responseText;
+
+                vdiv_dados.innerHTML = vretorno
+                vdiv_dados_tablet.innerHTML = vretorno
+                vdiv_dados_mobile.innerHTML = vretorno
+
+            }
+            else {
+
+            }
+
+        }
+
+
+        xmlhttp.open("GET", "../Consultas/subgrupo.asp", true);
+        xmlhttp.send();
+
+        $("#div_consulta").animate({ width: '800px' }, {
+            duration: 100, easing: "linear", done: function () {
+
+            }
+        });
+
+
+        $("#div_consulta_tablet").animate({ width: '100%' }, {
+            duration: 100, easing: "linear", done: function () {
+
+            }
+        });
+
+
+
+        $("#div_consulta_mobile").animate({ width: '100%' }, {
+            duration: 100, easing: "linear", done: function () {
+
+            }
+        });
+
+
+
+    }
+
+
+    ///////// Desabilita o menu //////////////////////////////////////
+    if (vmodo == 0) {
+
+        vdiv.style.width = "800px";
+        vdiv_tablet.style.width = "100%";
+        vdiv_mobile.style.width = "100%";
+
+        $("#div_consulta").animate({ width: '0px' }, {
+            duration: 100, easing: "linear", done: function () {
+
+                vdiv.style.visible = "hidden";
+                vdiv.style.display = "none";
+            }
+        });
+
+
+        $("#div_consulta_tablet").animate({ width: '0%' }, {
+            duration: 100, easing: "linear", done: function () {
+
+                vdiv_tablet.style.visible = "hidden";
+                vdiv_tablet.style.display = "none";
+            }
+        });
+
+
+        $("#div_consulta_mobile").animate({ width: '0%' }, {
+            duration: 100, easing: "linear", done: function () {
+
+                vdiv_mobile.style.visible = "hidden";
+                vdiv_mobile.style.display = "none";
+            }
+        });
+
+
+    }
+
+}
+
+function altera_fundo_linha(vcontrole, vmodo) {
+
+    if (vmodo == 1) {
+
+        vcontrole.style.backgroundColor = "#767676";
+    }
+
+
+
+    if (vmodo == 0) {
+
+
+        vcontrole.style.backgroundColor = "transparent";
+
+    }
+
+
+}

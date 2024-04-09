@@ -14,38 +14,92 @@ Option Explicit On
 Partial Public Class subgrupo
 
     '''<summary>
-    '''Controle cs_codigo_sub.
+    '''Controle pnl_gravar.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_codigo_sub As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents pnl_gravar As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
-    '''Controle cs_descricao_sub.
+    '''Controle cmd_ok_gravar.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_descricao_sub As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cmd_ok_gravar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Controle cmd_gravar_sub.
+    '''Controle pnl_obrigatorio.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cmd_gravar_sub As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents pnl_obrigatorio As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
-    '''Controle cmd_deletar_sub.
+    '''Controle cmd_voltar_obrigatorio.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cmd_deletar_sub As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents cmd_voltar_obrigatorio As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Controle pnl_principal.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents pnl_principal As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''Controle cs_codigo.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_codigo As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_descricao.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_descricao As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cmd_gravar.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cmd_gravar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Controle cmd_deletar.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cmd_deletar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Controle cmd_limpar.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cmd_limpar As Global.System.Web.UI.WebControls.Button
 End Class

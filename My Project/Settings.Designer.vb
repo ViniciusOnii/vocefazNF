@@ -66,8 +66,8 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=191.252.156.66;Initial Catalog=ERP;Persist Security Info=True;User ID"& _ 
-            "=BLCA;Password=g654840562")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=LOCALHOST;Initial Catalog=ERP;Persist Security Info=True;User ID=ERPV"& _ 
+            "OCEFAZNFE;Password=E@654#1")>  _
         Public ReadOnly Property vconexaobase() As String
             Get
                 Return CType(Me("vconexaobase"),String)
