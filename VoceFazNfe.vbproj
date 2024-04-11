@@ -200,6 +200,7 @@
     <Content Include="Help\reducaobcst.html" />
     <Content Include="Help\RegistroCODIF.html" />
     <Content Include="Help\SerieNota.html" />
+    <Content Include="Help\subgrupo.html" />
     <Content Include="Help\suframa.html" />
     <Content Include="Help\tipodeoperacao.html" />
     <Content Include="Help\tomadordoservico.html" />
@@ -215,6 +216,7 @@
     <Content Include="Imagens\fundo_topo.png" />
     <Content Include="Imagens\fundo_topo_azul.jpg" />
     <Content Include="Imagens\ihelp.png" />
+    <Content Include="Imagens\logocsv.jpg" />
     <Content Include="Imagens\preloader.gif" />
     <Content Include="Imagens\topohelp.png" />
     <Content Include="Jquery\jquery_mask.js" />

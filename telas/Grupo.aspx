@@ -52,34 +52,6 @@
       <div class="row" style="width:100%;height:200px"></div>
 
 
-      <!--/////////////////////////////////////////////////// Painel de Mensagem //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-      <asp:Panel ID="pnl_gravar" runat="server" BackColor="Transparent" Height="100%" Visible="False" style="background-color:transparent">
-
-          <div class="row" style="width:100%;height:100px;background-color:transparent"></div>
-
-          <div class="row" style="width:90%;height:80vh;background-color:transparent;margin-left:20px">
-
-              <div style="width:80%;height:200px;margin:auto;background-color:transparent;border:solid;border-width:1px;border-color:black;border-radius:10px">
-
-                  <div class="row" style="font-family:Arial;font-size:20px;color:black">
-                      <div class="col" align="center" style="padding-top:40px">Dados da Empresa gravados com sucesso.</div>
-                  </div>
-
-                  <div class="row" style="padding-top:40px">
-                      <div class="col" align="center">
-                         <asp:Button ID="cmd_ok_gravar" runat="server" Text="Ok" style="cursor:pointer;border-radius:10px;border:solid;border-width:1px" 
-                          BackColor="#17479E" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" Height="43px" Width="230px" UseSubmitBehavior="False" />
-                      </div>
-                  </div>
-
-
-              </div>
-
-          </div>
-
-      </asp:Panel>
-
-
       <!--/////////////////////////////////////////////////// Painel Obrigatório //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
       <asp:Panel ID="pnl_obrigatorio" runat="server" BackColor="Transparent" Height="100%" Visible="False" style="background-color:transparent">
 
@@ -170,12 +142,23 @@
             </div>
     
 
-
-
         </div>
 
 
-        <div class="row" style="width:100%;height:50px"></div>
+         <div class="row" style="width:100%;height:50px"></div>
+
+
+         <div class="row" style="width:100%;height:50px">
+
+             <div class="col" align="lef" style="padding-left:30px">
+
+                 <asp:ImageButton ID="cmd_csv_exporta" runat="server" Height="50px" ImageUrl="~/Imagens/logocsv.png" Width="50px" style="cursor:pointer" />
+
+             </div>
+
+
+         </div>
+
 
 
         <!--/////////////////////////////////////////////////// Botão Gravar //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
@@ -234,6 +217,23 @@
 
           </div>
 
+
+        <div class="row" style="width:100%;height:30px"></div>
+        
+        <!--/////////////////////////////////////////////////// Botão Imprimir //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////--> 
+        <div class="row" style="width:100%;height:100%">
+
+              <div class="col" align="center">
+
+                  <div id="botao_imprimir" style="width:300px;height:100%;cursor:pointer;display:block;visibility:visible">
+
+                      <asp:Button ID="cmd_imprimir" runat="server" style="cursor:pointer;border-radius:10px;border:solid;border-width:1px" Text="Imprimir" 
+                          BackColor="#17479E" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" Height="43px" Width="230px"  UseSubmitBehavior="False" OnClientClick ="window.open('../relatorios/relgrupo.asp', '_blank')" />
+                  </div>
+
+              </div>
+
+          </div>
 
 
     </asp:Panel>

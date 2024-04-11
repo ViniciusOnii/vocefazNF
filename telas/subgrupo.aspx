@@ -33,8 +33,8 @@
 
     function resposta_consulta(vresposta) {
 
-        var vcontrole = document.getElementById('<%=cs_codigo.ClientId%>');
-            var vdescricao = document.getElementById('<%=cs_descricao.ClientId%>');
+        var vcontrole = document.getElementById('<%=cs_codigo_sub_grupo.ClientId%>');
+            var vdescricao = document.getElementById('<%=cs_descricao_sub_grupo.ClientId%>');
 
         vcontrole.value = vresposta;
         vdescricao.value = "";
@@ -133,13 +133,13 @@
                             <div class="row"  style="width: 100%; height: 20px"></div>
 
                             <div class="row">
-                                <div class="col" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold"> Sigla do Grupo &nbsp &nbsp <img alt="" src="../Imagens/ihelp.png"  style="width: 20px; height: 21px; cursor:pointer" onclick="anima_informacao(1,'grupo')" /> </div>
+                                <div class="col" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold"> Sigla do Sub-Grupo &nbsp &nbsp <img alt="" src="../Imagens/ihelp.png"  style="width: 20px; height: 21px; cursor:pointer" onclick="anima_informacao(1,'subgrupo')" /> </div>
                             </div>
 
                             <div class="row" style="padding:0px;margin:0px">
                                 <div class="col" style="padding:0px;margin:0px">
-                                    <i class="fa fa-filter" style="color:orange;cursor:pointer;" onclick="anima_consulta_sub(1,'subgrupo')"></i> &nbsp
-                                    <asp:TextBox ID="cs_codigo" runat="server" CssClass="layouttexto" style="width: 100px;padding:0px;margin:0px" onBlur="SetTextIn(this,0);SetDiv('subgrupo_produtos',0)" onFocus="SetTextIn(this,1);SetDiv('subgrupo_produtos',1)" MaxLength="3" AutoPostBack="True" ></asp:TextBox>
+                                    <i class="fa fa-filter" style="color:orange;cursor:pointer;" onclick="anima_consulta(1,'subgrupo')"></i> &nbsp
+                                    <asp:TextBox ID="cs_codigo_sub_grupo" runat="server" CssClass="layouttexto" style="width: 100px;padding:0px;margin:0px" onBlur="SetTextIn(this,0);SetDiv('subgrupo_produtos',0)" onFocus="SetTextIn(this,1);SetDiv('subgrupo_produtos',1)" MaxLength="3" AutoPostBack="True" ></asp:TextBox>
                                 </div>
                             </div>
 
@@ -161,7 +161,7 @@
 
                             <div class="row" style="padding:0px;margin:0px">
                                 <div class="col" style="padding:0px;margin:0px">
-                                    <asp:TextBox ID="cs_descricao" runat="server" CssClass="layouttexto" style="width: 93%;" onBlur="SetTextIn(this,0);SetDiv('subgrupo_produtos',0)" onFocus="SetTextIn(this,1);SetDiv('subgrupo_produtos',1)" MaxLength="50" ></asp:TextBox>
+                                    <asp:TextBox ID="cs_descricao_sub_grupo" runat="server" CssClass="layouttexto" style="width: 93%;" onBlur="SetTextIn(this,0);SetDiv('subgrupo_produtos',0)" onFocus="SetTextIn(this,1);SetDiv('subgrupo_produtos',1)" MaxLength="50" ></asp:TextBox>
                                 </div>
                             </div>
 
@@ -173,9 +173,21 @@
 
 
         </div>
+          <!--/////////////////////////////////////////////////// logo SCV //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+          <div class="row" style="width: 100%; height: 50px"></div>
 
 
-        <div class="row" style="width:100%;height:50px"></div>
+          <div class="row" style="width: 100%; height: 50px">
+
+              <div class="col" align="lef" style="padding-left: 30px">
+
+                  <asp:ImageButton ID="cmd_csv_exporta" runat="server" Height="50px" ImageUrl="~/Imagens/logocsv.png" Width="50px" Style="cursor: pointer" />
+
+              </div>
+
+
+          </div>
 
 
         <!--/////////////////////////////////////////////////// Botão Gravar //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
@@ -235,8 +247,24 @@
           </div>
 
 
+          <div class="row" style="width:100%;height:30px"></div>
+          <!--/////////////////////////////////////////////////// Botão Imprimir //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+          <div class="row" style="width: 100%; height: 100%">
 
-    </asp:Panel>
+              <div class="col" align="center">
+
+                  <div id="botao_imprimir" style="width: 300px; height: 100%; cursor: pointer; display: block; visibility: visible">
+
+                      <asp:Button ID="cmd_imprimir" runat="server" Style="cursor: pointer; border-radius: 10px; border: solid; border-width: 1px" Text="Imprimir"
+                          BackColor="#17479E" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" Height="43px" Width="230px" UseSubmitBehavior="False"  />
+                  </div>
+
+              </div>
+
+          </div>
+
+
+      </asp:Panel>
 
 
 

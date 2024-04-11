@@ -1,4 +1,5 @@
-﻿Public Class subgrupo
+﻿
+Public Class Grupo
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -9,66 +10,66 @@
         Dim verp As New Data.SqlClient.SqlConnection
         Dim vcmdcomando As New Data.SqlClient.SqlCommand
         Dim vcmdcomando_gravar As New Data.SqlClient.SqlCommand
-        Dim tsubgrupo As Data.SqlClient.SqlDataReader
+        Dim tgrupo As Data.SqlClient.SqlDataReader
 
         '///////////////Variáveis///////////////////'
         Dim vselecao As String
-        Dim vcodigo_subgrupo As String
-        Dim vdescricao_subgrupo As String
+        Dim vcodigo_grupo As String
+        Dim vdescricao_grupo As String
         Dim vflag_obrigatorio As Integer
 
         Try
             vselecao = ""
             vflag_obrigatorio = 0
 
-            vcodigo_subgrupo = Trim(cs_codigo_sub_grupo.Text)
-            vdescricao_subgrupo = Trim(cs_descricao_sub_grupo.Text)
+            vcodigo_grupo = Trim(cs_codigo.Text)
+            vdescricao_grupo = Trim(cs_descricao.Text)
 
 
             '///////////////////////////// Consistências ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            If Trim(vcodigo_subgrupo) = "" Then
-                cs_codigo_sub_grupo.BackColor = Drawing.Color.Red
+            If Trim(vcodigo_grupo) = "" Then
+                cs_codigo.BackColor = Drawing.Color.Red
                 vflag_obrigatorio = 1
             Else
-                cs_codigo_sub_grupo.BackColor = Drawing.Color.Transparent
+                cs_codigo.BackColor = Drawing.Color.Transparent
             End If
 
-            If Trim(vdescricao_subgrupo) = "" Then
-                cs_descricao_sub_grupo.BackColor = Drawing.Color.Red
+            If Trim(vdescricao_grupo) = "" Then
+                cs_descricao.BackColor = Drawing.Color.Red
                 vflag_obrigatorio = 1
             Else
-                cs_descricao_sub_grupo.BackColor = Drawing.Color.Transparent
+                cs_descricao.BackColor = Drawing.Color.Transparent
             End If
 
 
             If (vflag_obrigatorio = 1) Then
 
                 pnl_principal.Visible = False
-                pnl_obrigatorio.Visible = True
+                pnl_obrigatorio.visible = True
                 Exit Sub
 
             End If
 
 
-
+            ' ///////////////////////////// Refresh auto ////////////////////////////////////////////////////////////////////////////////////////
             '////// abre o banco de dados ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             verp.ConnectionString = My.Settings.vconexaobase
             verp.Open()
 
-            vselecao = "SELECT * FROM subgrupo WHERE subgrupo_codigo='" & Trim(vcodigo_subgrupo) & "'"
+            vselecao = "SELECT * FROM grupo WHERE grupo_codigo='" & Trim(vcodigo_grupo) & "'"
 
             vcmdcomando.CommandText = vselecao
             vcmdcomando.CommandType = CommandType.Text
             vcmdcomando.CommandTimeout = 0
             vcmdcomando.Connection = verp
 
-            tsubgrupo = vcmdcomando.ExecuteReader
+            tgrupo = vcmdcomando.ExecuteReader
 
-            If tsubgrupo.Read() Then
-                vselecao = "UPDATE subgrupo SET "
-                vselecao = vselecao & "subgrupo_descricao='" & Trim(vdescricao_subgrupo) & "' "
-                vselecao = vselecao & "WHERE subgrupo_codigo='" & Trim(vcodigo_subgrupo) & "'"
-                tsubgrupo.Close()
+            If tgrupo.Read() Then
+                vselecao = "UPDATE grupo SET "
+                vselecao = vselecao & "grupo_descricao='" & Trim(vdescricao_grupo) & "' "
+                vselecao = vselecao & "WHERE grupo_codigo='" & Trim(vcodigo_grupo) & "'"
+                tgrupo.Close()
 
                 vcmdcomando_gravar.CommandText = vselecao
                 vcmdcomando_gravar.CommandType = CommandType.Text
@@ -76,13 +77,13 @@
                 vcmdcomando_gravar.Connection = verp
                 vcmdcomando_gravar.ExecuteNonQuery()
             Else
-                vselecao = "INSERT INTO subgrupo("
-                vselecao = vselecao & "subgrupo_codigo,"
-                vselecao = vselecao & "subgrupo_descricao)"
+                vselecao = "INSERT INTO grupo("
+                vselecao = vselecao & "grupo_codigo,"
+                vselecao = vselecao & "grupo_descricao)"
                 vselecao = vselecao & "VALUES("
-                vselecao = vselecao & "'" & vcodigo_subgrupo & "',"
-                vselecao = vselecao & "'" & vdescricao_subgrupo & "')"
-                tsubgrupo.Close()
+                vselecao = vselecao & "'" & vcodigo_grupo & "',"
+                vselecao = vselecao & "'" & vdescricao_grupo & "')"
+                tgrupo.Close()
 
                 vcmdcomando_gravar.CommandText = vselecao
                 vcmdcomando_gravar.CommandType = CommandType.Text
@@ -96,9 +97,9 @@
 
             cmd_gravar.Visible = False
             cmd_deletar.Visible = False
-            cs_codigo_sub_grupo.Text = ""
-            cs_descricao_sub_grupo.Text = ""
-            cs_codigo_sub_grupo.Focus()
+            cs_codigo.Text = ""
+            cs_descricao.Text = ""
+            cs_codigo.Focus()
 
 
 
@@ -114,27 +115,27 @@
         Dim verp As New Data.SqlClient.SqlConnection
         Dim vcmdcomando As New Data.SqlClient.SqlCommand
         Dim vcmdcomando_deletar As New Data.SqlClient.SqlCommand
-        Dim tsubgrupo As Data.SqlClient.SqlDataReader
+        Dim tgrupo As Data.SqlClient.SqlDataReader
 
 
         Dim vselecao As String
 
         Dim vflag_obrigatorio As Integer
-        Dim vcodigo_subgrupo As String
+        Dim vcodigo_grupo As String
 
 
         Try
 
             vflag_obrigatorio = 0
-            vcodigo_subgrupo = Trim(cs_codigo_sub_grupo.Text)
+            vcodigo_grupo = Trim(cs_codigo.Text)
 
 
             '///////////////////////////// Consistências ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            If Trim(vcodigo_subgrupo) = "" Then
-                cs_codigo_sub_grupo.BackColor = Drawing.Color.Red
+            If Trim(vcodigo_grupo) = "" Then
+                cs_codigo.BackColor = Drawing.Color.Red
                 vflag_obrigatorio = 1
             Else
-                cs_codigo_sub_grupo.BackColor = Drawing.Color.Transparent
+                cs_codigo.BackColor = Drawing.Color.Transparent
             End If
 
 
@@ -155,23 +156,23 @@
             verp.ConnectionString = My.Settings.vconexaobase
             verp.Open()
 
-            vselecao = "SELECT * FROM subgrupo WHERE subgrupo_codigo='" & Trim(vcodigo_subgrupo) & "'"
+            vselecao = "SELECT * FROM grupo WHERE grupo_codigo='" & Trim(vcodigo_grupo) & "'"
 
             vcmdcomando.CommandText = vselecao
             vcmdcomando.CommandType = CommandType.Text
             vcmdcomando.CommandTimeout = 0
             vcmdcomando.Connection = verp
 
-            tsubgrupo = vcmdcomando.ExecuteReader
+            tgrupo = vcmdcomando.ExecuteReader
 
-            If tsubgrupo.Read() Then
-
-
-                vselecao = "DELETE FROM subgrupo "
-                vselecao = vselecao & "WHERE subgrupo_codigo='" & Trim(vcodigo_subgrupo) & "'"
+            If tgrupo.Read() Then
 
 
-                tsubgrupo.Close()
+                vselecao = "DELETE FROM grupo "
+                vselecao = vselecao & "WHERE grupo_codigo='" & Trim(vcodigo_grupo) & "'"
+
+
+                tgrupo.Close()
 
 
                 vcmdcomando_deletar.CommandText = vselecao
@@ -180,8 +181,8 @@
                 vcmdcomando_deletar.Connection = verp
                 vcmdcomando_deletar.ExecuteNonQuery()
 
-                cs_codigo_sub_grupo.Text = ""
-                cs_descricao_sub_grupo.Text = ""
+                cs_codigo.Text = ""
+                cs_descricao.Text = ""
 
                 cmd_gravar.Visible = False
                 cmd_deletar.Visible = False
@@ -210,54 +211,54 @@
 
     End Sub
 
-    Protected Sub cs_codigo_TextChanged(sender As Object, e As EventArgs) Handles cs_codigo_sub_grupo.TextChanged
+    Protected Sub cs_codigo_TextChanged(sender As Object, e As EventArgs) Handles cs_codigo.TextChanged
 
         Dim verp As New Data.SqlClient.SqlConnection
         Dim vcmdcomando As New Data.SqlClient.SqlCommand
-        Dim tsubgrupo As Data.SqlClient.SqlDataReader
+        Dim tgrupo As Data.SqlClient.SqlDataReader
 
 
         Dim vselecao As String
 
-        Dim vcodigo_subgrupo As String
+        Dim vcodigo_grupo As String
 
 
         Try
 
-            vcodigo_subgrupo = UCase(Trim(cs_codigo_sub_grupo.Text))
-            cs_codigo_sub_grupo.Text = vcodigo_subgrupo
+            vcodigo_grupo = UCase(Trim(cs_codigo.Text))
+            cs_codigo.Text = vcodigo_grupo
 
             '////// abre o banco de dados ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             verp.ConnectionString = My.Settings.vconexaobase
             verp.Open()
 
-            vselecao = "SELECT * FROM subgrupo WHERE subgrupo_codigo='" & Trim(vcodigo_subgrupo) & "'"
+            vselecao = "SELECT * FROM grupo WHERE grupo_codigo='" & Trim(vcodigo_grupo) & "'"
 
             vcmdcomando.CommandText = vselecao
             vcmdcomando.CommandType = CommandType.Text
             vcmdcomando.CommandTimeout = 0
             vcmdcomando.Connection = verp
 
-            tsubgrupo = vcmdcomando.ExecuteReader
+            tgrupo = vcmdcomando.ExecuteReader
 
-            If tsubgrupo.Read() Then
+            If tgrupo.Read() Then
 
-                cs_descricao_sub_grupo.Text = tsubgrupo("subgrupo_descricao")
+                cs_descricao.Text = tgrupo("grupo_descricao")
                 cmd_deletar.Visible = True
                 cmd_gravar.Visible = True
 
             Else
 
-                cs_descricao_sub_grupo.Text = ""
+                cs_descricao.Text = ""
                 cmd_deletar.Visible = False
                 cmd_gravar.Visible = True
 
 
             End If
 
-            cs_descricao_sub_grupo.Focus()
+            cs_descricao.Focus()
 
-            tsubgrupo.Close()
+            tgrupo.Close()
             verp.Close()
 
 
@@ -273,13 +274,91 @@
         cmd_gravar.Visible = False
         cmd_deletar.Visible = False
 
-        cs_codigo_sub_grupo.Text = ""
-        cs_descricao_sub_grupo.Text = ""
+        cs_codigo.Text = ""
+        cs_descricao.Text = ""
 
-        cs_codigo_sub_grupo.Focus()
+        cs_codigo.Focus()
+
+    End Sub
+
+    Protected Sub cmd_imprimir_Click(sender As Object, e As EventArgs) Handles cmd_imprimir.Click
 
 
 
     End Sub
 
+    Protected Sub cmd_csv_exporta_Click(sender As Object, e As ImageClickEventArgs) Handles cmd_csv_exporta.Click
+
+        Dim file As System.IO.StreamWriter
+
+        Dim verp As New Data.SqlClient.SqlConnection
+        Dim vcmdcomando As New Data.SqlClient.SqlCommand
+        Dim tgrupo As Data.SqlClient.SqlDataReader
+
+
+        Dim vaux As String
+        Dim vselecao As String
+
+        Dim vlinha As Integer
+
+
+
+        Try
+
+            vlinha = 1
+            vaux = ""
+
+
+            '////// abre o banco de dados ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            verp.ConnectionString = My.Settings.vconexaobase
+            verp.Open()
+
+            vselecao = "SELECT * FROM grupo ORDER BY grupo_codigo"
+
+            vcmdcomando.CommandText = vselecao
+            vcmdcomando.CommandType = CommandType.Text
+            vcmdcomando.CommandTimeout = 0
+            vcmdcomando.Connection = verp
+
+            tgrupo = vcmdcomando.ExecuteReader
+
+
+            file = My.Computer.FileSystem.OpenTextFileWriter("C:\VoceFazNfe\Arquivos\grupo.csv", False)
+
+            Do While tgrupo.Read()
+
+                If vlinha = 1 Then
+
+                    vaux = "Sigla do Grupo" & ";" & "Descricao"
+
+                    file.WriteLine(vaux)
+
+                    vlinha = 2
+
+                End If
+
+
+                vaux = tgrupo("grupo_codigo") & ";" & tgrupo("grupo_descricao")
+
+                file.WriteLine(vaux)
+
+            Loop
+            file.Close()
+
+
+            tgrupo.Close()
+            verp.Close()
+
+            Response.Redirect("https://vocefaznfe.com.br/Arquivos/grupo.csv")
+
+
+        Catch ex As Exception
+
+
+
+        End Try
+
+
+
+    End Sub
 End Class
