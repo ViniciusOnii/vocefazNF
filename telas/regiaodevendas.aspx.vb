@@ -32,7 +32,7 @@
                 cs_codigo_registro_vendas.BackColor = Drawing.Color.Red
                 vflag_obrigatorio = 1
             Else
-                cs_codigo_registro_vendas.BackColor = Drawing.Color.Red
+                cs_codigo_registro_vendas.BackColor = Drawing.Color.Transparent
             End If
 
 
@@ -40,22 +40,24 @@
                 cs_descricao_registro_vendas.BackColor = Drawing.Color.Red
                 vflag_obrigatorio = 1
             Else
-                cs_descricao_registro_vendas.BackColor = Drawing.Color.Red
+                cs_descricao_registro_vendas.BackColor = Drawing.Color.Transparent
             End If
 
 
             If (vflag_obrigatorio = 1) Then
+
                 pnl_principal.Visible = False
                 pnl_obrigatorio.Visible = True
 
                 Exit Sub
             End If
 
-            '////// abre o banco de dados ////////////////////////
+            '////// abre o banco de dados ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             verp.ConnectionString = My.Settings.vconexaobase
             verp.Open()
 
             vselecao = "SELECT * FROM regiaovendas WHERE vendas_codigo='" & Trim(vcodigo_vendas) & "'"
+
             vcmdcomando.CommandText = vselecao
             vcmdcomando.CommandType = CommandType.Text
             vcmdcomando.CommandTimeout = 0
@@ -63,10 +65,9 @@
 
             tvendas = vcmdcomando.ExecuteReader
 
-
             If tvendas.Read() Then
-                vselecao = "UPTADE regiaovendas SET"
-                vselecao = vselecao & "vendas_descricao='" & Trim(vdescricao_vendas) & "'"
+                vselecao = "UPDATE regiaovendas SET "
+                vselecao = vselecao & "vendas_descricao='" & Trim(vdescricao_vendas) & "' "
                 vselecao = vselecao & "WHERE vendas_codigo='" & Trim(vcodigo_vendas) & "'"
                 tvendas.Close()
 
@@ -75,7 +76,6 @@
                 vcmdcomando_gravar.CommandTimeout = 0
                 vcmdcomando_gravar.Connection = verp
                 vcmdcomando_gravar.ExecuteNonQuery()
-
             Else
                 vselecao = "INSERT INTO regiaovendas("
                 vselecao = vselecao & "vendas_codigo,"
@@ -85,9 +85,9 @@
                 vselecao = vselecao & "'" & vdescricao_vendas & "')"
                 tvendas.Close()
 
-
                 vcmdcomando_gravar.CommandText = vselecao
                 vcmdcomando_gravar.CommandType = CommandType.Text
+                vcmdcomando_gravar.CommandTimeout = 0
                 vcmdcomando_gravar.Connection = verp
                 vcmdcomando_gravar.ExecuteNonQuery()
             End If
@@ -136,14 +136,14 @@
                 cs_codigo_registro_vendas.BackColor = Drawing.Color.Red
                 vflag_obrigatorio = 1
             Else
-                cs_codigo_registro_vendas.BackColor = Drawing.Color.Red
+                cs_codigo_registro_vendas.BackColor = Drawing.Color.Transparent
             End If
 
-            '////// abre o banco de dados /////////////////////
+            '////// abre o banco de dados ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             verp.ConnectionString = My.Settings.vconexaobase
             verp.Open()
 
-            vselecao = "SELECT * FROM regiaovendas WHERE vendas_codigo='" & Trim(vcodigo_vendas) & "'"
+            vselecao = "SELECT * FROM compradores WHERE comprador_codigo='" & Trim(vcodigo_vendas) & "'"
 
             vcmdcomando.CommandText = vselecao
             vcmdcomando.CommandType = CommandType.Text
@@ -154,10 +154,13 @@
 
             If tvendas.Read() Then
 
-                vselecao = "DELETE FROM regiaovendas"
-                vselecao = vselecao & "WHERE codigo_vendas='" & Trim(vcodigo_vendas) & "'"
+
+                vselecao = "DELETE FROM compradores "
+                vselecao = vselecao & "WHERE comprador_codigo='" & Trim(vcodigo_vendas) & "'"
+
 
                 tvendas.Close()
+
 
                 vcmdcomando_deletar.CommandText = vselecao
                 vcmdcomando_deletar.CommandType = CommandType.Text
@@ -170,9 +173,11 @@
 
                 cmd_gravar.Visible = False
                 cmd_deletar.Visible = False
+
             Else
 
-                '///erro
+                '///erro 
+
 
             End If
         Catch ex As Exception
@@ -198,15 +203,15 @@
 
 
         Try
+
             vcodigo_vendas = UCase(Trim(cs_codigo_registro_vendas.Text))
             cs_codigo_registro_vendas.Text = vcodigo_vendas
 
-
-            '////// abre o banco de dados /////////////////////////////////
+            '////// abre o banco de dados ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             verp.ConnectionString = My.Settings.vconexaobase
             verp.Open()
 
-            vselecao = "SELECT * FROM regiaovendas WHERE vendas_codigo" & Trim(vcodigo_vendas) & "'"
+            vselecao = "SELECT * FROM regiaovendas WHERE vendas_codigo='" & Trim(vcodigo_vendas) & "'"
 
             vcmdcomando.CommandText = vselecao
             vcmdcomando.CommandType = CommandType.Text
@@ -215,20 +220,26 @@
 
             tvendas = vcmdcomando.ExecuteReader
 
-
             If tvendas.Read() Then
 
                 cs_descricao_registro_vendas.Text = tvendas("vendas_descricao")
                 cmd_deletar.Visible = True
                 cmd_gravar.Visible = True
 
-            End If
+            Else
 
+                cs_descricao_registro_vendas.Text = ""
+                cmd_deletar.Visible = False
+                cmd_gravar.Visible = True
+
+
+            End If
 
             cs_descricao_registro_vendas.Focus()
 
             tvendas.Close()
             verp.Close()
+
 
         Catch ex As Exception
 

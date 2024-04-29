@@ -117,6 +117,7 @@
     <Content Include="Consultas\adovbs.inc" />
     <Content Include="Consultas\config.asp" />
     <Content Include="Consultas\compradores.asp" />
+    <Content Include="Consultas\regiaovendas.asp" />
     <Content Include="Consultas\unidade.asp" />
     <Content Include="Consultas\grupo.asp" />
     <Content Include="Consultas\subgrupo.asp" />
@@ -209,6 +210,7 @@
     <Content Include="Help\tomadordoservico.html" />
     <Content Include="Help\tributacaoicms.html" />
     <Content Include="Help\uficmsst.html" />
+    <Content Include="Help\regiaovendas.html" />
     <Content Include="Help\unidade.html" />
     <Content Include="Help\ValorBCdoICMS.html" />
     <Content Include="Help\ValorBCdoICMSST.html" />
@@ -228,6 +230,7 @@
     <Content Include="Logotipos\logoempresa.bmp" />
     <Content Include="telas\compradores.aspx" />
     <Content Include="telas\empresa.aspx" />
+    <Content Include="telas\familiadeclientes.aspx" />
     <Content Include="telas\Grupo.aspx" />
     <Content Include="telas\nfmanual.aspx" />
     <Content Include="telas\regiaodevendas.aspx" />
@@ -272,6 +275,13 @@
     <Compile Include="telas\empresa.aspx.vb">
       <DependentUpon>empresa.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="telas\familiadeclientes.aspx.designer.vb">
+      <DependentUpon>familiadeclientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\familiadeclientes.aspx.vb">
+      <DependentUpon>familiadeclientes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="telas\Grupo.aspx.designer.vb">
       <DependentUpon>Grupo.aspx</DependentUpon>

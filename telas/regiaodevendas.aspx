@@ -134,12 +134,12 @@
                          <div class="row"  style="width: 100%; height: 20px"></div>
 
                          <div class="row">
-                             <div class="col" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold"> Código &nbsp &nbsp <img alt="" src="../Imagens/ihelp.png"  style="width: 20px; height: 21px; cursor:pointer" onclick="anima_informacao(1,'compradores')" /> </div>
+                             <div class="col" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold"> Código &nbsp &nbsp <img alt="" src="../Imagens/ihelp.png"  style="width: 20px; height: 21px; cursor:pointer" onclick="anima_informacao(1,'regiaovendas')" /> </div>
                          </div>
 
                          <div class="row" style="padding:0px;margin:0px">
                              <div class="col" style="padding:0px;margin:0px">
-                                 <i class="fa fa-filter" style="color:orange;cursor:pointer;" onclick="anima_consulta(1,'compradores')"></i> &nbsp
+                                 <i class="fa fa-filter" style="color:orange;cursor:pointer;" onclick="anima_consulta(1,'regiaovendas')"></i> &nbsp
                                  <asp:TextBox ID="cs_codigo_registro_vendas" runat="server" CssClass="layouttexto" style="width: 100px;padding:0px;margin:0px" onBlur="SetTextIn(this,0);SetDiv('regiao_vendas',0)" onFocus="SetTextIn(this,1);SetDiv('regiao_vendas',1)" MaxLength="3" AutoPostBack="True" ></asp:TextBox>
                              </div>
                          </div>
