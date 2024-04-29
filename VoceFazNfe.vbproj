@@ -230,6 +230,7 @@
     <Content Include="telas\empresa.aspx" />
     <Content Include="telas\Grupo.aspx" />
     <Content Include="telas\nfmanual.aspx" />
+    <Content Include="telas\regiaodevendas.aspx" />
     <Content Include="telas\subgrupo.aspx" />
     <Content Include="telas\teste.aspx" />
     <Content Include="telas\unidade.aspx" />
@@ -284,6 +285,13 @@
     </Compile>
     <Compile Include="telas\nfmanual.aspx.vb">
       <DependentUpon>nfmanual.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="telas\regiaodevendas.aspx.designer.vb">
+      <DependentUpon>regiaodevendas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\regiaodevendas.aspx.vb">
+      <DependentUpon>regiaodevendas.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="telas\subgrupo.aspx.designer.vb">
