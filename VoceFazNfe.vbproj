@@ -116,6 +116,8 @@
     <Content Include="Bootstrap\js\fontawesome.js" />
     <Content Include="Consultas\adovbs.inc" />
     <Content Include="Consultas\config.asp" />
+    <Content Include="Consultas\compradores.asp" />
+    <Content Include="Consultas\unidade.asp" />
     <Content Include="Consultas\grupo.asp" />
     <Content Include="Consultas\subgrupo.asp" />
     <Content Include="Estilos\estilos.css" />
@@ -151,6 +153,7 @@
     <Content Include="Help\CodigoProdutoeServico.html" />
     <Content Include="Help\codigotributacao.html" />
     <Content Include="Help\codmunicipioocorrencia.html" />
+    <Content Include="Help\compradores.html" />
     <Content Include="Help\contigencia.html" />
     <Content Include="Help\coo.html" />
     <Content Include="Help\creditoicmsart23.html" />
@@ -206,6 +209,7 @@
     <Content Include="Help\tomadordoservico.html" />
     <Content Include="Help\tributacaoicms.html" />
     <Content Include="Help\uficmsst.html" />
+    <Content Include="Help\unidade.html" />
     <Content Include="Help\ValorBCdoICMS.html" />
     <Content Include="Help\ValorBCdoICMSST.html" />
     <Content Include="Help\ValordaAFRMM.html" />
@@ -222,11 +226,13 @@
     <Content Include="Jquery\jquery_mask.js" />
     <Content Include="Jquery\jquery_min.js" />
     <Content Include="Logotipos\logoempresa.bmp" />
+    <Content Include="telas\compradores.aspx" />
     <Content Include="telas\empresa.aspx" />
     <Content Include="telas\Grupo.aspx" />
     <Content Include="telas\nfmanual.aspx" />
     <Content Include="telas\subgrupo.aspx" />
     <Content Include="telas\teste.aspx" />
+    <Content Include="telas\unidade.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -251,6 +257,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="telas\compradores.aspx.designer.vb">
+      <DependentUpon>compradores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\compradores.aspx.vb">
+      <DependentUpon>compradores.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="telas\empresa.aspx.designer.vb">
       <DependentUpon>empresa.aspx</DependentUpon>
@@ -290,6 +303,13 @@
     <Compile Include="telas\Topo.Master.vb">
       <DependentUpon>Topo.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="telas\unidade.aspx.designer.vb">
+      <DependentUpon>unidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\unidade.aspx.vb">
+      <DependentUpon>unidade.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

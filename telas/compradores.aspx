@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/telas/Topo.Master" CodeBehind="subgrupo.aspx.vb" Inherits="VoceFazNfe.subgrupo" %>
+﻿ <%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/telas/Topo.Master" CodeBehind="compradores.aspx.vb" Inherits="VoceFazNfe.compradores" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    
-<script>
+
+    <script>
 
 
     function botao_confirmar(vbotao) {
@@ -33,20 +33,20 @@
 
     function resposta_consulta(vresposta) {
 
-        var vcontrole = document.getElementById('<%=cs_codigo_sub_grupo.ClientId%>');
-            var vdescricao = document.getElementById('<%=cs_descricao_sub_grupo.ClientId%>');
+        var vcontrole = document.getElementById('<%=cs_codigo_comprador.ClientId%>');
+            var vdescricao = document.getElementById('<%=cs_nome_completo.ClientId%>');
 
         vcontrole.value = vresposta;
         vdescricao.value = "";
 
-        anima_consulta(0, 'subgrupo');
+        anima_consulta(0, 'comprador');
 
     }
 
     
 
 
-</script>
+    </script>
 
 
       <div class="row" style="width:100%;height:200px"></div>
@@ -119,12 +119,12 @@
       <asp:Panel ID="pnl_principal" runat="server" BackColor="Transparent" Height="100%" Visible="True">
 
         <div class="row" style="width: 100%; height: 100%;  padding-left:20px; padding-top: 0px; margin-left: 0px;">
-            <span style="color: red; font-family: Arial; font-size: 20px; font-weight: bold;" >Cadastro de Sub-Grupos</span>
+            <span style="color: red; font-family: Arial; font-size: 20px; font-weight: bold;" >Cadastro de Compradores</span>
         </div>
 
         <div class="row"  style="width: 100%; height: 40px"></div>
 
-         <div id="subgrupo_produtos" name="subgrupo_produtos" style="visibility:visible;width:90%;height:100%;background-color:transparent;margin-left:20px;margin-right:20px;border:solid;border-color:#177CC0;border-width:1px;border-radius:10px;padding: 0px 20px 20px 20px;">
+         <div id="cadastro_comprador" name="cadastro_comprador" style="visibility:visible;width:90%;height:100%;background-color:transparent;margin-left:20px;margin-right:20px;border:solid;border-color:#177CC0;border-width:1px;border-radius:10px;padding: 0px 20px 20px 20px;">
 
            <div class="row" style="width:100%;padding:0px;margin:0px;background-color:transparent;height:100%;padding:0px;margin:0px">
 
@@ -133,13 +133,13 @@
                             <div class="row"  style="width: 100%; height: 20px"></div>
 
                             <div class="row">
-                                <div class="col" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold"> Sigla do Sub-Grupo &nbsp &nbsp <img alt="" src="../Imagens/ihelp.png"  style="width: 20px; height: 21px; cursor:pointer" onclick="anima_informacao(1,'subgrupo')" /> </div>
+                                <div class="col" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold"> Código do Comprador &nbsp &nbsp <img alt="" src="../Imagens/ihelp.png"  style="width: 20px; height: 21px; cursor:pointer" onclick="anima_informacao(1,'compradores')" /> </div>
                             </div>
 
                             <div class="row" style="padding:0px;margin:0px">
                                 <div class="col" style="padding:0px;margin:0px">
-                                    <i class="fa fa-filter" style="color:orange;cursor:pointer;" onclick="anima_consulta(1,'subgrupo')"></i> &nbsp
-                                    <asp:TextBox ID="cs_codigo_sub_grupo" runat="server" CssClass="layouttexto" style="width: 100px;padding:0px;margin:0px" onBlur="SetTextIn(this,0);SetDiv('subgrupo_produtos',0)" onFocus="SetTextIn(this,1);SetDiv('subgrupo_produtos',1)" MaxLength="3" AutoPostBack="True" ></asp:TextBox>
+                                    <i class="fa fa-filter" style="color:orange;cursor:pointer;" onclick="anima_consulta(1,'compradores')"></i> &nbsp
+                                    <asp:TextBox ID="cs_codigo_comprador" runat="server" CssClass="layouttexto" style="width: 100px;padding:0px;margin:0px" onBlur="SetTextIn(this,0);SetDiv('cadastro_comprador',0)" onFocus="SetTextIn(this,1);SetDiv('cadastro_comprador',1)" MaxLength="3" AutoPostBack="True" ></asp:TextBox>
                                 </div>
                             </div>
 
@@ -156,12 +156,12 @@
                     
                             <div class="row">
                                 <div class="col"
-                                    style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold"> Descrição </div>
+                                    style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold"> Nome Completo </div>
                             </div>
 
                             <div class="row" style="padding:0px;margin:0px">
                                 <div class="col" style="padding:0px;margin:0px">
-                                    <asp:TextBox ID="cs_descricao_sub_grupo" runat="server" CssClass="layouttexto" style="width: 93%;" onBlur="SetTextIn(this,0);SetDiv('subgrupo_produtos',0)" onFocus="SetTextIn(this,1);SetDiv('subgrupo_produtos',1)" MaxLength="50" ></asp:TextBox>
+                                    <asp:TextBox ID="cs_nome_completo" runat="server" CssClass="layouttexto" style="width: 93%;" onBlur="SetTextIn(this,0);SetDiv('cadastro_comprador',0)" onFocus="SetTextIn(this,1);SetDiv('cadastro_comprador',1)" MaxLength="50" ></asp:TextBox>
                                 </div>
                             </div>
 
@@ -265,6 +265,9 @@
 
 
       </asp:Panel>
+
+
+
 
 
 
