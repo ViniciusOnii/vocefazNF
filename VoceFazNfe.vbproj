@@ -117,6 +117,11 @@
     <Content Include="Consultas\adovbs.inc" />
     <Content Include="Consultas\config.asp" />
     <Content Include="Consultas\compradores.asp" />
+    <Content Include="Consultas\cadastrobanco.asp" />
+    <Content Include="Consultas\formadepagamento.asp" />
+    <Content Include="Consultas\cadastrocores.asp" />
+    <Content Include="Consultas\cadastrotamanhos.asp" />
+    <Content Include="Consultas\localestoque.asp" />
     <Content Include="Consultas\regiaovendas.asp" />
     <Content Include="Consultas\unidade.asp" />
     <Content Include="Consultas\grupo.asp" />
@@ -202,6 +207,10 @@
     <Content Include="Help\qpisqtde.html" />
     <Content Include="Help\reducaobc.html" />
     <Content Include="Help\reducaobcst.html" />
+    <Content Include="Help\formapagamento.html" />
+    <Content Include="Help\nomebanco.html" />
+    <Content Include="Help\localestoque.html" />
+    <Content Include="Help\cadastrodetamanos.html" />
     <Content Include="Help\RegistroCODIF.html" />
     <Content Include="Help\SerieNota.html" />
     <Content Include="Help\subgrupo.html" />
@@ -228,10 +237,15 @@
     <Content Include="Jquery\jquery_mask.js" />
     <Content Include="Jquery\jquery_min.js" />
     <Content Include="Logotipos\logoempresa.bmp" />
+    <Content Include="telas\banco.aspx" />
+    <Content Include="telas\cadastrocores.aspx" />
+    <Content Include="telas\cadastrodetamanhos.aspx" />
     <Content Include="telas\compradores.aspx" />
     <Content Include="telas\empresa.aspx" />
     <Content Include="telas\familiadeclientes.aspx" />
+    <Content Include="telas\formasdepgamento.aspx" />
     <Content Include="telas\Grupo.aspx" />
+    <Content Include="telas\locaisestoque.aspx" />
     <Content Include="telas\nfmanual.aspx" />
     <Content Include="telas\regiaodevendas.aspx" />
     <Content Include="telas\subgrupo.aspx" />
@@ -262,6 +276,27 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="telas\banco.aspx.designer.vb">
+      <DependentUpon>banco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\banco.aspx.vb">
+      <DependentUpon>banco.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="telas\cadastrocores.aspx.designer.vb">
+      <DependentUpon>cadastrocores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\cadastrocores.aspx.vb">
+      <DependentUpon>cadastrocores.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="telas\cadastrodetamanhos.aspx.designer.vb">
+      <DependentUpon>cadastrodetamanhos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\cadastrodetamanhos.aspx.vb">
+      <DependentUpon>cadastrodetamanhos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="telas\compradores.aspx.designer.vb">
       <DependentUpon>compradores.aspx</DependentUpon>
     </Compile>
@@ -283,12 +318,26 @@
       <DependentUpon>familiadeclientes.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="telas\formasdepgamento.aspx.designer.vb">
+      <DependentUpon>formasdepgamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\formasdepgamento.aspx.vb">
+      <DependentUpon>formasdepgamento.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="telas\Grupo.aspx.designer.vb">
       <DependentUpon>Grupo.aspx</DependentUpon>
     </Compile>
     <Compile Include="telas\Grupo.aspx.vb">
       <DependentUpon>Grupo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="telas\locaisestoque.aspx.designer.vb">
+      <DependentUpon>locaisestoque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\locaisestoque.aspx.vb">
+      <DependentUpon>locaisestoque.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="telas\nfmanual.aspx.designer.vb">
       <DependentUpon>nfmanual.aspx</DependentUpon>
