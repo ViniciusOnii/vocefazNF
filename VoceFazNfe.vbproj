@@ -121,6 +121,7 @@
     <Content Include="Consultas\formadepagamento.asp" />
     <Content Include="Consultas\cadastrocores.asp" />
     <Content Include="Consultas\cadastrotamanhos.asp" />
+    <Content Include="Consultas\cadastropagamentos.asp" />
     <Content Include="Consultas\localestoque.asp" />
     <Content Include="Consultas\regiaovendas.asp" />
     <Content Include="Consultas\unidade.asp" />
@@ -245,6 +246,7 @@
     <Content Include="telas\familiadeclientes.aspx" />
     <Content Include="telas\formasdepgamento.aspx" />
     <Content Include="telas\Grupo.aspx" />
+    <Content Include="telas\grupopagamentos.aspx" />
     <Content Include="telas\locaisestoque.aspx" />
     <Content Include="telas\nfmanual.aspx" />
     <Content Include="telas\regiaodevendas.aspx" />
@@ -331,6 +333,13 @@
     <Compile Include="telas\Grupo.aspx.vb">
       <DependentUpon>Grupo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="telas\grupopagamentos.aspx.designer.vb">
+      <DependentUpon>grupopagamentos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\grupopagamentos.aspx.vb">
+      <DependentUpon>grupopagamentos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="telas\locaisestoque.aspx.designer.vb">
       <DependentUpon>locaisestoque.aspx</DependentUpon>
