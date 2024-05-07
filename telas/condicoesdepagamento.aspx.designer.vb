@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class formasdepgamento
+Partial Public Class estadosuf
 
     '''<summary>
     '''Controle pnl_gravar.
@@ -59,58 +59,31 @@ Partial Public Class formasdepgamento
     Protected WithEvents pnl_principal As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
-    '''Controle cs_codigo_forma_pagamento.
+    '''Controle cs_codigo_condicoes_pagamento.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_codigo_forma_pagamento As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_codigo_condicoes_pagamento As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_descricao_forma_pagamento.
+    '''Controle cs_descricao_condicoes_pagamento.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_descricao_forma_pagamento As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_descricao_condicoes_pagamento As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle chkListOptions.
+    '''Controle cs_qtd_parcelas_pagamento.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents chkListOptions As Global.System.Web.UI.WebControls.CheckBoxList
-
-    '''<summary>
-    '''Controle cs_forma_pagamento_sat.
-    '''</summary>
-    '''<remarks>
-    '''Campo gerado automaticamente.
-    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-    '''</remarks>
-    Protected WithEvents cs_forma_pagamento_sat As Global.System.Web.UI.WebControls.DropDownList
-
-    '''<summary>
-    '''Controle cs_forma_pagamento_tef.
-    '''</summary>
-    '''<remarks>
-    '''Campo gerado automaticamente.
-    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-    '''</remarks>
-    Protected WithEvents cs_forma_pagamento_tef As Global.System.Web.UI.WebControls.CheckBoxList
-
-    '''<summary>
-    '''Controle CheckBoxList1.
-    '''</summary>
-    '''<remarks>
-    '''Campo gerado automaticamente.
-    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-    '''</remarks>
-    Protected WithEvents CheckBoxList1 As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents cs_qtd_parcelas_pagamento As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Controle cmd_csv_exporta.

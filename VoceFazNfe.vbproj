@@ -243,6 +243,7 @@
     <Content Include="telas\cadastrodetamanhos.aspx" />
     <Content Include="telas\compradores.aspx" />
     <Content Include="telas\empresa.aspx" />
+    <Content Include="telas\condicoesdepagamento.aspx" />
     <Content Include="telas\familiadeclientes.aspx" />
     <Content Include="telas\formasdepgamento.aspx" />
     <Content Include="telas\Grupo.aspx" />
@@ -312,6 +313,13 @@
     <Compile Include="telas\empresa.aspx.vb">
       <DependentUpon>empresa.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="telas\condicoesdepagamento.aspx.designer.vb">
+      <DependentUpon>condicoesdepagamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\condicoesdepagamento.aspx.vb">
+      <DependentUpon>condicoesdepagamento.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="telas\familiadeclientes.aspx.designer.vb">
       <DependentUpon>familiadeclientes.aspx</DependentUpon>

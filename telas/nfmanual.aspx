@@ -995,77 +995,80 @@
 
          <!--/////////////////////////////////////////////////// Div com os dados Iniciais / Principais da Nota /////////////////////////////////////////////////////////////////////////////////////////////-->
          <div id="div_dados_endereco_do_destinatario" name="div_dados_endereco_do_destinatario"
-            style="display:none;visibility: hidden;width:100%;height:100%;background-color:transparent;margin-left:20px;margin-right:20px;border:solid;border-color:#177CC0;border-width:1px;border-radius:10px;padding: 0px 20px 20px 20px;">
+             style="display: none; visibility: hidden; width: 100%; height: 100%; background-color: transparent; margin-left: 20px; margin-right: 20px; border: solid; border-color: #177CC0; border-width: 1px; border-radius: 10px; padding: 0px 20px 20px 20px;">
 
 
-            
+
              <div class="row"
-                 style="width:100%;padding:0px;margin:0px;background-color:transparent;height:100%;padding:0px;margin:0px">
+                 style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
 
                  <!--/////////////////////////////////////////////////// LINHA LADO DIREITO - CEP/ENDEREÇO/ NÚMERO /////////////////////////////////////////////////////////////////////////////////////////////-->
                  <div class="col-xl-7"
-                     style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
+                     style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px">
 
                      <div class="row"
-                         style="width:100%;height:100%;background-color:transparent;padding:0px;margin:0px">
+                         style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px">
 
                          <div class="col-md-4"
-                             style="width:100%;height:100%;background-color:transparent;padding:10px;">
+                             style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
 
 
-                              <div class="row">
-                                        <div class="col"
-                                            style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            CEP </div>
+                             <div class="row">
+                                 <div class="col"
+                                     style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                     CEP
+                                 </div>
 
-                                    </div>
+                             </div>
 
-                                    <div class="input-group">
-                                        <asp:TextBox ID="cs_cep_destinatario" runat="server" CssClass="layouttexto"
-                                            style="width: 150px" placeholder="00000-000" onBlur="SetTextIn(this,0);SetDiv('div_dados_endereco_do_destinatario',0)" onFocus="SetTextIn(this,1);SetDiv('div_dados_endereco_do_destinatario',1)" >
-                                        </asp:TextBox>
-                                        <div class="input-group-append">
-                                            <button class="material-symbols-outlined"><i
-                                                    class="fa-solid fa-magnifying-glass"></i></button>
-                                        </div>
-                                    </div>
+                             <div class="input-group">
+                                 <asp:TextBox ID="cs_cep_destinatario" runat="server" CssClass="layouttexto"
+                                     Style="width: 150px" placeholder="00000-000" onBlur="SetTextIn(this,0);SetDiv('div_dados_endereco_do_destinatario',0)" onFocus="SetTextIn(this,1);SetDiv('div_dados_endereco_do_destinatario',1)">
+                                 </asp:TextBox>
+                                 <div class="input-group-append">
+                                     <button class="material-symbols-outlined">
+                                         <i
+                                             class="fa-solid fa-magnifying-glass"></i>
+                                     </button>
+                                 </div>
+                             </div>
 
                          </div>
 
 
                          <div class=" col-md-6"
-                             style="width:100%;height:100%;background-color:transparent; padding:10px;">
+                             style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
                              <div class="row">
                                  <div class="col"
                                      style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
                                      Endereço
                                  </div>
                              </div>
-                             <div class="row" style="padding:0px;margin:0px">
-                                 <div class="col" style="padding:0px;margin:0px">
+                             <div class="row" style="padding: 0px; margin: 0px">
+                                 <div class="col" style="padding: 0px; margin: 0px">
                                      <asp:TextBox ID="cs_endereco_destinatario" runat="server" CssClass="layouttexto"
-                                         style="width: 93%;" onBlur="SetTextIn(this,0);SetDiv('div_dados_endereco_do_destinatario',0)" onFocus="SetTextIn(this,1);SetDiv('div_dados_endereco_do_destinatario',1)" >
+                                         Style="width: 93%;" onBlur="SetTextIn(this,0);SetDiv('div_dados_endereco_do_destinatario',0)" onFocus="SetTextIn(this,1);SetDiv('div_dados_endereco_do_destinatario',1)">
                                      </asp:TextBox>
                                  </div>
                              </div>
-                         </div> 
+                         </div>
 
-                                <div class=" col-md-2"
-                                    style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
-                                    <div class="row">
-                                        <div class="col"
-                                            style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                                            Número
-                                        </div>
-                                    </div>
-                                    <div class="row" style="padding: 0px; margin: 0px">
-                                        <div class="col" style="padding: 0px; margin: 0px">
-                                            <asp:TextBox ID="cs_numero_destinatario" runat="server" CssClass="layouttexto"
-                                                Style="width: 80px;" onBlur="SetTextIn(this,0);SetDiv('div_dados_endereco_do_destinatario',0)" onFocus="SetTextIn(this,1);SetDiv('div_dados_endereco_do_destinatario',1)" >
-                                            </asp:TextBox>
-                                        </div>
-                                    </div>
-                                </div>
+                         <div class=" col-md-2"
+                             style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+                             <div class="row">
+                                 <div class="col"
+                                     style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                     Número
+                                 </div>
+                             </div>
+                             <div class="row" style="padding: 0px; margin: 0px">
+                                 <div class="col" style="padding: 0px; margin: 0px">
+                                     <asp:TextBox ID="cs_numero_destinatario" runat="server" CssClass="layouttexto"
+                                         Style="width: 80px;" onBlur="SetTextIn(this,0);SetDiv('div_dados_endereco_do_destinatario',0)" onFocus="SetTextIn(this,1);SetDiv('div_dados_endereco_do_destinatario',1)">
+                                     </asp:TextBox>
+                                 </div>
+                             </div>
+                         </div>
 
                      </div>
 
