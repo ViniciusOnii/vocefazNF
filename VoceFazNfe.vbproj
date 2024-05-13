@@ -124,6 +124,7 @@
     <Content Include="Consultas\cadastropagamentos.asp" />
     <Content Include="Consultas\localestoque.asp" />
     <Content Include="Consultas\regiaovendas.asp" />
+    <Content Include="Consultas\mensagemespecial.asp" />
     <Content Include="Consultas\unidade.asp" />
     <Content Include="Consultas\grupo.asp" />
     <Content Include="Consultas\subgrupo.asp" />
@@ -244,11 +245,13 @@
     <Content Include="telas\compradores.aspx" />
     <Content Include="telas\empresa.aspx" />
     <Content Include="telas\condicoesdepagamento.aspx" />
+    <Content Include="telas\estadosuf.aspx" />
     <Content Include="telas\familiadeclientes.aspx" />
     <Content Include="telas\formasdepgamento.aspx" />
     <Content Include="telas\Grupo.aspx" />
     <Content Include="telas\grupopagamentos.aspx" />
     <Content Include="telas\locaisestoque.aspx" />
+    <Content Include="telas\mensagemespecial.aspx" />
     <Content Include="telas\nfmanual.aspx" />
     <Content Include="telas\regiaodevendas.aspx" />
     <Content Include="telas\subgrupo.aspx" />
@@ -321,6 +324,13 @@
       <DependentUpon>condicoesdepagamento.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="telas\estadosuf.aspx.designer.vb">
+      <DependentUpon>estadosuf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\estadosuf.aspx.vb">
+      <DependentUpon>estadosuf.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="telas\familiadeclientes.aspx.designer.vb">
       <DependentUpon>familiadeclientes.aspx</DependentUpon>
     </Compile>
@@ -354,6 +364,13 @@
     </Compile>
     <Compile Include="telas\locaisestoque.aspx.vb">
       <DependentUpon>locaisestoque.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="telas\mensagemespecial.aspx.designer.vb">
+      <DependentUpon>mensagemespecial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\mensagemespecial.aspx.vb">
+      <DependentUpon>mensagemespecial.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="telas\nfmanual.aspx.designer.vb">
