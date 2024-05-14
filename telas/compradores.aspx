@@ -39,7 +39,7 @@
         vcontrole.value = vresposta;
         vdescricao.value = "";
 
-        anima_consulta(0, 'comprador');
+        anima_consulta(0, 'compradores');
 
     }
 

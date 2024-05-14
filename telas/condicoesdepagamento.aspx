@@ -13,7 +13,7 @@
               vbotao.style.visibility = "hidden";
 
               vbotao_aguardo.style.display = "block";
-              vbotao_aguardo.style.visibility = "visible";
+              vbotao_aguardo.style.visibility = "visible"; 
 
           }
 
@@ -34,11 +34,11 @@
 
               var vcontrole = document.getElementById('<%=cs_codigo_condicoes_pagamento.ClientId%>');
               var vdescricao = document.getElementById('<%=cs_descricao_condicoes_pagamento.ClientId%>');
-              var vparcelas = document.getElementById('<%=cs_qtd_parcelas_pagamento.ClientID%>')
+              var vparcelas = document.getElementById('<%=cs_qtd_parcelas_pagamento.ClientID%>');
               vcontrole.value = vresposta;
               vdescricao.value = "";
 
-              anima_consulta(0, 'parcelas');
+              anima_consulta(0, 'condiçoespagamento');
 
           }
 
@@ -132,13 +132,13 @@
                       <div class="row"  style="width: 100%; height: 20px"></div>
 
                       <div class="row">
-                          <div class="col" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold"> Código &nbsp &nbsp <img alt="" src="../Imagens/ihelp.png"  style="width: 20px; height: 21px; cursor:pointer" onclick="anima_informacao(1,'localestoque')" /> </div>
+                          <div class="col" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold"> Código &nbsp &nbsp <img alt="" src="../Imagens/ihelp.png"  style="width: 20px; height: 21px; cursor:pointer" onclick="anima_informacao(1,'condicoespagamento')" /> </div>
                       </div>
 
                       <div class="row" style="padding:0px;margin:0px">
                           <div class="col" style="padding:0px;margin:0px">
-                              <i class="fa fa-filter" style="color:orange;cursor:pointer;" onclick="anima_consulta(1,'localestoque')"></i> &nbsp
-                              <asp:TextBox ID="cs_codigo_condicoes_pagamento" runat="server" CssClass="layouttexto" style="width: 100px;padding:0px;margin:0px" onBlur="SetTextIn(this,0);SetDiv('locais_estoque',0)" onFocus="SetTextIn(this,1);SetDiv('locais_estoque',1)" MaxLength="3" AutoPostBack="True" ></asp:TextBox>
+                              <i class="fa fa-filter" style="color:orange;cursor:pointer;" onclick="anima_consulta(1,'condiçoespagamento')"></i> &nbsp
+                              <asp:TextBox ID="cs_codigo_condicoes_pagamento" runat="server" CssClass="layouttexto" style="width: 100px;padding:0px;margin:0px" onBlur="SetTextIn(this,0);SetDiv('condicoes_pagamento',0)" onFocus="SetTextIn(this,1);SetDiv('condicoes_pagamento',1)" MaxLength="3" AutoPostBack="True" ></asp:TextBox>
                           </div>
                       </div>
 
@@ -160,7 +160,7 @@
 
                       <div class="row" style="padding:0px;margin:0px">
                           <div class="col" style="padding:0px;margin:0px">
-                              <asp:TextBox ID="cs_descricao_condicoes_pagamento" runat="server" CssClass="layouttexto" style="width: 93%;" onBlur="SetTextIn(this,0);SetDiv('locais_estoque',0)" onFocus="SetTextIn(this,1);SetDiv('locais_estoque',1)" MaxLength="50" ></asp:TextBox>
+                              <asp:TextBox ID="cs_descricao_condicoes_pagamento" runat="server" CssClass="layouttexto" style="width: 93%;" onBlur="SetTextIn(this,0);SetDiv('condicoes_pagamento',0)" onFocus="SetTextIn(this,1);SetDiv('condicoes_pagamento',1)" MaxLength="50" ></asp:TextBox>
                           </div>
                       </div>
            </div>
@@ -176,7 +176,7 @@
 
             <div class="row" style="padding:0px;margin:0px">
                 <div class="col" style="padding:0px;margin:0px">
-                    <asp:TextBox ID="cs_qtd_parcelas_pagamento" runat="server" CssClass="layouttexto" style="width: 20%;" onBlur="SetTextIn(this,0);SetDiv('locais_estoque',0)" onFocus="SetTextIn(this,1);SetDiv('locais_estoque',1)" MaxLength="50" ></asp:TextBox>
+                    <asp:TextBox ID="cs_qtd_parcelas_pagamento" runat="server" CssClass="layouttexto" style="width: 20%;" onBlur="SetTextIn(this,0);SetDiv('condicoes_pagamento',0)" onFocus="SetTextIn(this,1);SetDiv('condicoes_pagamento',1)" MaxLength="50" ></asp:TextBox>
                 </div>
             </div>
  </div>

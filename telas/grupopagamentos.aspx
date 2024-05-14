@@ -38,7 +38,7 @@
               vcontrole.value = vresposta;
               vdescricao.value = "";
 
-              anima_consulta(0, 'pagamentos');
+              anima_consulta(0, 'cadastropagamentos');
 
           }
 
@@ -132,7 +132,7 @@
                       <div class="row"  style="width: 100%; height: 20px"></div>
 
                       <div class="row">
-                          <div class="col" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold"> Código &nbsp &nbsp <img alt="" src="../Imagens/ihelp.png"  style="width: 20px; height: 21px; cursor:pointer" onclick="anima_informacao(1,'localestoque')" /> </div>
+                          <div class="col" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold"> Código &nbsp &nbsp <img alt="" src="../Imagens/ihelp.png"  style="width: 20px; height: 21px; cursor:pointer" onclick="anima_informacao(1,'grupopagamento')" /> </div>
                       </div>
 
                       <div class="row" style="padding:0px;margin:0px">

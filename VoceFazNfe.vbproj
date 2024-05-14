@@ -115,6 +115,7 @@
     <Content Include="Bootstrap\js\bootstrap.min.js" />
     <Content Include="Bootstrap\js\fontawesome.js" />
     <Content Include="Consultas\adovbs.inc" />
+    <Content Include="Consultas\condiçoespagamento.asp" />
     <Content Include="Consultas\config.asp" />
     <Content Include="Consultas\compradores.asp" />
     <Content Include="Consultas\cadastrobanco.asp" />
@@ -122,6 +123,7 @@
     <Content Include="Consultas\cadastrocores.asp" />
     <Content Include="Consultas\cadastrotamanhos.asp" />
     <Content Include="Consultas\cadastropagamentos.asp" />
+    <Content Include="Consultas\familiaclientes.asp" />
     <Content Include="Consultas\localestoque.asp" />
     <Content Include="Consultas\regiaovendas.asp" />
     <Content Include="Consultas\mensagemespecial.asp" />
@@ -162,6 +164,10 @@
     <Content Include="Help\codigotributacao.html" />
     <Content Include="Help\codmunicipioocorrencia.html" />
     <Content Include="Help\compradores.html" />
+    <Content Include="Help\cadastrocores.html" />
+    <Content Include="Help\cadastrobanco.html" />
+    <Content Include="Help\grupopagamento.html" />
+    <Content Include="Help\mensagemespecial.html" />
     <Content Include="Help\contigencia.html" />
     <Content Include="Help\coo.html" />
     <Content Include="Help\creditoicmsart23.html" />
@@ -171,6 +177,7 @@
     <Content Include="Help\Drawback.html" />
     <Content Include="Help\extipi.html" />
     <Content Include="Help\finalidadedeemissao.html" />
+    <Content Include="Help\condicoespagamento.html" />
     <Content Include="Help\formadepagamento.html" />
     <Content Include="Help\grupo.html" />
     <Content Include="Help\Gtin.html" />
