@@ -530,6 +530,47 @@
 
             </div>
         </div>
+
+        <!--/////////////////////////////////////////////////// Botão Alterar Preço //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="row" style="width: 100%; height: 100%">
+
+            <div class="col" align="center">
+
+                <div id="botao_alterar_preco" style="width: 300px; height: 100%; cursor: pointer; display: block; visibility: visible">
+
+                    <asp:Button ID="cmd_alterar_preco" runat="server" Style="cursor: pointer; border-radius: 10px; border: solid; border-width: 1px" Text="Alterar Preço"
+                        BackColor="blue" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" Height="43px" Width="230px" OnClientClick="botao_confirmar(this)" UseSubmitBehavior="False" Visible="False" />
+                </div>
+
+                <div id="botao_gravar_aguardando" style="display: none; visibility: hidden">
+                    <img alt="" src="../Imagens/preloader.gif" /><span style="font-family: Arial; font-size: 18px; color: #007DC5">&nbspAguarde</span></div>
+
+            </div>
+
+        </div>
+
+
+        <div class="row" style="width: 100%; height: 30px"></div>
+
+        <!--/////////////////////////////////////////////////// Botão Log de Preços //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <div class="row" style="width: 100%; height: 100%">
+
+            <div class="col" align="center">
+
+                <div id="botao_log_precos" style="width: 300px; height: 100%; cursor: pointer; display: block; visibility: visible">
+
+                    <asp:Button ID="cmd_deletar" runat="server" Style="cursor: pointer; border-radius: 10px; border: solid; border-width: 1px" Text="Log de Preços"
+                        BackColor="blue" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" Height="43px" Width="230px" OnClientClick="botao_confirmar_deletar(this)" UseSubmitBehavior="False" Visible="False" />
+                </div>
+
+                <div id="botao_deletar_aguardando" style="display: none; visibility: hidden">
+                    <img alt="" src="../Imagens/preloader.gif" /><span style="font-family: Arial; font-size: 18px; color: #007DC5">&nbspAguarde</span></div>
+
+            </div>
+
+        </div>
+
+
     </div>
 
 

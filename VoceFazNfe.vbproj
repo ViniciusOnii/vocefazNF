@@ -248,6 +248,7 @@
     <Content Include="Logotipos\logoempresa.bmp" />
     <Content Include="telas\banco.aspx" />
     <Content Include="telas\cadastrocores.aspx" />
+    <Content Include="telas\cadastrodeprodutos.aspx" />
     <Content Include="telas\cadastrodetamanhos.aspx" />
     <Content Include="telas\compradores.aspx" />
     <Content Include="telas\empresa.aspx" />
@@ -301,6 +302,13 @@
     </Compile>
     <Compile Include="telas\cadastrocores.aspx.vb">
       <DependentUpon>cadastrocores.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="telas\cadastrodeprodutos.aspx.designer.vb">
+      <DependentUpon>cadastrodeprodutos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\cadastrodeprodutos.aspx.vb">
+      <DependentUpon>cadastrodeprodutos.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="telas\cadastrodetamanhos.aspx.designer.vb">

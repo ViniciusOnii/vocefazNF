@@ -38,7 +38,7 @@
               vcontrole.value = vresposta;
               vdescricao.value = "";
 
-              anima_consulta(0, 'cadastrobanco');
+              anima_consulta(0, 'banco');
 
           }
 
