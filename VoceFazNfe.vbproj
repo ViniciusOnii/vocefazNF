@@ -235,6 +235,7 @@
     <Content Include="Help\ValordaAFRMM.html" />
     <Content Include="Help\valoripidevolvido.html" />
     <Content Include="Imagens\certificadoft.png" />
+    <Content Include="Imagens\fornecedor.png" />
     <Content Include="Imagens\fundo.png" />
     <Content Include="Imagens\fundoazultopo.png" />
     <Content Include="Imagens\fundo_topo.png" />
@@ -242,12 +243,14 @@
     <Content Include="Imagens\ihelp.png" />
     <Content Include="Imagens\logocsv.jpg" />
     <Content Include="Imagens\preloader.gif" />
+    <Content Include="Imagens\sefaz.jpg" />
     <Content Include="Imagens\topohelp.png" />
     <Content Include="Jquery\jquery_mask.js" />
     <Content Include="Jquery\jquery_min.js" />
     <Content Include="Logotipos\logoempresa.bmp" />
     <Content Include="telas\banco.aspx" />
     <Content Include="telas\cadastrocores.aspx" />
+    <Content Include="telas\cadastrodefornecedores.aspx" />
     <Content Include="telas\cadastrodeprodutos.aspx" />
     <Content Include="telas\cadastrodetamanhos.aspx" />
     <Content Include="telas\compradores.aspx" />
@@ -302,6 +305,13 @@
     </Compile>
     <Compile Include="telas\cadastrocores.aspx.vb">
       <DependentUpon>cadastrocores.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="telas\cadastrodefornecedores.aspx.designer.vb">
+      <DependentUpon>cadastrodefornecedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\cadastrodefornecedores.aspx.vb">
+      <DependentUpon>cadastrodefornecedores.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="telas\cadastrodeprodutos.aspx.designer.vb">
