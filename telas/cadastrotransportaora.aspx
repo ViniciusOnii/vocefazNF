@@ -398,7 +398,7 @@
             <div class="row" style="width: 100%; height: 20px"></div>
 
 
-            <div id="div_cadastro_fornecedores_documentacao" name="div_cadastro_fornecedores_documentacao" style="display: block; visibility: hidden; width: 100%; height: 100%; background-color: transparent; margin-left: 20px; margin-right: 20px; border: solid; border-color: #177CC0; border-width: 1px; border-radius: 10px; padding: 0px 20px 20px 20px;">
+            <div id="div_cadastro_fornecedores_documentacao" name="div_cadastro_fornecedores_documentacao" style="display: none; visibility: hidden; width: 100%; height: 100%; background-color: transparent; margin-left: 20px; margin-right: 20px; border: solid; border-color: #177CC0; border-width: 1px; border-radius: 10px; padding: 0px 20px 20px 20px;">
                 <div class="row" style="height: 20px"></div>
 
                 <div class="row" style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
@@ -456,6 +456,179 @@
                                 <div class="row">
                                     <div class="col" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
                                         <asp:ImageButton runat="server" Height="50px" Widht="70px" ImageUrl="~/Imagens/sefaz.jpg" Width="50px" Style="cursor: pointer" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--///////////////////////////////////////////////////  Container - Fone/ Contato  /////////////////////////////////////////////////////////////////////////////////////////////-->
+    <div class="container-fluid" style="padding: 0px; margin: 0px; width: 100%; height: 100%">
+        <div class="row" style="width: 100%; height: 50px"></div>
+
+
+        <div class="row" style="width: 100%; height: 100%; padding: 0px; margin: 0px; background-color: transparent">
+
+
+
+            <div class="row" style="width: 100%; height: 100%; color: #177CC0; padding-left: 20px; padding-top: 0px; font-family: Arial; font-size: 20px; font-weight: bold; margin-left: 0px">
+
+                <div id="i_cadastro_transportadora_fone_contato_on" name="i_cadastro_transportadora_fone_contato_on" class="col" align="left" style="display: block; visibility: visible; font-size: 20px; color: red; margin-right: 20px; border-bottom: none; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_transportadora_fone_contato','i_cadastro_transportadora_fone_contato_on','i_cadastro_transportadora_fone_contato_off',0)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Fone / Contato</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i></div>
+                <div id="i_cadastro_transportadora_fone_contato_off" name="i_cadastro_transportadora_fone_contato_off" class="col" align="left" style="display: none; visibility: hidden; font-size: 20px; color: red; margin-right: 20px; border-bottom: solid; border-width: 1px; border-color: #767676; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_transportadora_fone_contato','i_cadastro_transportadora_fone_contato_on','i_cadastro_transportadora_fone_contato_off',1)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Fone / Contato</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i></div>
+
+            </div>
+
+            <div class="row" style="width: 100%; height: 20px"></div>
+
+
+            <div id="div_cadastro_transportadora_fone_contato" name="div_cadastro_transportadora_fone_contato" style="display: block; visibility: visible; width: 100%; height: 100%; background-color: transparent; margin-left: 20px; margin-right: 20px; border: solid; border-color: #177CC0; border-width: 1px; border-radius: 10px; padding: 0px 20px 20px 20px;">
+                <div class="row" style="height: 20px"></div>
+
+                <div class="row" style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
+           <!--/////////////////////////////////////////////////// Lado Esquerdo -  Telefone - Ramal - Fax /////////////////////////////////////////////////////////////////////////////////////////////-->
+    <div class="col-xl-7" style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px">
+
+        <div class="row" style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
+            <div class="col-md-4" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+
+                <div class="row">
+                    <div class="col"
+                        style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                        Telefone
+                    </div>
+                </div>
+
+                <div class="row" style="padding: 0px; margin: 0px">
+                    <div class="col" style="padding: 0px; margin: 0px">
+                        <asp:TextBox ID="cs_transportadora_telefone" runat="server" CssClass="layouttexto"
+                            Style="width: 80%; padding: 0px; margin: 0px"
+                            onBlur="SetTextIn(this,0);SetDiv('div_cadastro_transportadora_fone_contato',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_transportadora_fone_contato',1)">
+
+                        </asp:TextBox>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4"
+                style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+
+
+                <div class="row">
+                    <div class="col"
+                        style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                        Ramal 
+                    </div>
+                </div>
+
+                <div class="row" style="padding: 0px; margin: 0px">
+                    <div class="col" style="padding: 0px; margin: 0px">
+                        <asp:TextBox ID="cs_transportadora_ramal" runat="server" CssClass="layouttexto"
+                            Style="width: 200px; padding: 0px; margin: 0px"
+                            onBlur="SetTextIn(this,0);SetDiv('div_cadastro_transportadora_fone_contato',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_transportadora_fone_contato',1)">
+
+                        </asp:TextBox>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4"
+                style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+
+
+                <div class="row">
+                    <div class="col"
+                        style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                        FAX 
+                    </div>
+                </div>
+
+                <div class="row" style="padding: 0px; margin: 0px">
+                    <div class="col" style="padding: 0px; margin: 0px">
+                        <asp:TextBox ID="cs_transportadora_fax" runat="server" CssClass="layouttexto"
+                            Style="width: 200px; padding: 0px; margin: 0px"
+                            onBlur="SetTextIn(this,0);SetDiv('div_cadastro_transportadora_fone_contato',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_transportadora_fone_contato',1)">
+
+                        </asp:TextBox>
+                    </div>
+                </div>
+            </div>
+          
+
+        </div>
+    </div>
+
+                    <!--/////////////////////////////////////////////////// lado direito - Site - Contato /////////////////////////////////////////////////////////////////////////////////////////////-->
+
+                    <div class="col-xl-5" style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px">
+
+                        <div class="row" style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
+                            <div class="col-md-5" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+                                <div class="row">
+                                    <div class="col"
+                                        style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                        Contato
+                                    </div>
+                                </div>
+
+                                <div class="row" style="padding: 0px; margin: 0px">
+                                    <div class="col" style="padding: 0px; margin: 0px">
+                                        <asp:TextBox ID="cs_transportadora_contato" runat="server" CssClass="layouttexto"
+                                            Style="width: 90%; padding: 0px; margin: 0px"
+                                            onBlur="SetTextIn(this,0);SetDiv('div_cadastro_transportadora_fone_contato',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_transportadora_fone_contato',1)">
+
+                                        </asp:TextBox>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-7" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+
+                                <div class="row">
+                                    <div class="col"
+                                        style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                        Site
+                                    </div>
+                                </div>
+
+                                <div class="row" style="padding: 0px; margin: 0px">
+                                    <div class="col" style="padding: 0px; margin: 0px">
+                                        <asp:TextBox ID="cs_transportadora_site" runat="server" CssClass="layouttexto"
+                                            Style="width: 90%; padding: 0px; margin: 0px"
+                                            onBlur="SetTextIn(this,0);SetDiv('div_cadastro_transportadora_fone_contato',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_transportadora_fone_contato ',1)">
+
+                                        </asp:TextBox>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--/////////////////////////////////////////////////// Lado Esquerdo -  Email ////////////////////////////////////////////////////////////////////////////////////////////-->
+                <div class="row" style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
+                    <div class="col-xl-12" style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px">
+
+                        <div class="row" style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
+                            <div class="col-md" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+
+                                <div class="row">
+                                    <div class="col"
+                                        style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                        E-mail
+                                    </div>
+                                </div>
+
+                                <div class="row" style="padding: 0px; margin: 0px">
+                                    <div class="col" style="padding: 0px; margin: 0px">
+                                        <asp:TextBox ID="cs_transportadora_email" runat="server" CssClass="layouttexto"
+                                            Style="width: 35%; padding: 0px; margin: 0px"
+                                            onBlur="SetTextIn(this,0);SetDiv('div_cadastro_transportadora_fone_contato',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_transportadora_fone_contato ',1)">
+
+                                        </asp:TextBox>
                                     </div>
                                 </div>
                             </div>

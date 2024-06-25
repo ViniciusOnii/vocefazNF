@@ -446,7 +446,7 @@
 
                             <div class="row" style="padding: 0px; margin: 0px">
                                 <div class="col" style="padding: 0px; margin: 0px">
-                                    <asp:TextBox ID="TextBox10" runat="server" CssClass="layouttexto"
+                                    <asp:TextBox ID="cs_fornecedor_cnpj" runat="server" CssClass="layouttexto"
                                         Style="width: 80%; padding: 0px; margin: 0px"
                                         onBlur="SetTextIn(this,0);SetDiv('div_cadastro_fornecedores_documentacao',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_fornecedores_documentacao',1)">
 
@@ -468,7 +468,7 @@
 
                             <div class="row" style="padding: 0px; margin: 0px">
                                 <div class="col" style="padding: 0px; margin: 0px">
-                                    <asp:TextBox ID="TextBox8" runat="server" CssClass="layouttexto"
+                                    <asp:TextBox ID="cs_fornecedor_inscricao" runat="server" CssClass="layouttexto"
                                         Style="width: 80%; padding: 0px; margin: 0px"
                                         onBlur="SetTextIn(this,0);SetDiv('div_cadastro_fornecedores_documentacao',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_fornecedores_documentacao',1)">
 
@@ -497,7 +497,7 @@
 
                             <div class="row" style="padding: 0px; margin: 0px">
                                 <div class="col" style="padding: 0px; margin: 0px">
-                                    <asp:TextBox ID="TextBox9" runat="server" CssClass="layouttexto"
+                                    <asp:TextBox ID="cs_fornecedor_suframa" runat="server" CssClass="layouttexto"
                                         Style="width: 90%; padding: 0px; margin: 0px"
                                         onBlur="SetTextIn(this,0);SetDiv('div_cadastro_fornecedores_documentacao',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_fornecedores_documentacao',1)">
 
@@ -559,7 +559,7 @@
 
                         <div class="row" style="padding: 0px; margin: 0px">
                             <div class="col" style="padding: 0px; margin: 0px">
-                                <asp:TextBox ID="TextBox11" runat="server" CssClass="layouttexto"
+                                <asp:TextBox ID="cs_fornecedor_telefone" runat="server" CssClass="layouttexto"
                                     Style="width: 80%; padding: 0px; margin: 0px"
                                     onBlur="SetTextIn(this,0);SetDiv('div_cadastro_fornecedores_fone_contato',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_fornecedores_fone_contato',1)">
 
@@ -581,7 +581,7 @@
 
                         <div class="row" style="padding: 0px; margin: 0px">
                             <div class="col" style="padding: 0px; margin: 0px">
-                                <asp:TextBox ID="TextBox12" runat="server" CssClass="layouttexto"
+                                <asp:TextBox ID="cs_fornecedor_ramal" runat="server" CssClass="layouttexto"
                                     Style="width: 200px; padding: 0px; margin: 0px"
                                     onBlur="SetTextIn(this,0);SetDiv('div_cadastro_fornecedores_fone_contato',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_fornecedores_fone_contato',1)">
 
@@ -603,7 +603,7 @@
 
                         <div class="row" style="padding: 0px; margin: 0px">
                             <div class="col" style="padding: 0px; margin: 0px">
-                                <asp:TextBox ID="TextBox14" runat="server" CssClass="layouttexto"
+                                <asp:TextBox ID="cs_fornecedor_fax" runat="server" CssClass="layouttexto"
                                     Style="width: 200px; padding: 0px; margin: 0px"
                                     onBlur="SetTextIn(this,0);SetDiv('div_cadastro_fornecedores_fone_contato',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_fornecedores_documentacao',1)">
 
@@ -737,7 +737,7 @@
     </div>
                </div>
            </div>
-    <!--///////////////////////////////////////////////////  Container - Fornecedor Documentação  /////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!--///////////////////////////////////////////////////  Container - Obersavações Gerais /////////////////////////////////////////////////////////////////////////////////////////////-->
 
     <div class="container-fluid" style="padding: 0px; margin: 0px; width: 100%; height: 100%">
         <div class="row" style="width: 100%; height: 50px"></div>

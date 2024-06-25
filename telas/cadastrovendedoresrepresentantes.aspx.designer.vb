@@ -11,185 +11,176 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class cadastrofornecedores
+Partial Public Class cadastrovendedores_representantes
 
     '''<summary>
-    '''Controle cs_codigo_transportadora.
+    '''Controle cs_codigo_vendedor_representante.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_codigo_transportadora As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_codigo_vendedor_representante As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_razao_social_transportadora.
+    '''Controle cs_nome_vendedor_vendedor.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_razao_social_transportadora As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_nome_vendedor_vendedor As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_nome_fantasia_transportadora.
+    '''Controle cs_apelido_vendedor_representante.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_nome_fantasia_transportadora As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_apelido_vendedor_representante As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_fornecedor_cep_transportadora.
+    '''Controle cs_pessoa_vendedor_representante.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_fornecedor_cep_transportadora As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_pessoa_vendedor_representante As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Controle cs_endereco_transportadora.
+    '''Controle cs_tipo_vendedor_representante.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_endereco_transportadora As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_tipo_vendedor_representante As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Controle cs_cidade_transportadora.
+    '''Controle cs_cep_vendedor_representante.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_cidade_transportadora As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cep_vendedor_representante As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_bairro_transportadora.
+    '''Controle cs_endereco_vendedor_representante.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_bairro_transportadora As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_endereco_vendedor_representante As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_estado_transportadora.
+    '''Controle cs_cidade_vendedor_representante.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_estado_transportadora As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents cs_cidade_vendedor_representante As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle img_logo_transportadora.
+    '''Controle cs_bairro_vendedor_representante.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents img_logo_transportadora As Global.System.Web.UI.WebControls.Image
+    Protected WithEvents cs_bairro_vendedor_representante As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle file_logo.
+    '''Controle cs_estado_vendedor_representante.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents file_logo As Global.System.Web.UI.WebControls.FileUpload
+    Protected WithEvents cs_estado_vendedor_representante As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Controle cmd_carregar_logo.
+    '''Controle cs_cpf_vendedor_representante.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cmd_carregar_logo As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents cs_cpf_vendedor_representante As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle lblmsg.
+    '''Controle cs_inscricao_vendedor_representante.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents lblmsg As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents cs_inscricao_vendedor_representante As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_cnpj_cpf_transportadora.
+    '''Controle cs_fone_contato_vendedor.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_cnpj_cpf_transportadora As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_fone_contato_vendedor As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_inscricao_transportadora.
+    '''Controle cs_fone_contato_ramal.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_inscricao_transportadora As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_fone_contato_ramal As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_transportadora_telefone.
+    '''Controle cs_fone_contato_fax.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_transportadora_telefone As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_fone_contato_fax As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_transportadora_ramal.
+    '''Controle cs_fone_contato_contato.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_transportadora_ramal As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_fone_contato_contato As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_transportadora_fax.
+    '''Controle cs_fone_contato_site.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_transportadora_fax As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_fone_contato_site As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_transportadora_contato.
+    '''Controle cs_fone_contato_email.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_transportadora_contato As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_fone_contato_email As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_transportadora_site.
+    '''Controle TextBox19.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_transportadora_site As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Controle cs_transportadora_email.
-    '''</summary>
-    '''<remarks>
-    '''Campo gerado automaticamente.
-    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-    '''</remarks>
-    Protected WithEvents cs_transportadora_email As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TextBox19 As Global.System.Web.UI.WebControls.TextBox
 End Class

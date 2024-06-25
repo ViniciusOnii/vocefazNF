@@ -158,58 +158,58 @@ Partial Public Class cadastrodefornecedores
     Protected WithEvents cs_fornecedor_nome_pais As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox10.
+    '''Controle cs_fornecedor_cnpj.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox10 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_fornecedor_cnpj As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox8.
+    '''Controle cs_fornecedor_inscricao.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox8 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_fornecedor_inscricao As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox9.
+    '''Controle cs_fornecedor_suframa.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox9 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_fornecedor_suframa As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox11.
+    '''Controle cs_fornecedor_telefone.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox11 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_fornecedor_telefone As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox12.
+    '''Controle cs_fornecedor_ramal.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox12 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_fornecedor_ramal As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox14.
+    '''Controle cs_fornecedor_fax.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox14 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_fornecedor_fax As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Controle TextBox13.
