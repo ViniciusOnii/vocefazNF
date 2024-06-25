@@ -138,4 +138,58 @@ Partial Public Class cadastrofornecedores
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
     Protected WithEvents cs_inscricao_transportadora As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle TextBox11.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents TextBox11 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle TextBox12.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents TextBox12 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle TextBox14.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents TextBox14 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle TextBox13.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents TextBox13 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle TextBox15.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents TextBox15 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_transportadora_email.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_transportadora_email As Global.System.Web.UI.WebControls.TextBox
 End Class
