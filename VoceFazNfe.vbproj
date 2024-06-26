@@ -240,6 +240,7 @@
     <Content Include="Imagens\fundoazultopo.png" />
     <Content Include="Imagens\fundo_topo.png" />
     <Content Include="Imagens\fundo_topo_azul.jpg" />
+    <Content Include="Imagens\icone_dados_cliente.png" />
     <Content Include="Imagens\ihelp.png" />
     <Content Include="Imagens\logocsv.jpg" />
     <Content Include="Imagens\preloader.gif" />
@@ -249,6 +250,7 @@
     <Content Include="Jquery\jquery_min.js" />
     <Content Include="Logotipos\logoempresa.bmp" />
     <Content Include="telas\banco.aspx" />
+    <Content Include="telas\cadastroclientes.aspx" />
     <Content Include="telas\cadastrocores.aspx" />
     <Content Include="telas\cadastrodefornecedores.aspx" />
     <Content Include="telas\cadastrodeprodutos.aspx" />
@@ -300,6 +302,13 @@
     </Compile>
     <Compile Include="telas\banco.aspx.vb">
       <DependentUpon>banco.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="telas\cadastroclientes.aspx.designer.vb">
+      <DependentUpon>cadastroclientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\cadastroclientes.aspx.vb">
+      <DependentUpon>cadastroclientes.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="telas\cadastrocores.aspx.designer.vb">

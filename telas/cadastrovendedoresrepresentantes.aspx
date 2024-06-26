@@ -561,7 +561,7 @@
                                 <div class="row" style="padding: 0px; margin: 0px">
                                     <div class="col" style="padding: 0px; margin: 0px">
                                         <asp:TextBox ID="cs_fone_contato_email" runat="server" CssClass="layouttexto"
-                                            Style="width: 35%; padding: 0px; margin: 0px"
+                                            Style="width: 30%; padding: 0px; margin: 0px"
                                             onBlur="SetTextIn(this,0);SetDiv('div_cadastro_fone_contato_vendedor',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_fone_contato_vendedor ',1)">
 
                                         </asp:TextBox>
@@ -587,8 +587,8 @@
 
         <div class="row" style="width: 100%; height: 100%; color: #177CC0; padding-left: 20px; padding-top: 0px; font-family: Arial; font-size: 20px; font-weight: bold; margin-left: 0px">
 
-            <div id="i_cadastro_observacoes_gerais_vendedor_on" name="i_cadastro_observacoes_gerais_vendedor_on" class="col" align="left" style="display: block; visibility: hidden; font-size: 20px; color: red; margin-right: 20px; border-bottom: none; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_observacoes_gerais_vendedor','i_cadastro_observacoes_gerais_vendedor_on','i_cadastro_observacoes_gerais_vendedor_off',0)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Observações Gerais</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i></div>
-            <div id="i_cadastro_observacoes_gerais_vendedor_off" name="i_cadastro_observacoes_gerais_vendedor_off" class="col" align="left" style="display: none; visibility: visible; font-size: 20px; color: red; margin-right: 20px; border-bottom: solid; border-width: 1px; border-color: #767676; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_observacoes_gerais_vendedor','i_cadastro_observacoes_gerais_vendedor_on','i_cadastro_observacoes_gerais_vendedor_off',1)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Observações Gerais</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i></div>
+            <div id="i_cadastro_observacoes_gerais_vendedor_on" name="i_cadastro_observacoes_gerais_vendedor_on" class="col" align="left" style="display: none; visibility: hidden; font-size: 20px; color: red; margin-right: 20px; border-bottom: none; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_observacoes_gerais_vendedor','i_cadastro_observacoes_gerais_vendedor_on','i_cadastro_observacoes_gerais_vendedor_off',0)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Observações Gerais</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i></div>
+            <div id="i_cadastro_observacoes_gerais_vendedor_off" name="i_cadastro_observacoes_gerais_vendedor_off" class="col" align="left" style="display: block; visibility: visible; font-size: 20px; color: red; margin-right: 20px; border-bottom: solid; border-width: 1px; border-color: #767676; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_observacoes_gerais_vendedor','i_cadastro_observacoes_gerais_vendedor_on','i_cadastro_observacoes_gerais_vendedor_off',1)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Observações Gerais</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i></div>
 
         </div>
 
