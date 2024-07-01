@@ -104,58 +104,58 @@ Partial Public Class cadastroclientes
     Protected WithEvents cs_endereco_faturamento_complemento As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox1.
+    '''Controle cs_endereco_faturamento_bairro.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_endereco_faturamento_bairro As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_codMunicipio.
+    '''Controle cs_endereco_faturamento_codigo_municipio.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_codMunicipio As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_endereco_faturamento_codigo_municipio As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_nomemunicipio.
+    '''Controle cs_endereco_faturamento_nome_municipio.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_nomemunicipio As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_endereco_faturamento_nome_municipio As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_uf.
+    '''Controle cs_endereco_faturamento_uf.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_uf As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents cs_endereco_faturamento_uf As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Controle codigo_pais_destinatario.
+    '''Controle cs_endereco_faturamento_codigo_pais.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents codigo_pais_destinatario As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_endereco_faturamento_codigo_pais As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cs_nome_Pais_destinatario.
+    '''Controle cs_endereco_faturamento_nome_pais.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cs_nome_Pais_destinatario As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_endereco_faturamento_nome_pais As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Controle ImageButton1.
@@ -165,4 +165,130 @@ Partial Public Class cadastroclientes
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
     Protected WithEvents ImageButton1 As Global.System.Web.UI.WebControls.ImageButton
+
+    '''<summary>
+    '''Controle cmd_inscricao_estadual_nao_possui.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cmd_inscricao_estadual_nao_possui As Global.System.Web.UI.WebControls.RadioButton
+
+    '''<summary>
+    '''Controle cmd_inscricao_estadual_isnto.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cmd_inscricao_estadual_isnto As Global.System.Web.UI.WebControls.RadioButton
+
+    '''<summary>
+    '''Controle cs_inscricao_estadual_possui.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_inscricao_estadual_possui As Global.System.Web.UI.WebControls.RadioButton
+
+    '''<summary>
+    '''Controle cs_inscricao_estadual_numero.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_inscricao_estadual_numero As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_documentacao_cliente_cnpj.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_documentacao_cliente_cnpj As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_documentacao_cliente_cpf.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_documentacao_cliente_cpf As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_documentacao_cliente_isc_municipal.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_documentacao_cliente_isc_municipal As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_documentacao_cliente_suframa.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_documentacao_cliente_suframa As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_transportadora_telefone.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_transportadora_telefone As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_transportadora_ramal.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_transportadora_ramal As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_transportadora_fax.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_transportadora_fax As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_transportadora_contato.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_transportadora_contato As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_transportadora_site.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_transportadora_site As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_transportadora_email.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_transportadora_email As Global.System.Web.UI.WebControls.TextBox
 End Class
