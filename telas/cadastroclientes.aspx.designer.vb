@@ -68,6 +68,15 @@ Partial Public Class cadastroclientes
     Protected WithEvents cs_sefaz_cliente As Global.System.Web.UI.WebControls.ImageButton
 
     '''<summary>
+    '''Controle cs_regime_cliente.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_regime_cliente As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
     '''Controle cs_endereco_faturamento_cep.
     '''</summary>
     '''<remarks>
@@ -158,13 +167,13 @@ Partial Public Class cadastroclientes
     Protected WithEvents cs_endereco_faturamento_nome_pais As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle ImageButton1.
+    '''Controle cs_endereco_faturamento_icone_cliente.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents ImageButton1 As Global.System.Web.UI.WebControls.ImageButton
+    Protected WithEvents cs_endereco_faturamento_icone_cliente As Global.System.Web.UI.WebControls.ImageButton
 
     '''<summary>
     '''Controle cmd_inscricao_estadual_nao_possui.
@@ -291,4 +300,229 @@ Partial Public Class cadastroclientes
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
     Protected WithEvents cs_transportadora_email As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_cliente_endereco_cobranca_cep.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_cliente_endereco_cobranca_cep As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_cliente_endereco_cobrança.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_cliente_endereco_cobrança As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_cliente_numero_endereco_cobranca.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_cliente_numero_endereco_cobranca As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_complemento_endereco_cobranca.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_complemento_endereco_cobranca As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_cliente_bairro_endereco_cobranca.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_cliente_bairro_endereco_cobranca As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_cliente_codigo_municipio_endereco_cobranca.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_cliente_codigo_municipio_endereco_cobranca As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_cliente_uf_endereco_cobranca.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_cliente_uf_endereco_cobranca As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Controle cs_cliente_img_endereco_cobranca.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_cliente_img_endereco_cobranca As Global.System.Web.UI.WebControls.ImageButton
+
+    '''<summary>
+    '''Controle cs_cliente_endereco_entrega_cep.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_cliente_endereco_entrega_cep As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_cliente_endereco_entrega.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_cliente_endereco_entrega As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_cliente_endereco_entrega_numero.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_cliente_endereco_entrega_numero As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_cliente_endereco_entrega_complemento.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_cliente_endereco_entrega_complemento As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_cliente_endereco_entrega_bairro.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_cliente_endereco_entrega_bairro As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_cliente_endereco_entrega_codigo_municipio.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_cliente_endereco_entrega_codigo_municipio As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_cliente_endereco_entrega_uf.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_cliente_endereco_entrega_uf As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Controle cs_cliente_endereco_entrega_img.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_cliente_endereco_entrega_img As Global.System.Web.UI.WebControls.ImageButton
+
+    '''<summary>
+    '''Controle myTextArea.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents myTextArea As Global.System.Web.UI.HtmlControls.HtmlTextArea
+
+    '''<summary>
+    '''Controle cs_numero_modelo_fiscal_dados_principais.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_numero_modelo_fiscal_dados_principais As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_serie_documento_fiscal_dados_principais.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_serie_documento_fiscal_dados_principais As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cs_numero_documento_fiscal_dados_principais.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cs_numero_documento_fiscal_dados_principais As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle TextBox4.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents TextBox4 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle TextBox5.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents TextBox5 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle TextBox6.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents TextBox6 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle DropDownList1.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents DropDownList1 As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Controle ImageButton1.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents ImageButton1 As Global.System.Web.UI.WebControls.ImageButton
 End Class
