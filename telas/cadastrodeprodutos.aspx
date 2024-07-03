@@ -213,8 +213,6 @@
                                             Style="width: 10%;" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_produtos',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_produtos',1)">
                                         </asp:TextBox>
 
-
-
                                         <asp:TextBox ID="cs_unidade_estoque" runat="server" CssClass="layouttexto"
                                             Style="width: 270px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_produtos',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_produtos',1)">
                                         </asp:TextBox>

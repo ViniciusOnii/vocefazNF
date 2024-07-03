@@ -1,4 +1,6 @@
-﻿Public Class cadastroclientes
+﻿Imports System.Drawing
+
+Public Class cadastroclientes
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -18,4 +20,5 @@
         cs_inscricao_estadual_numero.Text = ""
     End Sub
 
-End Class
+
+   
