@@ -19,6 +19,5 @@ Public Class cadastroclientes
         ' Clear the text in the TextBox whenever a different option is selected
         cs_inscricao_estadual_numero.Text = ""
     End Sub
+End Class
 
-
-   

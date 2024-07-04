@@ -1386,12 +1386,12 @@
 
                                 <div class="row" style="padding: 0px; margin: 0px">
                                     <div class="col" style="padding: 0px; margin: 0px">
-                                        <asp:TextBox ID="cs_unidade_estoque0" runat="server" CssClass="layouttexto"
-                                            Style="width: 10%;" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_produtos',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_produtos',1)">
+                                        <asp:TextBox ID="cs_cadastro_cliente_vendedor0" runat="server" CssClass="layouttexto"
+                                            Style="width: 10%;" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
                                         </asp:TextBox>
 
-                                        <asp:TextBox ID="cs_unidade_estoque" runat="server" CssClass="layouttexto"
-                                            Style="width: 270px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_produtos',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_produtos',1)">
+                                        <asp:TextBox ID="cs_cadastro_cliente_vendedor1" runat="server" CssClass="layouttexto"
+                                            Style="width: 270px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
                                         </asp:TextBox>
 
 
@@ -1414,12 +1414,12 @@
 
                                 <div class="row" style="padding: 0px; margin: 0px">
                                     <div class="col" style="padding: 0px; margin: 0px">
-                                        <asp:TextBox ID="TextBox4" runat="server" CssClass="layouttexto"
-                                            Style="width: 10%;" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_produtos',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_produtos',1)">
+                                        <asp:TextBox ID="cs_cadastro_cliente_regiao0" runat="server" CssClass="layouttexto"
+                                            Style="width: 10%;" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
                                         </asp:TextBox>
 
-                                        <asp:TextBox ID="TextBox5" runat="server" CssClass="layouttexto"
-                                            Style="width: 270px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_produtos',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_produtos',1)">
+                                        <asp:TextBox ID="cs_cadastro_cliente_regiao1" runat="server" CssClass="layouttexto"
+                                            Style="width: 270px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
                                         </asp:TextBox>
 
 
@@ -1452,12 +1452,12 @@
 
                                 <div class="row" style="padding: 0px; margin: 0px">
                                     <div class="col" style="padding: 0px; margin: 0px">
-                                        <asp:TextBox ID="TextBox1" runat="server" CssClass="layouttexto"
-                                            Style="width: 10%;" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_produtos',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_produtos',1)">
+                                        <asp:TextBox ID="cs_cadastro_cliente_familia_cliente0" runat="server" CssClass="layouttexto"
+                                            Style="width: 10%;" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
                                         </asp:TextBox>
 
-                                        <asp:TextBox ID="TextBox2" runat="server" CssClass="layouttexto"
-                                            Style="width: 270px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_produtos',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_produtos',1)">
+                                        <asp:TextBox ID="cs_cadastro_cliente_familia_cliente1" runat="server" CssClass="layouttexto"
+                                            Style="width: 270px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
                                         </asp:TextBox>
 
 
@@ -1481,7 +1481,7 @@
                             <div class="row" style="padding: 0px; margin: 0px">
                                 <div class="col" style="padding: 0px; margin: 0px">
                                     <asp:TextBox ID="cs_cliente_complemente_data_nascimento" runat="server" CssClass="layouttexto"
-                                        Style="width: 100px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_produtos',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_produtos',1)">
+                                        Style="width: 100px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
                                     </asp:TextBox>
                                      
                                 </div>
@@ -1510,12 +1510,12 @@
 
                                 <div class="row" style="padding: 0px; margin: 0px">
                                     <div class="col" style="padding: 0px; margin: 0px">
-                                        <asp:TextBox ID="TextBox3" runat="server" CssClass="layouttexto"
-                                            Style="width: 10%;" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_produtos',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_produtos',1)">
+                                        <asp:TextBox ID="cs_cadastro_cliente_representante0" runat="server" CssClass="layouttexto"
+                                            Style="width: 10%;" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
                                         </asp:TextBox>
 
-                                        <asp:TextBox ID="TextBox7" runat="server" CssClass="layouttexto"
-                                            Style="width: 270px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_produtos',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_produtos',1)">
+                                        <asp:TextBox ID="cs_cadastro_cliente_representante1" runat="server" CssClass="layouttexto"
+                                            Style="width: 270px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
                                         </asp:TextBox>
 
 
@@ -1540,9 +1540,9 @@
 
                             <div class="row" style="padding: 0px; margin: 0px">
                                 <div class="col" style="padding: 0px; margin: 0px">
-                                    <asp:TextBox ID="TextBox17" runat="server" CssClass="layouttexto"
+                                    <asp:TextBox ID="cs_cadastro_cliente_email" runat="server" CssClass="layouttexto"
                                         Style="width: 75%; padding: 0px; margin: 0px"
-                                        onBlur="SetTextIn(this,0);SetDiv('div_cadastro_fornecedores_fone_contato',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_fornecedores_fone_contato',1)">
+                                        onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
 
                                     </asp:TextBox>
                                 </div>
@@ -1565,9 +1565,9 @@
 
                             <div class="row" style="padding: 0px; margin: 0px">
                                 <div class="col" style="padding: 0px; margin: 0px">
-                                    <asp:TextBox ID="TextBox18" runat="server" CssClass="layouttexto"
+                                    <asp:TextBox ID="cs_cadastro_cliente_envio_nfe" runat="server" CssClass="layouttexto"
                                         Style="width: 80%; padding: 0px; margin: 0px"
-                                        onBlur="SetTextIn(this,0);SetDiv('div_cadastro_fornecedores_fone_contato',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_fornecedores_fone_contato',1)">
+                                        onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
 
                                     </asp:TextBox>
                                 </div>
@@ -1585,9 +1585,9 @@
 
                             <div class="row" style="padding: 0px; margin: 0px">
                                 <div class="col" style="padding: 0px; margin: 0px">
-                                    <asp:TextBox ID="TextBox8" runat="server" CssClass="layouttexto"
+                                    <asp:TextBox ID="cs_cadastro_cliente_instagram" runat="server" CssClass="layouttexto"
                                         Style="width: 80%; padding: 0px; margin: 0px"
-                                        onBlur="SetTextIn(this,0);SetDiv('div_cadastro_fornecedores_fone_contato',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_fornecedores_fone_contato',1)">
+                                        onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
 
                                     </asp:TextBox>
                                 </div>
@@ -1599,43 +1599,221 @@
         </div>
     </div>
 
-       <!--///////////////////////////////////////////////////  Container dados adicionais   /////////////////////////////////////////////////////////////////////////////////////////////-->
-<div class="container-fluid" style="padding: 0px; margin: 0px; width: 100%; height: 100%">
-    <div class="row" style="width: 100%; height: 50px"></div>
+      
 
-    <div class="row" style="width: 100%; height: 100%; padding: 0px; margin: 0px; background-color: transparent">
-        <div class="row" style="width: 100%; height: 100%; color: #177CC0; padding-left: 20px; padding-top: 0px; font-family: Arial; font-size: 20px; font-weight: bold; margin-left: 0px">
-            <div id="i_cadastro_cliente_dados_adicionais_on" name="i_cadastro_cliente_dados_adicionais_on" class="col" align="left" style="display: block; visibility: visible; font-size: 20px; color: red; margin-right: 20px; border-bottom: none; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_cliente_dados_adicionais','i_cadastro_cliente_dados_adicionais_off',0)">
-                <span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Avisos</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i>
-            </div>
-            <div id="i_cadastro_cliente_dados_adicionais_off" name="i_cadastro_cliente_dados_adicionais_off" class="col" align="left" style="display: none; visibility: hidden; font-size: 20px; color: red; margin-right: 20px; border-bottom: solid; border-width: 1px; border-color: #767676; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_cliente_dados_adicionais','i_cadastro_cliente_dados_adicionais_on','i_cadastro_cliente_dados_adicionais_off',1)">
-                <span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Avisos</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i>
-            </div>
-        </div>
-        
-        <div class="row" style="width: 100%; height: 20px"></div>
+     <!--///////////////////////////////////////////////////  Container - Referencias Comerciais  /////////////////////////////////////////////////////////////////////////////////////////////-->
+ <div class="container-fluid" style="padding: 0px; margin: 0px; width: 100%; height: 100%">
+     <div class="row" style="width: 100%; height: 50px"></div>
 
-        <div id="div_cadastro_cliente_dados_adicionais" name="div_cadastro_cliente_dados_adicionais" style="display: block; visibility: visible; width: 100%; height: 100%; background-color: transparent; margin-left: 20px; margin-right: 20px; border: solid; border-color: #177CC0; border-width: 1px; border-radius: 10px; padding: 0px 20px 20px 20px;">
-            <div class="row" style="height: 20px"></div>
 
-            <div class="row" style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
-                <!--/////////////////////////////////////////////////// Lado Esquerdo -  CPNJ - CPF /////////////////////////////////////////////////////////////////////////////////////////////-->
-                <div class="col-xl-12" style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px">
-                    <div class="row" style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
-                        <div class="col-md-12" style="width: 50%; height: 100%; background-color: transparent; padding: 10px;">
-                            <div class="row" style="padding: 0px; margin: 0px">
-                                <div class="col" style="padding: 0px; margin: 0px">
-                                    <textarea id="Textarea1" runat="server" class="layouttexto" rows="4" cols="50"
-                                        style="width: 50%; padding: 0px; margin: 0px; border: 1px solid #000000;"
-                                        onblur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_adicionais',0)" onfocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_documentacao',1)">
-                                    </textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+     <div class="row" style="width: 100%; height: 100%; padding: 0px; margin: 0px; background-color: transparent">
+
+
+
+         <div class="row" style="width: 100%; height: 100%; color: #177CC0; padding-left: 20px; padding-top: 0px; font-family: Arial; font-size: 20px; font-weight: bold; margin-left: 0px">
+
+             <div id="i_cadastro_cliente_referencias_comerciais_on" name="i_cadastro_fone_referencias_comerciais_on" class="col" align="left" style="display: none; visibility: hidden; font-size: 20px; color: red; margin-right: 20px; border-bottom: none; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_cliente_referencias_comerciais','i_cadastro_cliente_referencias_comerciais_on','i_cadastro_cliente_referencias_comerciais_off',0)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Referências Comerciais</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i></div>
+             <div id="i_cadastro_cliente_referencias_comerciais_off" name="i_cadastro_fone_referencias_comerciais_off" class="col" align="left" style="display: block; visibility: visible; font-size: 20px; color: red; margin-right: 20px; border-bottom: solid; border-width: 1px; border-color: #767676; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_cliente_referencias_comerciais','i_cadastro_cliente_referencias_comerciais_on','i_cadastro_cliente_referencias_comerciais_off',1)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Referências Comerciais</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i></div>
+
+         </div>
+
+         <div class="row" style="width: 100%; height: 20px"></div>
+
+
+         <div id="div_cadastro_cliente_referencias_comerciais" name="div_cadastro_cliente_referencias_comerciais" style="display: none; visibility: hidden; width: 100%; height: 100%; background-color: transparent; margin-left: 20px; margin-right: 20px; border: solid; border-color: #177CC0; border-width: 1px; border-radius: 10px; padding: 0px 20px 20px 20px;">
+             <div class="row" style="height: 20px"></div>
+
+             <div class="row" style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
+                 <!--/////////////////////////////////////////////////// Lado Esquerdo -  Empresa - ddd Telefone /////////////////////////////////////////////////////////////////////////////////////////////-->
+                 <div class="col-xl-6" style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px">
+
+                     <div class="row" style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
+                         <div class="col-md-6" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+
+                             <div class="row">
+                                 <div class="col"
+                                     style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                     Empresa
+                                 </div>
+                             </div>
+
+                             <div class="row" style="padding: 0px; margin: 0px">
+                                 <div class="col" style="padding: 0px; margin: 0px">
+                                     <asp:TextBox ID="cs_fone_contato_vendedor" runat="server" CssClass="layouttexto"
+                                         Style="width: 80%; padding: 0px; margin: 0px"
+                                         onBlur="SetTextIn(this,0);SetDiv('div_cadastro_fone_contato_vendedor',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_fone_contato_vendedor',1)">
+
+                                     </asp:TextBox>
+                                 </div>
+                             </div>
+                         </div>
+
+                         <div class="col-md-6"
+                             style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+
+
+                             <div class="row">
+                                 <div class="col"
+                                     style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                     (ddd) Telefone 
+                                 </div>
+                             </div>
+
+                             <div class="row" style="padding: 0px; margin: 0px">
+                                 <div class="col" style="padding: 0px; margin: 0px">
+                                     <asp:TextBox ID="cs_fone_contato_ramal" runat="server" CssClass="layouttexto"
+                                         Style="width: 200px; padding: 0px; margin: 0px"
+                                         onBlur="SetTextIn(this,0);SetDiv('div_cadastro_fone_contato_vendedor',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_fone_contato_vendedor',1)">
+
+                                     </asp:TextBox>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+
+                 <!--/////////////////////////////////////////////////// lado direito - Cliente - data ult.compra /////////////////////////////////////////////////////////////////////////////////////////////-->
+
+                 <div class="col-xl-6" style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px">
+
+                     <div class="row" style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
+                         <div class="col-md-5" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+                             <div class="row">
+                                 <div class="col"
+                                     style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                     Cliente Desde
+                                 </div>
+                             </div>
+
+                             <div class="row" style="padding: 0px; margin: 0px">
+                                 <div class="col" style="padding: 0px; margin: 0px">
+                                     <asp:TextBox ID="cs_fone_contato_contato" runat="server" CssClass="layouttexto"
+                                         Style="width: 90%; padding: 0px; margin: 0px"
+                                         onBlur="SetTextIn(this,0);SetDiv('div_cadastro_fone_contato_vendedor',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_fone_contato_vendedor',1)">
+
+                                     </asp:TextBox>
+                                 </div>
+                             </div>
+                         </div>
+
+                         <div class="col-md-7" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+
+                             <div class="row">
+                                 <div class="col"
+                                     style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                     Data Ult. Compra
+                                 </div>
+                             </div>
+
+                             <div class="row" style="padding: 0px; margin: 0px">
+                                 <div class="col" style="padding: 0px; margin: 0px">
+                                     <asp:TextBox ID="cs_fone_contato_site" runat="server" CssClass="layouttexto"
+                                         Style="width: 90%; padding: 0px; margin: 0px"
+                                         onBlur="SetTextIn(this,0);SetDiv('div_cadastro_fone_contato_vendedor',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_fone_contato_vendedor ',1)">
+
+                                     </asp:TextBox>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+
+             <!--/////////////////////////////////////////////////// Lado Esquerdo -  R$ ult.Compra - R$ Valor Médio  ////////////////////////////////////////////////////////////////////////////////////////////-->
+             <div class="row" style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
+                 <div class="col-xl-12" style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px">
+
+                     <div class="row" style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
+                         <div class="col-md-6" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+
+                             <div class="row">
+                                 <div class="col"
+                                     style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                     R$ Ult Compra
+                                 </div>
+                             </div>
+
+                             <div class="row" style="padding: 0px; margin: 0px">
+                                 <div class="col" style="padding: 0px; margin: 0px">
+                                     <asp:TextBox ID="cs_fone_contato_email" runat="server" CssClass="layouttexto"
+                                         Style="width: 30%; padding: 0px; margin: 0px"
+                                         onBlur="SetTextIn(this,0);SetDiv('div_cadastro_fone_contato_vendedor',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_fone_contato_vendedor ',1)">
+
+                                     </asp:TextBox>
+                                 </div>
+                             </div>
+                         </div>
+
+                          <div class="col-md-6" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+
+                              <div class="row">
+                                  <div class="col"
+                                      style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                      R$ Valor Médio
+                                  </div>
+                              </div>
+
+                              <div class="row" style="padding: 0px; margin: 0px">
+                                  <div class="col" style="padding: 0px; margin: 0px">
+                                      <asp:TextBox ID="TextBox6" runat="server" CssClass="layouttexto"
+                                          Style="width: 30%; padding: 0px; margin: 0px"
+                                          onBlur="SetTextIn(this,0);SetDiv('div_cadastro_fone_contato_vendedor',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_fone_contato_vendedor ',1)">
+
+                                      </asp:TextBox>
+                                  </div>
+                              </div>
+                          </div>
+                     </div>
+                 </div>
+
+                  <!--/////////////////////////////////////////////////// Lado direito - Contato - Observações ////////////////////////////////////////////////////////////////////////////////////////////-->
+                 <div class="col-xl-6" style="width: 100%; height: 100%; background-color: transparent; padding: 0px; margin: 0px">
+
+                     <div class="row" style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
+                         <div class="col-md-6" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+
+                             <div class="row">
+                                 <div class="col"
+                                     style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                     Contato
+                                 </div>
+                             </div>
+
+                             <div class="row" style="padding: 0px; margin: 0px">
+                                 <div class="col" style="padding: 0px; margin: 0px">
+                                     <asp:TextBox ID="TextBox9" runat="server" CssClass="layouttexto"
+                                         Style="width: 30%; padding: 0px; margin: 0px"
+                                         onBlur="SetTextIn(this,0);SetDiv('div_cadastro_fone_contato_vendedor',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_fone_contato_vendedor ',1)">
+
+                                     </asp:TextBox>
+                                 </div>
+                             </div>
+                         </div>
+
+                         <div class="col-md-6" style="width: 100%; height: 100%; background-color: transparent; padding: 10px;">
+
+                             <div class="row">
+                                 <div class="col"
+                                     style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
+                                     Obersvações
+                                 </div>
+                             </div>
+
+                             <div class="row" style="padding: 0px; margin: 0px">
+                                 <div class="col" style="padding: 0px; margin: 0px">
+                                     <asp:TextBox ID="TextBox10" runat="server" CssClass="layouttexto"
+                                         Style="width: 30%; padding: 0px; margin: 0px"
+                                         onBlur="SetTextIn(this,0);SetDiv('div_cadastro_fone_contato_vendedor',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_fone_contato_vendedor ',1)">
+
+                                     </asp:TextBox>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
 </asp:Content>
