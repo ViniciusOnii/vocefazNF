@@ -268,6 +268,7 @@
     <Content Include="telas\locaisestoque.aspx" />
     <Content Include="telas\mensagemespecial.aspx" />
     <Content Include="telas\nfmanual.aspx" />
+    <Content Include="telas\parametrosimpressaoboletos.aspx" />
     <Content Include="telas\regiaodevendas.aspx" />
     <Content Include="telas\subgrupo.aspx" />
     <Content Include="telas\teste.aspx" />
@@ -428,6 +429,13 @@
     </Compile>
     <Compile Include="telas\nfmanual.aspx.vb">
       <DependentUpon>nfmanual.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="telas\parametrosimpressaoboletos.aspx.designer.vb">
+      <DependentUpon>parametrosimpressaoboletos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\parametrosimpressaoboletos.aspx.vb">
+      <DependentUpon>parametrosimpressaoboletos.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="telas\regiaodevendas.aspx.designer.vb">
