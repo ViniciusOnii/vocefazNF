@@ -143,7 +143,9 @@
     <Content Include="Help\bcoperacaopropria.html" />
     <Content Include="Help\bcufdestino.html" />
     <Content Include="Help\calculoicmsst.html" />
+    <Content Include="Help\nossonumero.html" />
     <Content Include="Help\CertificadoDigital.html" />
+    <Content Include="Help\carteira.html" />
     <Content Include="Help\cfop.html" />
     <Content Include="Help\ChassiVeiculo.html" />
     <Content Include="Help\ChaveAcessoNFE.html" />
@@ -234,6 +236,8 @@
     <Content Include="Help\ValorBCdoICMSST.html" />
     <Content Include="Help\ValordaAFRMM.html" />
     <Content Include="Help\valoripidevolvido.html" />
+    <Content Include="Imagens\bradesco.png" />
+    <Content Include="Imagens\brasil.png" />
     <Content Include="Imagens\certificadoft.png" />
     <Content Include="Imagens\fornecedor.png" />
     <Content Include="Imagens\fundo.png" />
@@ -242,8 +246,11 @@
     <Content Include="Imagens\fundo_topo_azul.jpg" />
     <Content Include="Imagens\icone_dados_cliente.png" />
     <Content Include="Imagens\ihelp.png" />
+    <Content Include="Imagens\itau.png" />
     <Content Include="Imagens\logocsv.jpg" />
     <Content Include="Imagens\preloader.gif" />
+    <Content Include="Imagens\safra.png" />
+    <Content Include="Imagens\santander.png" />
     <Content Include="Imagens\sefaz.jpg" />
     <Content Include="Imagens\topohelp.png" />
     <Content Include="Jquery\jquery_mask.js" />
