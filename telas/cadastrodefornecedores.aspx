@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/telas/Topo.Master" CodeBehind="cadastrodefornecedores.aspx.vb" Inherits="VoceFazNfe.cadastrodefornecedores" %>
+﻿c<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/telas/Topo.Master" CodeBehind="cadastrodefornecedores.aspx.vb" Inherits="VoceFazNfe.cadastrodefornecedores" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="row" style="width: 100%; height: 210px; background-color: transparent"></div>

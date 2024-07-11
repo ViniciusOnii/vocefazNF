@@ -302,74 +302,74 @@ Partial Public Class parametrosimpressaoboletos
     Protected WithEvents cs_cadastro_cliente_boleto_brasil As Global.System.Web.UI.HtmlControls.HtmlTextArea
 
     '''<summary>
-    '''Controle TextBox17.
+    '''Controle cs_cadastro_cliente_agencia_santander.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox17 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_agencia_santander As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox18.
+    '''Controle cs_cadastro_cliente_conta_santander.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox18 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_conta_santander As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox19.
+    '''Controle cs_cadastro_cliente_nosso_numero_santander.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox19 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_nosso_numero_santander As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox20.
+    '''Controle cs_cadastro_cliente_carteira_santander.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox20 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_carteira_santander As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox21.
+    '''Controle cs_cadastro_cliente_cedente_santander.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox21 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_cedente_santander As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox23.
+    '''Controle cs_cadastro_cliente_cod_transmicao_santander.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox23 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_cod_transmicao_santander As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox22.
+    '''Controle cs_cadastro_cliente_numero_cobrança_santander.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox22 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_numero_cobrança_santander As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle Textarea5.
+    '''Controle cs_cadastro_cliente_instrucao_boleto_santander.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents Textarea5 As Global.System.Web.UI.HtmlControls.HtmlTextArea
+    Protected WithEvents cs_cadastro_cliente_instrucao_boleto_santander As Global.System.Web.UI.HtmlControls.HtmlTextArea
 End Class
