@@ -144,6 +144,9 @@
     <Content Include="Help\bcufdestino.html" />
     <Content Include="Help\calculoicmsst.html" />
     <Content Include="Help\identificaocedente.html" />
+    <Content Include="Help\instrucaoitau.html" />
+    <Content Include="Help\instrucaobradesco.html" />
+    <Content Include="Help\parametrodemulta.html" />
     <Content Include="Help\numeroconvenio.html" />
     <Content Include="Help\codigocliente.html" />
     <Content Include="Help\nossonumero.html" />

@@ -127,7 +127,7 @@
                        <div class="row">
                            <div class="col"
                                style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                               Paramêtros de Multa(CNAB)
+                               Paramêtros de Multa(CNAB) &nbsp &nbsp <img alt="" src="../Imagens/ihelp.png"  style="width: 20px; height: 21px; cursor:pointer" onclick="anima_informacao(1,'parametrodemulta')" />
                            </div>
                        </div>
                            <div class="row" style="padding: 0px; margin: 0px">
@@ -154,7 +154,7 @@
                        <div class="row" style="padding: 0px; margin: 0px">
                            <div class="col" style="padding: 0px; margin: 0px">
                                <asp:TextBox ID="cs_cadastro_cliente_percentual_multa_bradesco" runat="server" CssClass="layouttexto"
-                                   Style="width: 75%; padding: 0px; margin: 0px"
+                                   Style="width: 140px; padding: 0px; margin: 0px"
                                    onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_bradesco',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_bradesco',1)">
 
                                </asp:TextBox>
@@ -192,7 +192,7 @@
                        <div class="row">
                            <div class="col"
                                style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                               Instrução(CNAB)
+                               Instrução(CNAB) &nbsp &nbsp <img alt="" src="../Imagens/ihelp.png"  style="width: 20px; height: 21px; cursor:pointer" onclick="anima_informacao(1,'instrucaobradesco')" />
                            </div>
                        </div>
 
@@ -252,7 +252,7 @@
                 <div class="row" style="padding: 0px; margin: 0px">
                     <div class="col" style="padding: 0px; margin: 0px">
                         <asp:TextBox ID="cs_cadastro_cliente_juros_bradesco" runat="server" CssClass="layouttexto"
-                            Style="width: 75%; padding: 0px; margin: 0px"
+                            Style="width: 140px; padding: 0px; margin: 0px"
                             onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_bradesco',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_bradesco',1)">
 
                         </asp:TextBox>
@@ -395,7 +395,7 @@
                                <div class="col" style="padding: 0px; margin: 0px">
                                   
                                    <asp:TextBox ID="cs_cadastro_cliente_nosso_numero_itau" runat="server" CssClass="layouttexto"
-                                       Style="width: 270px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_itau',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_itau',1)">
+                                       Style="width: 60%" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_itau',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_itau',1)">
                                    </asp:TextBox>
 
                                </div>
@@ -453,7 +453,7 @@
                        <div class="row">
                            <div class="col"
                                style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                               Instrução(CNAB)
+                               Instrução(CNAB) &nbsp &nbsp <img alt="" src="../Imagens/ihelp.png"  style="width: 20px; height: 21px; cursor:pointer" onclick="anima_informacao(1,'instrucaoitau')" />
                            </div>
                        </div>
 
