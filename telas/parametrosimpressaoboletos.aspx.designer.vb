@@ -248,58 +248,58 @@ Partial Public Class parametrosimpressaoboletos
     Protected WithEvents cs_cadastro_cliente_boleto_safra As Global.System.Web.UI.HtmlControls.HtmlTextArea
 
     '''<summary>
-    '''Controle TextBox12.
+    '''Controle cs_cadastro_cliente_agencia_brasil.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox12 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_agencia_brasil As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox13.
+    '''Controle cs_cadastro_cliente_conta_brasil.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox13 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_conta_brasil As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox14.
+    '''Controle cs_cadastro_cliente_nosso_numero_brasil.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox14 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_nosso_numero_brasil As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox15.
+    '''Controle cs_cadastro_cliente_carteira_brasil.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox15 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_carteira_brasil As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox16.
+    '''Controle cs_cadastro_cliente_convenio_brasil.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox16 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_convenio_brasil As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle Textarea1.
+    '''Controle cs_cadastro_cliente_boleto_brasil.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents Textarea1 As Global.System.Web.UI.HtmlControls.HtmlTextArea
+    Protected WithEvents cs_cadastro_cliente_boleto_brasil As Global.System.Web.UI.HtmlControls.HtmlTextArea
 
     '''<summary>
     '''Controle TextBox17.

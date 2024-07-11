@@ -590,8 +590,8 @@
 
     <div class="row" style="width: 100%; height: 100%; display: block; padding-left: 20px; padding-top: 0px; margin-left: 0px;">
 
-        <div id="i_cadastro_cliente_impressao_safra_on" name="i_cadastro_cliente_impressao_safra_on" class="col" align="left" style="display: block; visibility: visible; font-size: 20px; color: red; margin-right: 20px; border-bottom: none; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_impressao_bradesco','i_cadastro_cliente_impressao_bradesco_on','i_cadastro_cliente_impressao_bradesco_off',0)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Safra</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i> &nbsp <img alt="" src="../Imagens/safra.png" style="width: 40px; height: 34px; cursor: pointer"/></div>
-        <div id="i_cadastro_cliente_impressao_safra_off" name="i_cadastro_cliente_impressao_safra_off" class="col" align="left" style="display: none; visibility: hidden; font-size: 20px; color: red; margin-right: 20px; border-bottom: solid; border-color: #767676; border-width: 1px; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_cliente_impressao_bradesco','i_cadastro_cliente_impressao_bradesco_on','i_cadastro_cliente_dados_complemento_off',1)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Safra</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i> </div>                                  
+        <div id="i_cadastro_cliente_impressao_safra_on" name="i_cadastro_cliente_impressao_safra_on" class="col" align="left" style="display: block; visibility: visible; font-size: 20px; color: red; margin-right: 20px; border-bottom: none; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_cliente_impressao_safra','i_cadastro_cliente_impressao_safra_on','i_cadastro_cliente_impressao_safra_off',0)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Safra</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i> &nbsp <img alt="" src="../Imagens/safra.png" style="width: 40px; height: 34px; cursor: pointer"/></div>
+        <div id="i_cadastro_cliente_impressao_safra_off" name="i_cadastro_cliente_impressao_safra_off" class="col" align="left" style="display: none; visibility: hidden; font-size: 20px; color: red; margin-right: 20px; border-bottom: solid; border-color: #767676; border-width: 1px; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_cliente_impressao_safra','i_cadastro_cliente_impressao_safra_on','i_cadastro_cliente_impressao_safra_off',1)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Safra</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i> </div>                                  
     </div>
 
            <div class="row" style="width: 100%; height: 20px"></div>
@@ -732,8 +732,8 @@
 
     <div class="row" style="width: 100%; height: 100%; display: block; padding-left: 20px; padding-top: 0px; margin-left: 0px;">
 
-        <div id="i_cadastro_cliente_impressao_banco_brasil_on" name="i_cadastro_cliente_impressao_safra_on" class="col" align="left" style="display: block; visibility: visible; font-size: 20px; color: red; margin-right: 20px; border-bottom: none; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_impressao_bradesco','i_cadastro_cliente_impressao_bradesco_on','i_cadastro_cliente_impressao_bradesco_off',0)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Banco do Brasil</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i> &nbsp <img alt="" src="../Imagens/brasil.png" style="width: 40px; height: 34px; cursor: pointer"/></div>
-        <div id="i_cadastro_cliente_impressao_banco_brasil_off" name="i_cadastro_cliente_impressao_safra_off" class="col" align="left" style="display: none; visibility: hidden; font-size: 20px; color: red; margin-right: 20px; border-bottom: solid; border-color: #767676; border-width: 1px; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_cliente_impressao_bradesco','i_cadastro_cliente_impressao_bradesco_on','i_cadastro_cliente_dados_complemento_off',1)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Banco do Brasil</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i> </div>                                  
+        <div id="i_cadastro_cliente_impressao_banco_brasil_on" name="i_cadastro_cliente_impressao_safra_on" class="col" align="left" style="display: block; visibility: visible; font-size: 20px; color: red; margin-right: 20px; border-bottom: none; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_cliente_impressao_banco_brasil','i_cadastro_cliente_impressao_banco_brasil_on','i_cadastro_cliente_impressao_banco_brasil_off',0)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Banco do Brasil</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i> &nbsp <img alt="" src="../Imagens/brasil.png" style="width: 40px; height: 34px; cursor: pointer"/></div>
+        <div id="i_cadastro_cliente_impressao_banco_brasil_off" name="i_cadastro_cliente_impressao_safra_off" class="col" align="left" style="display: none; visibility: hidden; font-size: 20px; color: red; margin-right: 20px; border-bottom: solid; border-color: #767676; border-width: 1px; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_cliente_impressao_banco_brasil','i_cadastro_cliente_impressao_banco_brasil_on','i_cadastro_cliente_impressao_banco_brasil_off',1)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Banco do Brasil</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i> </div>                                  
     </div>
 
            <div class="row" style="width: 100%; height: 20px"></div>
@@ -763,8 +763,8 @@
             
                          <div class="row" style="padding: 0px; margin: 0px">
                              <div class="col" style="padding: 0px; margin: 0px">                                  
-                                 <asp:TextBox ID="TextBox12" runat="server" CssClass="layouttexto"
-                                     Style="width: 140px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
+                                 <asp:TextBox ID="cs_cadastro_cliente_agencia_brasil" runat="server" CssClass="layouttexto"
+                                     Style="width: 140px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_banco_brasil',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_banco_brasil',1)">
                                  </asp:TextBox>                              
                              </div>
                          </div>
@@ -778,8 +778,8 @@
                      </div>                      
                          <div class="row" style="padding: 0px; margin: 0px">
                              <div class="col" style="padding: 0px; margin: 0px">                                  
-                                 <asp:TextBox ID="TextBox13" runat="server" CssClass="layouttexto"
-                                     Style="width: 140px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
+                                 <asp:TextBox ID="cs_cadastro_cliente_conta_brasil" runat="server" CssClass="layouttexto"
+                                     Style="width: 140px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_banco_brasil',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_banco_brasil',1)">
                                  </asp:TextBox>                                   
                              </div>
                          </div>
@@ -804,8 +804,8 @@
                          <div class="row" style="padding: 0px; margin: 0px">
                              <div class="col" style="padding: 0px; margin: 0px">
                                 
-                                 <asp:TextBox ID="TextBox14" runat="server" CssClass="layouttexto"
-                                     Style="width: 270px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
+                                 <asp:TextBox ID="cs_cadastro_cliente_nosso_numero_brasil" runat="server" CssClass="layouttexto"
+                                     Style="width: 270px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_banco_brasil',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_banco_brasil',1)">
                                  </asp:TextBox>
 
                              </div>
@@ -815,15 +815,15 @@
                  <div class="col-md-6" style="width: 100%; height: 100%; background-color: transparent; padding: 4px; padding-left: 15px; padding-top: 10px">
                      <div class="row">
                          <div class="col" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                             Carteira
+                             Carteira &nbsp &nbsp <img alt="" src="../Imagens/ihelp.png"  style="width: 20px; height: 21px; cursor:pointer" onclick="anima_informacao(1,'carteira')" />
                          </div>
                      </div>
 
 
                      <div class="row" style="padding: 0px; margin: 0px">
                          <div class="col" style="padding: 0px; margin: 0px">
-                             <asp:TextBox ID="TextBox15" runat="server" CssClass="layouttexto"
-                                 Style="width: 100px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
+                             <asp:TextBox ID="cs_cadastro_cliente_carteira_brasil" runat="server" CssClass="layouttexto"
+                                 Style="width: 100px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_banco_brasil',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_banco_brasil',1)">
                              </asp:TextBox>
                               
                          </div>
@@ -845,15 +845,15 @@
                  <div class="col-md-6" style="width: 100%; height: 100%; background-color: transparent; padding: 4px; padding-left: 15px; padding-top: 10px">
                      <div class="row">
                          <div class="col" style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                             Número do Convênio
+                             Número do Convênio &nbsp &nbsp <img alt="" src="../Imagens/ihelp.png"  style="width: 20px; height: 21px; cursor:pointer" onclick="anima_informacao(1,'numeroconvenio')" />
                          </div>
                      </div>
 
 
                      <div class="row" style="padding: 0px; margin: 0px">
                          <div class="col" style="padding: 0px; margin: 0px">
-                             <asp:TextBox ID="TextBox16" runat="server" CssClass="layouttexto"
-                                 Style="width: 100px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
+                             <asp:TextBox ID="cs_cadastro_cliente_convenio_brasil" runat="server" CssClass="layouttexto"
+                                 Style="width: 100px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_banco_brasil',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_banco_brasil',1)">
                              </asp:TextBox>
 
                          </div>
@@ -872,9 +872,9 @@
 
                      <div class="row" style="padding: 0px; margin: 0px">
                          <div class="col" style="padding: 0px; margin: 0px">
-                             <textarea id="Textarea1" runat="server" class="layouttexto" rows="4" cols="50"
+                             <textarea id="cs_cadastro_cliente_boleto_brasil" runat="server" class="layouttexto" rows="4" cols="50"
                                  style="width: 100%; padding: 0px; margin: 0px; border: 1px solid #000000;"
-                                 onblur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_documentacao',0)" onfocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_documentacao',1)">
+                                 onblur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_banco_brasil',0)" onfocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_banco_brasil',1)">
                             </textarea>
                          </div>
                      </div>
