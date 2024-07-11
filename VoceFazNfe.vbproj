@@ -143,6 +143,7 @@
     <Content Include="Help\bcoperacaopropria.html" />
     <Content Include="Help\bcufdestino.html" />
     <Content Include="Help\calculoicmsst.html" />
+    <Content Include="Help\codigocliente.html" />
     <Content Include="Help\nossonumero.html" />
     <Content Include="Help\CertificadoDigital.html" />
     <Content Include="Help\carteira.html" />
