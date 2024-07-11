@@ -122,130 +122,130 @@ Partial Public Class parametrosimpressaoboletos
     Protected WithEvents cs_cadastro_cliente_impressao_bradesco As Global.System.Web.UI.HtmlControls.HtmlTextArea
 
     '''<summary>
-    '''Controle TextBox5.
+    '''Controle cs_cadastro_cliente_agencia_itau.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox5 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_agencia_itau As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox6.
+    '''Controle cs_cadastro_cliente_conta_itau.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox6 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_conta_itau As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox7.
+    '''Controle cs_cadastro_cliente_nosso_numero_itau.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox7 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_nosso_numero_itau As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox8.
+    '''Controle cs_cadastro_cliente_carteira_itau.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox8 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_carteira_itau As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox2.
+    '''Controle cs_cadastro_cliente_cod_cliente_itau.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox2 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_cod_cliente_itau As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle DropDownList1.
+    '''Controle cs_cadastro_cliente_instrucao_itau.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents DropDownList1 As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents cs_cadastro_cliente_instrucao_itau As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Controle TextBox10.
+    '''Controle cs_cadastro_cliente_dias_protesto_itau.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox10 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_dias_protesto_itau As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox9.
+    '''Controle cs_cadastro_cliente_juros_itau.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox9 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_juros_itau As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle Textarea4.
+    '''Controle cs_cadastro_cliente_boleto_itau.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents Textarea4 As Global.System.Web.UI.HtmlControls.HtmlTextArea
+    Protected WithEvents cs_cadastro_cliente_boleto_itau As Global.System.Web.UI.HtmlControls.HtmlTextArea
 
     '''<summary>
-    '''Controle TextBox1.
+    '''Controle cs_cadastro_cliente_agencia_safra.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_agencia_safra As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox3.
+    '''Controle cs_cadastro_cliente_conta_safra.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox3 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_conta_safra As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox4.
+    '''Controle cs_cadastro_cliente_nosso_numero_safra.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox4 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_nosso_numero_safra As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle TextBox11.
+    '''Controle cs_cadastro_cliente_carteira_safra.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox11 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents cs_cadastro_cliente_carteira_safra As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle Textarea2.
+    '''Controle cs_cadastro_cliente_boleto_safra.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents Textarea2 As Global.System.Web.UI.HtmlControls.HtmlTextArea
+    Protected WithEvents cs_cadastro_cliente_boleto_safra As Global.System.Web.UI.HtmlControls.HtmlTextArea
 
     '''<summary>
     '''Controle TextBox12.

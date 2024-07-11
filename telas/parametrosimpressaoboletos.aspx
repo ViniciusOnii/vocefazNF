@@ -353,8 +353,8 @@
               
                            <div class="row" style="padding: 0px; margin: 0px">
                                <div class="col" style="padding: 0px; margin: 0px">                                  
-                                   <asp:TextBox ID="TextBox5" runat="server" CssClass="layouttexto"
-                                       Style="width: 140px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
+                                   <asp:TextBox ID="cs_cadastro_cliente_agencia_itau" runat="server" CssClass="layouttexto"
+                                       Style="width: 140px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_itau',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_itau',1)">
                                    </asp:TextBox>                              
                                </div>
                            </div>
@@ -368,8 +368,8 @@
                        </div>                      
                            <div class="row" style="padding: 0px; margin: 0px">
                                <div class="col" style="padding: 0px; margin: 0px">                                  
-                                   <asp:TextBox ID="TextBox6" runat="server" CssClass="layouttexto"
-                                       Style="width: 140px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
+                                   <asp:TextBox ID="cs_cadastro_cliente_conta_itau" runat="server" CssClass="layouttexto"
+                                       Style="width: 140px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_itau',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_itau',1)">
                                    </asp:TextBox>                                   
                                </div>
                            </div>
@@ -394,8 +394,8 @@
                            <div class="row" style="padding: 0px; margin: 0px">
                                <div class="col" style="padding: 0px; margin: 0px">
                                   
-                                   <asp:TextBox ID="TextBox7" runat="server" CssClass="layouttexto"
-                                       Style="width: 270px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
+                                   <asp:TextBox ID="cs_cadastro_cliente_nosso_numero_itau" runat="server" CssClass="layouttexto"
+                                       Style="width: 270px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_itau',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_itau',1)">
                                    </asp:TextBox>
 
                                </div>
@@ -412,8 +412,8 @@
 
                        <div class="row" style="padding: 0px; margin: 0px">
                            <div class="col" style="padding: 0px; margin: 0px">
-                               <asp:TextBox ID="TextBox8" runat="server" CssClass="layouttexto"
-                                   Style="width: 100px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
+                               <asp:TextBox ID="cs_cadastro_cliente_carteira_itau" runat="server" CssClass="layouttexto"
+                                   Style="width: 100px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_itau',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_itau',1)">
                                </asp:TextBox>
                                 
                            </div>
@@ -440,8 +440,8 @@
 
                        <div class="row" style="padding: 0px; margin: 0px">
                            <div class="col" style="padding: 0px; margin: 0px">
-                               <asp:TextBox ID="TextBox2" runat="server" CssClass="layouttexto"
-                                   Style="width: 100px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
+                               <asp:TextBox ID="cs_cadastro_cliente_cod_cliente_itau" runat="server" CssClass="layouttexto"
+                                   Style="width: 100px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_itau',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_itau',1)">
                                </asp:TextBox>
 
                            </div>
@@ -459,7 +459,7 @@
 
                        <div class="row" style="padding: 0px; margin: 0px">
                            <div class="col" style="padding: 0px; margin: 0px">
-                               <asp:DropDownList ID="DropDownList1" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_clientes',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_clientes',1)" CssClass="layouttexto" runat="server">
+                               <asp:DropDownList ID="cs_cadastro_cliente_instrucao_itau" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_itau',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_itau',1)" CssClass="layouttexto" runat="server">
                                    <asp:ListItem style="width: 100%;" Text="03" Value="1" />
                                    <asp:ListItem style="width: 100%;" Text="05" Value="2" />
                                    <asp:ListItem style="width: 100%;" Text="06" Value="3" />
@@ -520,9 +520,9 @@
 
                        <div class="row" style="padding: 0px; margin: 0px">
                            <div class="col" style="padding: 0px; margin: 0px">
-                               <asp:TextBox ID="TextBox10" runat="server" CssClass="layouttexto"
+                               <asp:TextBox ID="cs_cadastro_cliente_dias_protesto_itau" runat="server" CssClass="layouttexto"
                                    Style="width: 60%; padding: 0px; margin: 0px"
-                                   onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
+                                   onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_itau',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_itau',1)">
 
                                </asp:TextBox>
                            </div>
@@ -534,15 +534,15 @@
                        <div class="row">
                            <div class="col"
                                style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                               % de juros DIarios(CNAB)
+                               % de juros Diarios(CNAB)
                            </div>
                        </div>
 
                        <div class="row" style="padding: 0px; margin: 0px">
                            <div class="col" style="padding: 0px; margin: 0px">
-                               <asp:TextBox ID="TextBox9" runat="server" CssClass="layouttexto"
+                               <asp:TextBox ID="cs_cadastro_cliente_juros_itau" runat="server" CssClass="layouttexto"
                                    Style="width: 60%; padding: 0px; margin: 0px"
-                                   onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
+                                   onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_itau',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_itau',1)">
 
                                </asp:TextBox>
                            </div>
@@ -568,9 +568,9 @@
 
                 <div class="row" style="padding: 0px; margin: 0px">
                     <div class="col" style="padding: 0px; margin: 0px">
-                        <textarea id="Textarea4" runat="server" class="layouttexto" rows="4" cols="50"
+                        <textarea id="cs_cadastro_cliente_boleto_itau" runat="server" class="layouttexto" rows="4" cols="50"
                             style="width: 60%; padding: 0px; margin: 0px; border: 1px solid #000000;"
-                            onblur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_documentacao',0)" onfocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_documentacao',1)">
+                            onblur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_itau',0)" onfocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_itau',1)">
                         </textarea>
                     </div>
                 </div>
@@ -621,8 +621,8 @@
             
                          <div class="row" style="padding: 0px; margin: 0px">
                              <div class="col" style="padding: 0px; margin: 0px">                                  
-                                 <asp:TextBox ID="TextBox1" runat="server" CssClass="layouttexto"
-                                     Style="width: 140px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
+                                 <asp:TextBox ID="cs_cadastro_cliente_agencia_safra" runat="server" CssClass="layouttexto"
+                                     Style="width: 140px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_safra',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_safra',1)">
                                  </asp:TextBox>                              
                              </div>
                          </div>
@@ -636,8 +636,8 @@
                      </div>                      
                          <div class="row" style="padding: 0px; margin: 0px">
                              <div class="col" style="padding: 0px; margin: 0px">                                  
-                                 <asp:TextBox ID="TextBox3" runat="server" CssClass="layouttexto"
-                                     Style="width: 140px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
+                                 <asp:TextBox ID="cs_cadastro_cliente_conta_safra" runat="server" CssClass="layouttexto"
+                                     Style="width: 140px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_safra',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_safra',1)">
                                  </asp:TextBox>                                   
                              </div>
                          </div>
@@ -662,8 +662,8 @@
                          <div class="row" style="padding: 0px; margin: 0px">
                              <div class="col" style="padding: 0px; margin: 0px">
                                 
-                                 <asp:TextBox ID="TextBox4" runat="server" CssClass="layouttexto"
-                                     Style="width: 270px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
+                                 <asp:TextBox ID="cs_cadastro_cliente_nosso_numero_safra" runat="server" CssClass="layouttexto"
+                                     Style="width: 270px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_safra',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_safra',1)">
                                  </asp:TextBox>
 
                              </div>
@@ -680,8 +680,8 @@
 
                      <div class="row" style="padding: 0px; margin: 0px">
                          <div class="col" style="padding: 0px; margin: 0px">
-                             <asp:TextBox ID="TextBox11" runat="server" CssClass="layouttexto"
-                                 Style="width: 100px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_dados_complemento',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_dados_complemento',1)">
+                             <asp:TextBox ID="cs_cadastro_cliente_carteira_safra" runat="server" CssClass="layouttexto"
+                                 Style="width: 100px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_safra',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_safra',1)">
                              </asp:TextBox>
                               
                          </div>
@@ -702,15 +702,15 @@
                      <div class="row">
                          <div class="col"
                              style="font-family: Arial; font-size: 16px; color: #000000; font-weight: bold">
-                             Instruções que serão impressas no boleto
+                             Instruções do Boleto
                          </div>
                      </div>
 
                      <div class="row" style="padding: 0px; margin: 0px">
                          <div class="col" style="padding: 0px; margin: 0px">
-                             <textarea id="Textarea2" runat="server" class="layouttexto" rows="4" cols="50"
+                             <textarea id="cs_cadastro_cliente_boleto_safra" runat="server" class="layouttexto" rows="4" cols="50"
                                  style="width: 100%; padding: 0px; margin: 0px; border: 1px solid #000000;"
-                                 onblur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_documentacao',0)" onfocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_documentacao',1)">
+                                 onblur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_safra',0)" onfocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_safra',1)">
                             </textarea>
                          </div>
                      </div>
