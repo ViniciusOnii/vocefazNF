@@ -14,6 +14,24 @@ Option Explicit On
 Partial Public Class cadastrodeprodutos
 
     '''<summary>
+    '''Controle pnl_obrigatorio.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents pnl_obrigatorio As Global.System.Web.UI.WebControls.Panel
+
+    '''<summary>
+    '''Controle cmd_voltar_obrigatorio.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cmd_voltar_obrigatorio As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''Controle cs_codigo_produto.
     '''</summary>
     '''<remarks>
@@ -239,22 +257,22 @@ Partial Public Class cadastrodeprodutos
     Protected WithEvents cs_venda_ecommerce As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controle cmd_alterar_preco.
+    '''Controle Button2.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cmd_alterar_preco As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents Button2 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Controle cmd_deletar.
+    '''Controle cmd_log_preco.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents cmd_deletar As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents cmd_log_preco As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''Controle cs_peso_liquido_sat.
@@ -302,22 +320,22 @@ Partial Public Class cadastrodeprodutos
     Protected WithEvents cs_cfop_sat As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Controle TextBox1.
+    '''Controle DropDownList5.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DropDownList5 As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Controle TextBox2.
+    '''Controle DropDownList4.
     '''</summary>
     '''<remarks>
     '''Campo gerado automaticamente.
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
-    Protected WithEvents TextBox2 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DropDownList4 As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Controle DropDownList1.
@@ -329,6 +347,15 @@ Partial Public Class cadastrodeprodutos
     Protected WithEvents DropDownList1 As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
+    '''Controle TextBox1.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''Controle DropDownList2.
     '''</summary>
     '''<remarks>
@@ -336,4 +363,85 @@ Partial Public Class cadastrodeprodutos
     '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
     '''</remarks>
     Protected WithEvents DropDownList2 As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Controle TextBox2.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents TextBox2 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle TextBox5.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents TextBox5 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle DropDownList3.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents DropDownList3 As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Controle TextBox7.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents TextBox7 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle TextBox8.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents TextBox8 As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Controle cmd_gravar.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cmd_gravar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Controle Button1.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Controle cmd_limpar.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cmd_limpar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Controle cmd_imprimir.
+    '''</summary>
+    '''<remarks>
+    '''Campo gerado automaticamente.
+    '''Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+    '''</remarks>
+    Protected WithEvents cmd_imprimir As Global.System.Web.UI.WebControls.Button
 End Class

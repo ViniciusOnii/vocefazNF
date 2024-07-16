@@ -1,7 +1,69 @@
-﻿c<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/telas/Topo.Master" CodeBehind="cadastrodefornecedores.aspx.vb" Inherits="VoceFazNfe.cadastrodefornecedores" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/telas/Topo.Master" CodeBehind="cadastrodefornecedores.aspx.vb" Inherits="VoceFazNfe.cadastrodefornecedores" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    
+    <script>
+
+        function botao_confirmar(vbotao) {
+
+            var vbotao = document.getElementById("botao_gravar");
+            var vbotao_aguardo = document.getElementById("botao_gravar_aguardando");
+
+            vbotao.style.display = "none";
+            vbotao.style.visibility = "hidden";
+
+            vbotao_aguardo.style.display = "block";
+            vbotao_aguardo.style.visibility = "visible";
+
+        }
+
+        function botao_confirmar_deletar(vbotao) {
+
+            var vbotao = document.getElementById("botao_deletar");
+            var vbotao_aguardo = document.getElementById("botao_deletar_aguardando");
+
+            vbotao.style.display = "none";
+            vbotao.style.visibility = "hidden";
+
+            vbotao_aguardo.style.display = "block";
+            vbotao_aguardo.style.visibility = "visible";
+
+        }
+    </script>
 
     <div class="row" style="width: 100%; height: 210px; background-color: transparent"></div>
+
+           <!--/////////////////////////////////////////////////// Painel Obrigatório   /////////////////////////////////////////////////////////////////////////////////////////////-->
+    <asp:Panel ID="pnl_obrigatorio" runat="server" BackColor="Transparent" Height="100%" Visible="False" style="background-color:transparent">
+
+    <div class="row" style="width:90%;height:80vh;background-color:transparent;margin-left:20px">
+
+        <div style="width:80%;height:300px;margin:auto;background-color:transparent;border:solid;border-width:1px;border-color:black;border-radius:10px">
+
+        
+            <div class="row" style="font-family:Arial;font-size:20px;color:black">
+                <div class="col" align="center" style="padding-top:10px">Você deixou de preencher campos obrigatórios ou preencheu de forma errada.</div>
+            </div>
+
+            <div class="row" style="font-family:Arial;font-size:20px;color:black">
+                <div class="col" align="center" style="padding-top:10px">Esses campos estão marcados agora em vermelho.</div>
+            </div>
+
+            <div class="row" style="font-family:Arial;font-size:20px;color:black">
+                <div class="col" align="center" style="padding-top:10px">Volte e termine o preenchimento.</div>
+            </div>
+
+            <div class="row" style="padding-top:40px">
+                <div class="col" align="center">
+                   <asp:Button ID="cmd_voltar_obrigatorio" runat="server" Text="Voltar" style="cursor:pointer;border-radius:10px;border:solid;border-width:1px" 
+                    BackColor="#17479E" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" Height="43px" Width="230px" UseSubmitBehavior="False" />
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</asp:Panel>
 
 <!--///////////////////////////////////////////////////  Container dados Principais do Produto  /////////////////////////////////////////////////////////////////////////////////////////////-->
 <div class="container-fluid" style="padding: 0px; margin: 0px; width: 100%; height: 100%">
@@ -792,4 +854,78 @@
              </div>
          </div>
      </div>
+
+            <!--/////////////////////////////////////////////////// Botão Gravar //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<div class="row" style="width:100%;height:100%">
+
+      <div class="col" align="center">
+
+          <div id="botao_gravar" style="width:300px;height:100%;cursor:pointer;display:block;visibility:visible">
+
+              <asp:Button ID="cmd_gravar" runat="server" style="cursor:pointer;border-radius:10px;border:solid;border-width:1px" Text="Gravar" 
+                  BackColor="green" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" Height="43px" Width="230px" OnClientClick="botao_confirmar(this)" UseSubmitBehavior="False" Visible="False" />
+          </div>
+
+          <div id="botao_gravar_aguardando" style="display:none;visibility:hidden"><img alt="" src="../Imagens/preloader.gif" /><span style="font-family:Arial;font-size:18px;color:#007DC5">&nbspAguarde</span></div>
+
+      </div>
+
+  </div>
+
+
+<div class="row" style="width:100%;height:30px"></div>
+
+<!--/////////////////////////////////////////////////// Botão Deletar //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////--> 
+<div class="row" style="width:100%;height:100%">
+
+      <div class="col" align="center">
+
+          <div id="botao_deletar" style="width:300px;height:100%;cursor:pointer;display:block;visibility:visible">
+
+              <asp:Button ID="Button1" runat="server" style="cursor:pointer;border-radius:10px;border:solid;border-width:1px" Text="Deletar" 
+                  BackColor="red" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" Height="43px" Width="230px" OnClientClick="botao_confirmar_deletar(this)" UseSubmitBehavior="False" Visible="False" />
+          </div>
+
+          <div id="botao_deletar_aguardando" style="display:none;visibility:hidden"><img alt="" src="../Imagens/preloader.gif" /><span style="font-family:Arial;font-size:18px;color:#007DC5">&nbspAguarde</span></div>
+
+      </div>
+
+  </div>
+
+
+
+<div class="row" style="width:100%;height:30px"></div>
+
+<!--/////////////////////////////////////////////////// Botão Limpar //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////--> 
+<div class="row" style="width:100%;height:100%">
+
+      <div class="col" align="center">
+
+          <div id="botao_limpar" style="width:300px;height:100%;cursor:pointer;display:block;visibility:visible">
+
+              <asp:Button ID="cmd_limpar" runat="server" style="cursor:pointer;border-radius:10px;border:solid;border-width:1px" Text="Limpar" 
+                  BackColor="gray" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" Height="43px" Width="230px"  UseSubmitBehavior="False" />
+          </div>
+
+      </div>
+
+  </div>
+
+
+<div class="row" style="width:100%;height:30px"></div>
+
+<!--/////////////////////////////////////////////////// Botão Imprimir //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////--> 
+<div class="row" style="width:100%;height:100%">
+
+      <div class="col" align="center">
+
+          <div id="botao_imprimir" style="width:300px;height:100%;cursor:pointer;display:block;visibility:visible">
+
+              <asp:Button ID="cmd_imprimir" runat="server" style="cursor:pointer;border-radius:10px;border:solid;border-width:1px" Text="Imprimir" 
+                  BackColor="#17479E" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" Height="43px" Width="230px"  UseSubmitBehavior="False" OnClientClick ="window.open('../relatorios/relgrupo.asp', '_blank')" />
+          </div>
+
+      </div>
+
+  </div>
 </asp:Content>

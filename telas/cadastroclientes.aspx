@@ -3,6 +3,76 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
+    <script>
+
+
+        function botao_confirmar(vbotao) {
+
+            var vbotao = document.getElementById("botao_gravar");
+            var vbotao_aguardo = document.getElementById("botao_gravar_aguardando");
+
+            vbotao.style.display = "none";
+            vbotao.style.visibility = "hidden";
+
+            vbotao_aguardo.style.display = "block";
+            vbotao_aguardo.style.visibility = "visible";
+
+        }
+
+        function botao_confirmar_deletar(vbotao) {
+
+            var vbotao = document.getElementById("botao_deletar");
+            var vbotao_aguardo = document.getElementById("botao_deletar_aguardando");
+
+            vbotao.style.display = "none";
+            vbotao.style.visibility = "hidden";
+
+            vbotao_aguardo.style.display = "block";
+            vbotao_aguardo.style.visibility = "visible";
+
+        }
+
+       
+    </script>
+
+
+    
+
+
+<!--/////////////////////////////////////////////////// Painel Obrigatório //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<asp:Panel ID="pnl_obrigatorio" runat="server" BackColor="Transparent" Height="100%" Visible="False" style="background-color:transparent">
+
+    <div class="row" style="width:90%;height:80vh;background-color:transparent;margin-left:20px">
+
+        <div style="width:80%;height:300px;margin:auto;background-color:transparent;border:solid;border-width:1px;border-color:black;border-radius:10px">
+
+        
+            <div class="row" style="font-family:Arial;font-size:20px;color:black">
+                <div class="col" align="center" style="padding-top:10px">Você deixou de preencher campos obrigatórios ou preencheu de forma errada.</div>
+            </div>
+
+            <div class="row" style="font-family:Arial;font-size:20px;color:black">
+                <div class="col" align="center" style="padding-top:10px">Esses campos estão marcados agora em vermelho.</div>
+            </div>
+
+            <div class="row" style="font-family:Arial;font-size:20px;color:black">
+                <div class="col" align="center" style="padding-top:10px">Volte e termine o preenchimento.</div>
+            </div>
+
+            <div class="row" style="padding-top:40px">
+                <div class="col" align="center">
+                   <asp:Button ID="cmd_voltar_obrigatorio" runat="server" Text="Voltar" style="cursor:pointer;border-radius:10px;border:solid;border-width:1px" 
+                    BackColor="#17479E" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" Height="43px" Width="230px" UseSubmitBehavior="False" />
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</asp:Panel>
+  
+
 
     <div class="row" style="width: 100%; height: 210px; background-color: transparent"></div>
 
@@ -671,15 +741,15 @@
 
         <div class="row" style="width: 100%; height: 100%; color: #177CC0; padding-left: 20px; padding-top: 0px; font-family: Arial; font-size: 20px; font-weight: bold; margin-left: 0px">
 
-            <div id="i_cadastro_transportadora_fone_contato_on" name="i_cadastro_transportadora_fone_contato_on" class="col" align="left" style="display: block; visibility: visible; font-size: 20px; color: red; margin-right: 20px; border-bottom: none; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_transportadora_fone_contato','i_cadastro_transportadora_fone_contato_on','i_cadastro_transportadora_fone_contato_off',0)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Fone / Contato</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i></div>
-            <div id="i_cadastro_transportadora_fone_contato_off" name="i_cadastro_transportadora_fone_contato_off" class="col" align="left" style="display: none; visibility: hidden; font-size: 20px; color: red; margin-right: 20px; border-bottom: solid; border-width: 1px; border-color: #767676; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_transportadora_fone_contato','i_cadastro_transportadora_fone_contato_on','i_cadastro_transportadora_fone_contato_off',1)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Fone / Contato</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i></div>
+            <div id="i_cadastro_transportadora_fone_contato_on" name="i_cadastro_transportadora_fone_contato_on" class="col" align="left" style="display: none; visibility: hidden; font-size: 20px; color: red; margin-right: 20px; border-bottom: none; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_transportadora_fone_contato','i_cadastro_transportadora_fone_contato_on','i_cadastro_transportadora_fone_contato_off',0)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Fone / Contato</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i></div>
+            <div id="i_cadastro_transportadora_fone_contato_off" name="i_cadastro_transportadora_fone_contato_off" class="col" align="left" style="display: block; visibility: visible; font-size: 20px; color: red; margin-right: 20px; border-bottom: solid; border-width: 1px; border-color: #767676; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_transportadora_fone_contato','i_cadastro_transportadora_fone_contato_on','i_cadastro_transportadora_fone_contato_off',1)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Fone / Contato</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i></div>
 
         </div>
 
         <div class="row" style="width: 100%; height: 20px"></div>
 
 
-        <div id="div_cadastro_transportadora_fone_contato" name="div_cadastro_transportadora_fone_contato" style="display: block; visibility: visible; width: 100%; height: 100%; background-color: transparent; margin-left: 20px; margin-right: 20px; border: solid; border-color: #177CC0; border-width: 1px; border-radius: 10px; padding: 0px 20px 20px 20px;">
+        <div id="div_cadastro_transportadora_fone_contato" name="div_cadastro_transportadora_fone_contato" style="display: none; visibility: hidden; width: 100%; height: 100%; background-color: transparent; margin-left: 20px; margin-right: 20px; border: solid; border-color: #177CC0; border-width: 1px; border-radius: 10px; padding: 0px 20px 20px 20px;">
             <div class="row" style="height: 20px"></div>
 
             <div class="row" style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
@@ -1308,17 +1378,17 @@
 
     <div class="row" style="width: 100%; height: 100%; padding: 0px; margin: 0px; background-color: transparent">
         <div class="row" style="width: 100%; height: 100%; color: #177CC0; padding-left: 20px; padding-top: 0px; font-family: Arial; font-size: 20px; font-weight: bold; margin-left: 0px">
-            <div id="i_cadastro_cliente_avisos_on" name="i_cadastro_cliente_avisos_on" class="col" align="left" style="display: block; visibility: visible; font-size: 20px; color: red; margin-right: 20px; border-bottom: none; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_cliente_avisos','i_cadastro_cliente_avisos_on','i_cadastro_cliente_avisos_off',0)">
+            <div id="i_cadastro_cliente_avisos_on" name="i_cadastro_cliente_avisos_on" class="col" align="left" style="display: none; visibility: hidden; font-size: 20px; color: red; margin-right: 20px; border-bottom: none; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_cliente_avisos','i_cadastro_cliente_avisos_on','i_cadastro_cliente_avisos_off',0)">
                 <span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Avisos</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i>
             </div>
-            <div id="i_cadastro_cliente_avisos_off" name="i_cadastro_cliente_avisos_off" class="col" align="left" style="display: none; visibility: hidden; font-size: 20px; color: red; margin-right: 20px; border-bottom: solid; border-width: 1px; border-color: #767676; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_cliente_avisos','i_cadastro_cliente_avisos_on','i_cadastro_cliente_avisos_off',1)">
+            <div id="i_cadastro_cliente_avisos_off" name="i_cadastro_cliente_avisos_off" class="col" align="left" style="display: block; visibility: visible; font-size: 20px; color: red; margin-right: 20px; border-bottom: solid; border-width: 1px; border-color: #767676; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_cliente_avisos','i_cadastro_cliente_avisos_on','i_cadastro_cliente_avisos_off',1)">
                 <span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Avisos</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i>
             </div>
         </div>
         
         <div class="row" style="width: 100%; height: 20px"></div>
 
-        <div id="div_cadastro_cliente_avisos" name="div_cadastro_cliente_avisos" style="display: block; visibility: visible; width: 100%; height: 100%; background-color: transparent; margin-left: 20px; margin-right: 20px; border: solid; border-color: #177CC0; border-width: 1px; border-radius: 10px; padding: 0px 20px 20px 20px;">
+        <div id="div_cadastro_cliente_avisos" name="div_cadastro_cliente_avisos" style="display: none; visibility: hidden; width: 100%; height: 100%; background-color: transparent; margin-left: 20px; margin-right: 20px; border: solid; border-color: #177CC0; border-width: 1px; border-radius: 10px; padding: 0px 20px 20px 20px;">
             <div class="row" style="height: 20px"></div>
 
             <div class="row" style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
@@ -1816,4 +1886,78 @@
          </div>
      </div>
  </div>
+
+       <!--/////////////////////////////////////////////////// Botão Gravar //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+   <div class="row" style="width:100%;height:100%">
+
+         <div class="col" align="center">
+
+             <div id="botao_gravar" style="width:300px;height:100%;cursor:pointer;display:block;visibility:visible">
+
+                 <asp:Button ID="cmd_gravar" runat="server" style="cursor:pointer;border-radius:10px;border:solid;border-width:1px" Text="Gravar" 
+                     BackColor="green" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" Height="43px" Width="230px" OnClientClick="botao_confirmar(this)" UseSubmitBehavior="False" Visible="False" />
+             </div>
+
+             <div id="botao_gravar_aguardando" style="display:none;visibility:hidden"><img alt="" src="../Imagens/preloader.gif" /><span style="font-family:Arial;font-size:18px;color:#007DC5">&nbspAguarde</span></div>
+
+         </div>
+
+     </div>
+
+
+   <div class="row" style="width:100%;height:30px"></div>
+
+   <!--/////////////////////////////////////////////////// Botão Deletar //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////--> 
+   <div class="row" style="width:100%;height:100%">
+
+         <div class="col" align="center">
+
+             <div id="botao_deletar" style="width:300px;height:100%;cursor:pointer;display:block;visibility:visible">
+
+                 <asp:Button ID="cmd_deletar" runat="server" style="cursor:pointer;border-radius:10px;border:solid;border-width:1px" Text="Deletar" 
+                     BackColor="red" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" Height="43px" Width="230px" OnClientClick="botao_confirmar_deletar(this)" UseSubmitBehavior="False" Visible="False" />
+             </div>
+
+             <div id="botao_deletar_aguardando" style="display:none;visibility:hidden"><img alt="" src="../Imagens/preloader.gif" /><span style="font-family:Arial;font-size:18px;color:#007DC5">&nbspAguarde</span></div>
+
+         </div>
+
+     </div>
+
+
+   
+   <div class="row" style="width:100%;height:30px"></div>
+   
+   <!--/////////////////////////////////////////////////// Botão Limpar //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////--> 
+   <div class="row" style="width:100%;height:100%">
+
+         <div class="col" align="center">
+
+             <div id="botao_limpar" style="width:300px;height:100%;cursor:pointer;display:block;visibility:visible">
+
+                 <asp:Button ID="cmd_limpar" runat="server" style="cursor:pointer;border-radius:10px;border:solid;border-width:1px" Text="Limpar" 
+                     BackColor="gray" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" Height="43px" Width="230px"  UseSubmitBehavior="False" />
+             </div>
+
+         </div>
+
+     </div>
+
+
+   <div class="row" style="width:100%;height:30px"></div>
+   
+   <!--/////////////////////////////////////////////////// Botão Imprimir //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////--> 
+   <div class="row" style="width:100%;height:100%">
+
+         <div class="col" align="center">
+
+             <div id="botao_imprimir" style="width:300px;height:100%;cursor:pointer;display:block;visibility:visible">
+
+                 <asp:Button ID="cmd_imprimir" runat="server" style="cursor:pointer;border-radius:10px;border:solid;border-width:1px" Text="Imprimir" 
+                     BackColor="#17479E" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" Height="43px" Width="230px"  UseSubmitBehavior="False" OnClientClick ="window.open('../relatorios/relgrupo.asp', '_blank')" />
+             </div>
+
+         </div>
+
+     </div>
 </asp:Content>

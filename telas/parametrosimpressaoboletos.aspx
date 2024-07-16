@@ -541,7 +541,7 @@
                        <div class="row" style="padding: 0px; margin: 0px">
                            <div class="col" style="padding: 0px; margin: 0px">
                                <asp:TextBox ID="cs_cadastro_cliente_juros_itau" runat="server" CssClass="layouttexto"
-                                   Style="width: 60%; padding: 0px; margin: 0px"
+                                   Style="width: 140px; padding: 0px; margin: 0px"
                                    onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_itau',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_itau',1)">
 
                                </asp:TextBox>
@@ -640,7 +640,7 @@
                                      Style="width: 140px" onBlur="SetTextIn(this,0);SetDiv('div_cadastro_cliente_impressao_safra',0)" onFocus="SetTextIn(this,1);SetDiv('div_cadastro_cliente_impressao_safra',1)">
                                  </asp:TextBox>                                   
                              </div>
-                         </div>
+                         </div>   
                      
                  </div>
 
