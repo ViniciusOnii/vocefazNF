@@ -66,6 +66,7 @@
 </asp:Panel>
 
 <!--///////////////////////////////////////////////////  Container dados Principais do Produto  /////////////////////////////////////////////////////////////////////////////////////////////-->
+     <asp:Panel ID="pnl_principal" runat="server" BackColor="Transparent" Height="100%" Visible="True">
 <div class="container-fluid" style="padding: 0px; margin: 0px; width: 100%; height: 100%">
     <div class="row" style="width: 100%; height: 50px"></div>
 
@@ -480,15 +481,15 @@
 
         <div class="row" style="width: 100%; height: 100%; color: #177CC0; padding-left: 20px; padding-top: 0px; font-family: Arial; font-size: 20px; font-weight: bold; margin-left: 0px">
 
-            <div id="i_cadastro_fornecedores_documentacao_on" name="i_cadastro_fornecedores_documentacao_on" class="col" align="left" style="display: block; visibility: visible; font-size: 20px; color: red; margin-right: 20px; border-bottom: none; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_fornecedores_documentacao','i_cadastro_fornecedores_documentacao_on','i_cadastro_fornecedores_documentacao_off',0)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Documentação</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i></div>
-            <div id="i_cadastro_fornecedores_documentacao_off" name="i_cadastro_fornecedores_documentacao_off" class="col" align="left" style="display: none; visibility: hidden; font-size: 20px; color: red; margin-right: 20px; border-bottom: solid; border-width: 1px; border-color: #767676; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_fornecedores_documentacao','i_cadastro_fornecedores_documentacao_on','i_cadastro_fornecedores_documentacao_off',1)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Documentação</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i></div>
+            <div id="i_cadastro_fornecedores_documentacao_on" name="i_cadastro_fornecedores_documentacao_on" class="col" align="left" style="display: none; visibility: hidden; font-size: 20px; color: red; margin-right: 20px; border-bottom: none; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_fornecedores_documentacao','i_cadastro_fornecedores_documentacao_on','i_cadastro_fornecedores_documentacao_off',0)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Documentação</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i></div>
+            <div id="i_cadastro_fornecedores_documentacao_off" name="i_cadastro_fornecedores_documentacao_off" class="col" align="left" style="display: block; visibility: visible; font-size: 20px; color: red; margin-right: 20px; border-bottom: solid; border-width: 1px; border-color: #767676; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_fornecedores_documentacao','i_cadastro_fornecedores_documentacao_on','i_cadastro_fornecedores_documentacao_off',1)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Documentação</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i></div>
 
         </div>
         
         <div class="row" style="width: 100%; height: 20px"></div>
 
 
-        <div id="div_cadastro_fornecedores_documentacao" name="div_cadastro_fornecedores_documentacao" style="display: block; visibility: visible; width: 100%; height: 100%; background-color: transparent; margin-left: 20px; margin-right: 20px; border: solid; border-color: #177CC0; border-width: 1px; border-radius: 10px; padding: 0px 20px 20px 20px;">
+        <div id="div_cadastro_fornecedores_documentacao" name="div_cadastro_fornecedores_documentacao" style="display: none; visibility: hidden; width: 100%; height: 100%; background-color: transparent; margin-left: 20px; margin-right: 20px; border: solid; border-color: #177CC0; border-width: 1px; border-radius: 10px; padding: 0px 20px 20px 20px;">
             <div class="row" style="height: 20px"></div>
 
             <div class="row" style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
@@ -593,15 +594,15 @@
 
     <div class="row" style="width: 100%; height: 100%; color: #177CC0; padding-left: 20px; padding-top: 0px; font-family: Arial; font-size: 20px; font-weight: bold; margin-left: 0px">
 
-        <div id="i_cadastro_fornecedores_fone_contato_on" name="i_cadastro_fornecedores_fone_contato_on" class="col" align="left" style="display: block; visibility: visible; font-size: 20px; color: red; margin-right: 20px; border-bottom: none; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_fornecedores_fone_contato','i_cadastro_fornecedores_fone_contato_on','i_cadastro_fornecedores_fone_contato_off',0)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Fone / Contato</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i></div>
-        <div id="i_cadastro_fornecedores_fone_contato_off" name="i_cadastro_fornecedores_fone_contato_off" class="col" align="left" style="display: none; visibility: hidden; font-size: 20px; color: red; margin-right: 20px; border-bottom: solid; border-width: 1px; border-color: #767676; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_fornecedores_fone_contato','i_cadastro_fornecedores_fone_contato_on','i_cadastro_fornecedores_fone_contato_off',1)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Fone / Contato</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i></div>
+        <div id="i_cadastro_fornecedores_fone_contato_on" name="i_cadastro_fornecedores_fone_contato_on" class="col" align="left" style="display: none; visibility: hidden; font-size: 20px; color: red; margin-right: 20px; border-bottom: none; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_fornecedores_fone_contato','i_cadastro_fornecedores_fone_contato_on','i_cadastro_fornecedores_fone_contato_off',0)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Fone / Contato</span>&nbsp;&nbsp;<i class="fa fa-toggle-on"></i></div>
+        <div id="i_cadastro_fornecedores_fone_contato_off" name="i_cadastro_fornecedores_fone_contato_off" class="col" align="left" style="display: block; visibility: visible; font-size: 20px; color: red; margin-right: 20px; border-bottom: solid; border-width: 1px; border-color: #767676; cursor: pointer" onclick="mostra_div_informacao('div_cadastro_fornecedores_fone_contato','i_cadastro_fornecedores_fone_contato_on','i_cadastro_fornecedores_fone_contato_off',1)"><span style="color: #177CC0; font-family: Arial; font-size: 20px; font-weight: bold;">Fone / Contato</span>&nbsp;&nbsp;<i class="fa fa-toggle-off"></i></div>
 
     </div>
     
     <div class="row" style="width: 100%; height: 20px"></div>
 
 
-    <div id="div_cadastro_fornecedores_fone_contato" name="div_cadastro_fornecedores_fone_contato" style="display: block; visibility: visible; width: 100%; height: 100%; background-color: transparent; margin-left: 20px; margin-right: 20px; border: solid; border-color: #177CC0; border-width: 1px; border-radius: 10px; padding: 0px 20px 20px 20px;">
+    <div id="div_cadastro_fornecedores_fone_contato" name="div_cadastro_fornecedores_fone_contato" style="display: none; visibility: hidden; width: 100%; height: 100%; background-color: transparent; margin-left: 20px; margin-right: 20px; border: solid; border-color: #177CC0; border-width: 1px; border-radius: 10px; padding: 0px 20px 20px 20px;">
         <div class="row" style="height: 20px"></div>
 
         <div class="row" style="width: 100%; padding: 0px; margin: 0px; background-color: transparent; height: 100%; padding: 0px; margin: 0px">
@@ -928,4 +929,6 @@
       </div>
 
   </div>
+
+</asp:Panel>
 </asp:Content>

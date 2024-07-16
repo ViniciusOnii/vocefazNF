@@ -270,6 +270,7 @@
     <Content Include="telas\cadastrodetamanhos.aspx" />
     <Content Include="telas\cadastrotransportaora.aspx" />
     <Content Include="telas\cadastrovendedoresrepresentantes.aspx" />
+    <Content Include="telas\centrodecustos.aspx" />
     <Content Include="telas\compradores.aspx" />
     <Content Include="telas\empresa.aspx" />
     <Content Include="telas\condicoesdepagamento.aspx" />
@@ -365,6 +366,13 @@
     </Compile>
     <Compile Include="telas\cadastrovendedoresrepresentantes.aspx.vb">
       <DependentUpon>cadastrovendedoresrepresentantes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="telas\centrodecustos.aspx.designer.vb">
+      <DependentUpon>centrodecustos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="telas\centrodecustos.aspx.vb">
+      <DependentUpon>centrodecustos.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="telas\compradores.aspx.designer.vb">

@@ -71,6 +71,8 @@
 </asp:Panel>
 
 <!--///////////////////////////////////////////////////  Container dados Principais do Produto  /////////////////////////////////////////////////////////////////////////////////////////////-->
+          <asp:Panel ID="pnl_principal" runat="server" BackColor="Transparent" Height="100%" Visible="True">
+
 <div class="container-fluid" style="padding: 0px; margin: 0px; width: 100%; height: 100%">
     <div class="row" style="width: 100%; height: 50px"></div>
 
@@ -778,4 +780,6 @@
       </div>
 
   </div>
+
+ </asp:Panel>
 </asp:Content>
